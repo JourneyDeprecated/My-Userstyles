@@ -232,6 +232,14 @@ textarea {
     background-color: #ED1C24 !important;
 }
 
+.btn-comment {
+	background-color: transparent !important;
+}
+
+.btn-comment:hover {
+	background-color: #6e7a83 !important;
+}
+
 .season-links {
     background-color: transparent !important;
     border-top: 1px solid #ED1C24 !important;
