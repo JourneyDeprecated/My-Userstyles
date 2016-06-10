@@ -1,0 +1,64 @@
+body {
+  background-color: rgb(41, 44, 54);
+}
+
+h1 {
+  color: rgb(0, 0, 0);
+}
+
+a {
+  color: rgb(255, 0, 0);
+}
+
+a:hover {
+  color: rgb(255, 0, 0);
+  text-decoration: none;
+}
+
+.space {
+  margin-top: 60px;
+}
+
+.lead {
+  color: rgb(0, 0, 0);
+}
+
+.links {
+  font-size: 1.25rem;
+  margin-bottom: 0px;
+}
+
+.card {
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+}
+
+.btn-block,
+.btn-primary-outline {
+  color: rgb(255, 255, 255);
+  border-color: rgb(0, 0, 0);
+  border-width: 3px;
+}
+
+.btn-block:hover {
+  color: rgb(255, 0, 0);
+  background-color: rgb(0, 0, 0);
+  border-color: rgb(0, 0, 0);
+}
+
+i {
+  color: rgb(0, 0, 0);
+  padding-right: 1px;
+}
+
+#first {
+  animation-delay: 0.75s;
+}
+
+#second {
+  animation-delay: 1.35s;
+}
+
+#third {
+  animation-delay: 1.9s;
+}
