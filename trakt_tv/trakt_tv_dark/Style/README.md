@@ -9,7 +9,7 @@ Dark theme for Trakt.tv - Browse Trakt.tv in nighttime mode.
 Install a userstyle manager for your favorite browser:
 
 - Chrome: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en
-- Firefox: https://addons.mozilla.org/en-US/firefox/addon/stylish/ (be sure to place the CSS inside the `@-moz-document domain("github.com")` block)
+- Firefox: https://addons.mozilla.org/en-US/firefox/addon/stylish/ (be sure to place the CSS inside the `@-moz-document domain("trakt.tv")` block)
 - Safari: http://sobolev.us/stylish
 
 Then, copy-pasta the styles from `Trakt.tv-Dark_Theme.css` into a new userstyle. Be sure to specify that it apply to sites beginning with `https://trakt.tv/*`.
