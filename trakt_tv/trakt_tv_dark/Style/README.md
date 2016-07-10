@@ -2,7 +2,7 @@
 
 # Trakt.tv Dark
 
-Dark theme for Trakt.tv - Browse Trakt.tv in nighttime mode.
+Dark theme for Trakt.tv - Switch off the lights on Trakt.tv and browse Trakt.tv in nighttime mode.
 
 ### How to use
 

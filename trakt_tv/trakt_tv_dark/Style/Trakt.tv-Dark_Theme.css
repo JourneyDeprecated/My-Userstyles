@@ -1,100 +1,458 @@
 @-moz-document domain("trakt.tv") {
+
+/*
+* Trakt.tv Dark v2.0
+* Copyright 2016 JourneyOver
+*/
+
+:root {
+--bg: #2c2c33 !important;             /*  var(--bg) blue  */
+--bg2: #2a2a31 !important;             /*  var(--bg2) a bit darker blue  */
+--bg-dark: #1d1e22 !important;             /*  var(--bg-dark) darker blue  */
+--border: #000102 !important;             /* var(--border) Black Border */
+--first-color: #ffffff !important;             /* var(--first-color) white  */
+--second-color: #888888 !important;             /* var(--second-color) grey  */
+--third-color: #16a085 !important;             /* var(--third-color) darker Keppel  */
+--fourth-color: #009edf !important;             /* var(--fourth-color) blue  */
+--fifth-color: #ff0000 !important;             /* var(--fifth-color) red  */
+--sixth-color: #000000 !important;             /* var(--sixth-color) black  */
+--seventh-color: #8e44ad !important;             /* var(--seventh-color) purple  */
+--eight-color: #6e7a83 !important;             /* var(--eight-color) light blue-grey  */
+--transparent1: rgba(29, 30, 34, 0.65) !important;             /* var(--transparent1) */
+--transparent2: rgba(0, 0, 0, .75) !important;             /* var(--transparent2) */
+--transparent3: rgba(0, 0, 0, .5) !important;             /* var(--transparent3) */
+--transparent4: rgba(0, 0, 0, .10) !important;             /* var(--transparent4) */
+}
+
+/* Main Globals */
+
+/* Background + footer background */
 section {
-    background-color: #1F1F1F !important;
-    color: #FFFFFF;
+  background-color: var(--bg-dark) !important;
+  color: var(--first-color);
 }
 
-body.comments #info-wrapper .above-comment-bg,
-body.comments_season #info-wrapper .above-comment-bg,
-body.comments_episode #info-wrapper .above-comment-bg,
-body.list_comments #info-wrapper .above-comment-bg comment blockquote {
-    background-color: #1F1F1F;
+footer {
+  background: var(--bg-dark);
 }
 
-body.comments #info-wrapper .info #read .comment-wrapper .comment blockquote,
-body.comments_season #info-wrapper .info #read .comment-wrapper .comment blockquote,
-body.comments_episode #info-wrapper .info #read .comment-wrapper .comment blockquote,
-body.list_comments #info-wrapper .info #read .comment-wrapper .comment blockquote {
-    background-color: #1F1F1F;
+#main-search {
+  background: var(--bg-dark) !important;
 }
 
-.custom-list .list-info .info .overview[data-readmore][aria-expanded="false"] .shade {
-    width: 0%;
+#main-search input.footer-search {
+  background: transparent;
+  color: var(--first-color);
 }
 
-.comment-wrapper .comment blockquote {
-    background-color: #1F1F1F;
+/* Profile Headers */
+#cover-wrapper {
+  background-image: url(https://goo.gl/oazJ7A) !important;
 }
 
-.summary-activity .tabs .tab {
-    border: solid 1px #ED1C24;
-    color: #FFFFFF;
+/* Navigation Menu */
+.no-touch header#top-nav,
+.no-touch header#top-nav:hover {
+  background: var(--transparent1);
 }
 
-#info-wrapper .info #actors .posters ul li .character {
-    color: #FFFFFF;
+/* Header Search */
+#header-search,
+header#top-nav #header-search #header-search-button.btn-primary {
+  background: var(--bg);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-#episodes-wrapper .under-info .titles {
-    background-color: #1F1F1F;
+#header-search:hover,
+header#top-nav #header-search #header-search-button.btn-primary:hover {
+  background: var(--transparent3);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-#episodes-wrapper .under-info h3 a {
-    color: #ED1C24;
+header#top-nav #header-search #header-search-query.open {
+  background: transparent;
+  color: var(--first-color);
 }
 
-#episodes-wrapper .episode-stats a {
-    color: #FDFDFD !important;
+header#top-nav #header-search #header-search-type.shown .dropdown-toggle {
+  background: transparent;
+  border-left: transparent;
+  color: var(--first-color);
 }
 
-.seasons {
-    background-color: #3b3b3b !important;
-    width: 85% !important;
-    margin-left: 3% !important;
-    border-radius: 15px;
-    text-align: center;
+header#top-nav #header-search #header-search-type.shown .dropdown-menu {
+  background: var(--bg);
 }
 
-.season-toggle {
-    color: #FFFFFF !important;
+header#top-nav #header-search #header-search-type.shown .dropdown-menu {
+  background: var(--bg);
 }
 
-.poster {
-    visibility: hidden;
+header#top-nav #header-search #header-search-type a {
+  color: var(--first-color);
+  background: var(--bg);
+  cursor: pointer;
 }
 
-.poster .real {
-    visibility: visible;
-    border-radius: 5px;
+header#top-nav #header-search #header-search-type a:hover {
+  color: var(--fifth-color);
+  background: var(--bg);
 }
 
+/* Alert */
+.alert {
+  background-color: transparent !important;
+  border: 1px solid var(--sixth-color) !important;
+  color: var(--first-color) !important;
+}
+
+/* Toast */
+#toast-container.toast-top-full-width .toast.toast-success {
+  background-color: transparent !important;
+  border: 1px solid var(--sixth-color) !important;
+  color: var(--first-color) !important;
+}
+
+/* watchlist/collections Dropdown Menu */
+.quick-icons .actions .popover .popover-title {
+  color: var(--first-color) !important;
+}
+
+.popover.with-list .popover-content,
+.popover.remove .popover-content {
+  background-color: var(--bg-dark) !important;
+}
+
+.popover-title {
+  background-color: var(--bg-dark) !important;
+  border-bottom: 1px solid var(--bg2) !important;
+}
+
+ul.lists li {
+  color: var(--second-color) !important;
+}
+
+ul.lists li.selected {
+  color: var(--first-color) !important;
+}
+
+.popover.remove .popover-content>button,
+.popover.remove .popover-content>button.btn-cancel {
+  background: var(--bg);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+.popover.remove .popover-content>button:hover,
+.popover.remove .popover-content>button.btn-cancel:hover {
+  background: var(--transparent3);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+/* Add To Collection *Other Date* */
+.popover .data-wrapper input {
+  color: var(--first-color);
+  background: var(--bg-dark);
+}
+
+.popover .data-wrapper {
+  background-color: var(--bg);
+}
+
+.popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline {
+  background-color: var(--bg);
+  border-top: 1px solid var(--bg2)
+}
+
+.popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline button {
+  opacity: 100;
+}
+
+.popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline .xdsoft_month,
+.popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline .xdsoft_year {
+  color: var(--first-color);
+}
+
+.xdsoft_datetimepicker .xdsoft_label>.xdsoft_select {
+  background: var(--bg);
+}
+
+.generic-datepicker .xdsoft_calendar td.xdsoft_current,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div {
+  background: var(--bg-dark) !important;
+}
+
+.xdsoft_datetimepicker .xdsoft_calendar td,
+.xdsoft_datetimepicker .xdsoft_calendar th,
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div {
+  background: var(--bg) !important;
+  color: var(--first-color) !important;
+  font-size: 13px !important;
+}
+
+/* Avatars on various pages */
+.user-avatar img {
+  display: block;
+  width: 100%;
+  border: solid 1px var(--border) !important;
+  background-color: var(--bg-dark) !important;
+  border-radius: 0%;
+  margin-left: 5px;
+}
+
+.user-avatar .corner-rating {
+  right: -5px !important;
+}
+
+.comment-wrapper .above-comment .user-avatar .corner-rating .text {
+  right: -17px !important;
+}
+
+/* Fanart/Poster images */
 .fanart {
-    visibility: hidden;
+  visibility: hidden !important;
 }
 
 .fanart .shadow-base {
-    visibility: visible !important;
+  visibility: visible !important;
 }
 
 .fanart .titles {
-    visibility: visible !important;
+  visibility: visible !important;
 }
 
 .fanart .real {
-    visibility: visible;
-    border-radius: 5px !important;
+  visibility: visible !important;
+  border-radius: 5px !important;
 }
 
+.poster {
+  visibility: hidden !important;
+}
+
+.poster .real {
+  visibility: visible !important;
+  border-radius: 5px !important;
+}
+
+.poster-wrapper .poster,
+.posters .poster-items-wrapper {
+  visibility: visible !important;
+}
+
+.posters .poster {
+  border: hidden !important;
+}
+
+/* Quick Icons */
+.titles-link h3 {
+  color: var(--first-color) !important;
+}
+
+.titles-link h4 {
+  color: var(--second-color) !important;
+}
+
+.quick-icons {
+  border-width: 0px !important;
+  margin-top: 2px !important;
+  background-color: var(--transparent4) !important;
+}
+
+.quick-icons .actions a.watch:hover,
+.quick-icons .actions a.watch.selected {
+  color: var(--first-color) !important;
+}
+
+.quick-icons .actions a.collect:hover,
+.quick-icons .actions a.collect.selected {
+  color: var(--first-color) !important;
+}
+
+.quick-icons .actions a.list:hover,
+.quick-icons .actions a.list.selected {
+  color: var(--first-color) !important;
+}
+
+.quick-icons .actions a.ignore:hover,
+.quick-icons .actions a.ignore.selected {
+  color: var(--first-color) !important;
+}
+
+/* Divider/Eye/Cal/Rss/CSV icons + See more text */
+.see-more {
+  color: var(--second-color) !important;
+}
+
+.see-more:hover {
+  color: var(--first-color) !important;
+}
+
+.feed-icons .feed-icon {
+  color: var(--second-color) !important;
+}
+
+.feed-icons .feed-icon:hover {
+  color: var(--first-color) !important;
+}
+
+.filter-dropdown .hide-dividers .icon {
+  color: var(--second-color);
+}
+
+.filter-dropdown .hide-dividers .icon:hover {
+  color: var(--first-color);
+}
+
+.filter-dropdown.selected .icon,
+.filter-dropdown.selected .caret,
+.filter-dropdown .selected .icon,
+.filter-dropdown .selected .caret {
+  color: var(--first-color) !important;
+}
+
+.filter-dropdown .icon .line {
+  background: var(--first-color);
+}
+
+.filter-dropdown .dropdown-toggle {
+  color: var(--second-color);
+}
+
+.filter-dropdown .dropdown-toggle:hover {
+  color: var(--first-color);
+}
+
+.subnav-wrapper .right .feed-icon .icon {
+  color: var(--second-color);
+}
+
+.subnav-wrapper .right .feed-icon .icon:hover {
+  color: var(--first-color);
+}
+
+/* Twitter Button */
+.btn-twitter {
+  background: var(--bg-dark);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+.btn-twitter:hover {
+  background: var(--transparent3);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+/* Facebook Button */
+.btn-facebook {
+  background: var(--bg-dark);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+.btn-facebook:hover {
+  background: var(--transparent3);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+/* Google+ Button */
+.btn-gplus,
+.btn-google-plus {
+  background: var(--bg-dark);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+.btn-gplus:hover,
+.btn-google-plus:hover {
+  background: var(--transparent3);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+ 
+/* Tumblr Button */
+.btn-tumblr {
+  background: var(--bg-dark);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+.btn-tumblr:hover {
+  background: var(--transparent3);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+/* Medium Button */
+.btn-medium {
+  background: var(--bg-dark);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+.btn-medium:hover {
+  background: var(--transparent3);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+/* Profile Globals */
+
+/* Cover Wrapper */
+#cover-wrapper .shadow {
+  display: none;
+}
+
+#cover-wrapper #avatar-wrapper .avatar {
+  border-radius: 1%;
+  border: 0px;
+  background-color: transparent;
+}
+
+#cover-wrapper #backdrop-info a,
+#cover-wrapper #backdrop-info a .year {
+  color: var(--fifth-color);
+}
+
+/* Links Wrapper */
+#links-wrapper {
+  background: var(--transparent1);
+}
+
+/* All Types/All Ratings/Recently Rated/Watched,
+Recently Watched/Recently Collected/Personal Lists,
+Rank/Comments/Recently Added dropdowns/Friends */
 .btn-default {
-    background-color: transparent !important;
-    color: #FFFFFF !important;
-    border: 1px solid #ED1C24 !important;
+  background: var(--transparent3);
+  color: var(--first-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 .dropdown .btn-default {
-    background-color: transparent !important;
-    color: #FFFFFF !important;
-    border: 1px solid #ED1C24 !important;
+  background: var(--bg-dark);
+  color: var(--first-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 .dropdown .btn-default:hover,
@@ -102,347 +460,669 @@ body.list_comments #info-wrapper .info #read .comment-wrapper .comment blockquot
 .btn-default:active,
 .btn-default.active,
 .open > .btn-default.dropdown-toggle {
-    background-color: #ED1C24 !important;
-    color: #FFFFFF !important;
-    border-color: transparent !important;
+  background: var(--transparent3);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-.quick-icons {
-    border-width: 0px !important;
-    margin-top: 5px !important;
-    border-radius: 5px !important;
-    background-color: transparent !important;
+.dropdown-menu,
+.dropdown-menu>li>a {
+  background: var(--bg-dark);
+  color: var(--second-color);
 }
 
-.pagination li a {
-    background-color: transparent !important;
-    color: #FFFFFF !important;
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus {
+  background: var(--sixth-color);
+  color: var(--first-color);
 }
 
-.alert {
-    background-color: transparent !important;
-    border: 1px solid #ED1C24 !important;
-    color: #FFFFFF !important;
-}
-
-.popover {
-    background-color: #F1F1F1 !important;
-}
-
-.popover.with-list .popover-content {
-    background-color: #1D1D1D;
-}
-
-.popover-title {
-    color: #ED1C24 !important;
-    background-color: #1F1F1F !important;
-    border-bottom: 1px solid #FF0000 !important;
-}
-
-ul.lists li {
-    color: #CC1C22 !important;
-}
-
-.btn-cancel {
-    color: #ED1C24 !important;
-}
-
-.users-wrapper {
-    background-color: transparent !important;
-    border-width: 0px !important;
-}
-
-.subnav-wrapper {
-    background-color: #1F1F1F !important;
-}
-
-textarea {
-    background-color: transparent !important;
-    color: #FFFFFF !important;
-    border: 1px solid #ED1C24 !important;
-    border-top-width: 0px !important;
-}
-
+/* Items/Plays/Watched/TLTW/Shows/lists/comments/People Count */
 .above-comment {
-    background-color: transparent !important;
-    border: 1px solid #ED1C24 !important;
-}
-
-.comment-wrapper.list .above-comment .user-name h4 a.username {
-    color: #FFFFFF;
+  background-color: transparent !important;
 }
 
 .comment-wrapper {
-    border-width: 0px !important;
-    background-color: transparent !important;
+  border-width: 0px !important;
+  background-color: transparent !important;
 }
 
 .comment-wrapper .interactions,
 #main-comment .interactions {
-    font-size: 15px;
+  font-size: 13px;
 }
 
 .comment-wrapper.wider .above-comment .interactions a {
-    margin: 20px;
+  color: var(--first-color);
+  margin: 15px;
 }
 
-#info-wrapper .sidebar .external li a {
-    color: #FFFFFF !important;
+/* Page numbers */
+.pagination li a {
+  background-color: transparent !important;
+  color: var(--first-color) !important;
 }
 
-#info-wrapper .sidebar .sections li a:hover {
-    color: #FFFFFF !important;
+/* Comments */
+
+/* Thumbs Up Button */
+.comment-wrapper .above-comment .selected {
+  color: var(--fifth-color) !important;
 }
 
-#main-search {
-    background: #1F1F1f !important;
+/* Date and Time */
+.comment-wrapper .above-comment .date {
+  color: var(--first-color);
+  font-family: "Proxima Nova" !important;
 }
 
-.btn-list {
-    background-color: transparent !important;
+/* Add Comment */
+.new-comment-focus.main {
+  font-size: 13px;
+  color: var(--second-color);
 }
 
-.btn-list:hover {
-    background-color: #009EDF !important;
+.new-comment-focus.main:hover {
+  font-size: 13px;
+  color: var(--first-color);
 }
 
-.btn-watch {
-    background-color: transparent !important;
+/* reply Box */
+.new-reply-wrapper .reply-field textarea {
+  background-color: var(--bg);
+  border: solid 1px var(--border);
 }
 
-.btn-watch:hover {
-    background-color: #8E44AD !important;
+.new-reply-wrapper .buttons .comment-submit {
+  background: var(--bg-dark);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-.btn-collect {
-    background-color: transparent !important;
+.new-reply-wrapper .buttons .comment-submit:hover,
+.new-reply-wrapper .buttons .comment-submit:active {
+  background: var(--transparent3);
+  color: var(--first-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-.btn-collect:hover {
-    background-color: #16A085 !important;
+/* TV/Movies/Calender/Discover page */
+
+/* Body */
+.frame-wrapper {
+  background-color: var(--bg-dark);
 }
 
-.btn-checkin {
-    color: #ED1C24 !important;
-    background-color: transparent !important;
+.frame-wrapper #huckster-desktop-wrapper.visible {
+  display: block;
+  padding: 0 0 0 0;
+  background: var(--bg-dark);
 }
 
-.btn-checkin:hover {
-    color: #FFFFFF !important;
-    background-color: #ED1C24 !important;
+.container-fluid {
+  background: var(--bg-dark);
+}
+/* End Globals */
+
+/* Sign in page */
+
+/* Trakt Logo */
+#auth-form-wrapper .logo-wrapper .logo,
+.checkin-modal .logo-wrapper .logo {
+  background: url(http://i.imgur.com/iMVkiDx.png) no-repeat;
+  background-size: 128px 128px;
 }
 
-.btn-comment {
-	background-color: transparent !important;
-}
-
-.btn-comment:hover {
-	background-color: #6e7a83 !important;
-}
-
-.season-links {
-    background-color: transparent !important;
-    border-top: 1px solid #ED1C24 !important;
-    border-bottom: 1px solid #ED1C24 !important;
-}
-
-@keyframes fade-in {
-    from {
-        color: #FFFFFF;
-    }
-    to {
-        color: #ED1C24;
-    }
-}
-
-@keyframes fade-out {
-    from {
-        color: #ED1C24;
-    }
-    to {
-        color: #FFFFFF;
-      }
-}
-
-.fa-heart-o {
-    animation-name: fade-out;
-    animation-duration: 0.5s;
-    color: #FFFFFF;
-}
-
-.fa-heart-o:hover {
-    animation-name: fade-in;
-    animation-duration: 0.5s;
-    color: #ED1C24;
-}
-
-.selected {
-    color: #ED1C24 !important;
-}
-
-.actions {
-    color: #FFFFFF !important;
-}
-
-.quick-icons .actions a.watch:hover,
-.quick-icons .actions a.watch.selected {
-    color: #FFFFFF !important;
-}
-
-.quick-icons .actions a.collect:hover,
-.quick-icons .actions a.collect.selected {
-    color: #FFFFFF !important;
-}
-
-.quick-icons .actions a.list:hover,
-.quick-icons .actions a.list.selected {
-    color: #FFFFFF !important;
-}
-
-.panel {
-    background-color: transparent !important;
-    border: 1px solid #ED1C24 !important;
-}
-
-.panel-heading {
-    color: #FFFFFF !important;
-    background-color: #ED1C24 !important;
-    border-width: 0px !important;
-}
-
-.panel-body input,
-#list-name {
-    background-color: transparent !important;
-    border: 1px solid #ED1C24 !important;
-    color: #FFFFFF !important;
-}
-
-td,
-td:hover {
-    color: #ff0000;
-    background-color: #1F1F1F
-}
-
-h3.instructions {
-    background-color: #1f1f1f
-}
-
-#avatar-file-upload {
-    background-color: transparent !important;
-    color: #ED1C24 !important;
-    border-color: #ED1C24 !important;
-}
-
-#avatar-file-upload:hover {
-    background-color: #ED1C24 !important;
-    color: #FFFFFF !important;
-}
-
-#user_about {
-    border: 1px solid #ED1C24 !important;
-    color: #FFFFFF !important;
-}
-
-.panel-body select {
-    background-color: #1F1F1F !important;
-    border: 1px solid #ED1C24 !important;
-    color: #E40A0A !important;
-}
-
-.filter-dropdown .icon.trakt-icon-divider {
-    margin-top: 2px;
-    color: #E4E3E3;
-}
-
-.close {
-    color: #FFFFFF !important;
-}
-
+/* Login form */
+#auth-form-wrapper,
 .checkin-modal {
-    background-color: #1F1F1F !important;
+  background-color: var(--bg-dark);
+  color: var(--second-color);
+  border-radius: 1px;
 }
 
-.checkin-modal .form-signin .fanarts .fanart img {
-    border-radius: 0px !important;
+/* Text area */
+.form-control {
+  color: var(--first-color);
+  background-color: var(--bg-dark);
+  border: 1px solid var(--border);
 }
 
-.checkin-modal .form-inputs textarea {
-    border: 1px solid #ED1C24 !important;
+/* Sign-in Button */
+#auth-form-wrapper .btn-primary,
+.checkin-modal .btn-primary {
+  background: var(--bg-dark);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-.posters .poster-under {
-    background-color: #1F1F1F !important;
-    color: #FFFFFF !important;
+#auth-form-wrapper .btn-primary:hover,
+.checkin-modal .btn-primary:hover {
+  background: var(--transparent3);
+  color: var(--first-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-.titles-link {
-    color: #E01C24 !important;
+/* Bottom Section of login form */
+#auth-form-wrapper .bottom-wrapper,
+.checkin-modal .bottom-wrapper {
+  border-top: solid 1px var(--bg2);
+  background-color: var(--bg-dark);
+  Color: var(--second-color);
 }
 
-.activity-date {
-    background-color: #232121 !important;
+/* Apps Page */
+.btn-group.in-wrapper .btn {
+  background: var(--bg-dark);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-#boxes-wrapper .row .last-comment h3 span {
-    font-family: "Proxima Nova";
-    left: 70px;
-    font-size: 15px;
-    margin-right: 0px;
+.btn-group.in-wrapper .btn:hover {
+  background: var(--transparent3);
+  color: var(--first-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+.btn-group.in-wrapper .btn-primary {
+  background: var(--bg-dark);
+  color: var(--fifth-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+/* Dashboard */
+
+/* Avatar */
+#results-top-wrapper.user-wrapper .user-avatar img {
+  border-color: var(--bg-dark) !important;
+  background-color: var(--bg-dark) !important;
+  border-width: 0px !important;
+}
+
+/* Stats Wrapper */
+#results-top-wrapper.user-wrapper .stats-wrapper {
+  background-color: var(--bg2);
+}
+
+/* Last 30 days at a glance */
+#charts-wrapper h3 {
+  color: var(--first-color);
+}
+
+#charts-wrapper .genre-bars.light .bar label {
+  color: var(--first-color);
+}
+
+/* Network Activity */
+#network-wrapper .posters .poster-under {
+  background-color: transparent !important;
+  color: var(--first-color) !important;
+}
+
+#network-wrapper .posters .poster-under .text a.username {
+  color: var(--first-color) !important;
+}
+
+#network-wrapper .posters .poster-under .text a {
+  color: var(--first-color) !important;
+}
+
+#network-wrapper .posters .activity-date {
+  background-color: var(--bg2);
+  color: var(--first-color);
+}
+  
+/* profile page */
+
+/* About/Last Watched/WATCHED TV SHOWS/MOST WATCHED TV SHOW,
+MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
+#boxes-wrapper .row .stat-box {
+  border: 1px solid var(--border);
+}
+
+#boxes-wrapper .row .stat-box h2,
+#boxes-wrapper .row .last-comment h3 span,
+#boxes-wrapper .row .stat-box .shade h3,
+#boxes-wrapper .row .stat-box .shade h4 {
+  font-family: "Proxima Nova";
+  left: 70px;
+  font-size: 15px;
+  margin-right: 0px;
+}
+
+#boxes-wrapper .row .last-comment h3 .fa {
+  font-size: 30px;
+  margin: 0 0 0 0;
 }
 
 #boxes-wrapper .row .last-comment {
-    background-color: #1F1F1F;
+  background-color: var(--bg-dark);
 }
 
-#boxes-wrapper .row .stats {
-    background-color: #1F1F1F;
-}
-
+#boxes-wrapper .row .stats,
 #boxes-wrapper .row .stats .bottom-shade {
-    background-color: #1F1F1F;
+  background-color: var(--bg-dark);
 }
 
 #boxes-wrapper .row .stats .under-stat {
-    color: #ED2626;
+  color: var(--fifth-color);
 }
 
 #boxes-wrapper .row .stat-box {
-    border: 1px solid #ED1C24;
+  background-color: var(--bg-dark);
 }
 
-#faq-wrapper p {
-    color: #000 !important;
+#boxes-wrapper .row .stat-box .see-more {
+  color: var(--first-color) !important;
 }
 
-#schedule-wrapper .poster-wrapper .poster {
-    visibility: visible !important;
+/* Favorites */
+#favorites-wrapper.col-stat.alt {
+  background: transparent;
 }
 
-.titles-link h3 {
-    color: #FFFFFF !important;
+/* Ratings */
+#chart-ratings-wrapper.col-stat.alt {
+  background: transparent;
 }
 
-.titles-link h4 {
-    color: #ABABAB !important;
+#chart-ratings-wrapper #chart-ratings {
+  border: 1px solid var(--border);
 }
 
-.interactions,
-.above-comment {
-    border: 1px solid transparent !important;
+/* Progress Page */
+
+/* Season Bar */
+.seasons {
+  background-color: var(--bg2) !important;
+  width: 85% !important;
+  margin-left: 3% !important;
+  border-radius: 15px;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+  text-align: center;
 }
 
-.username,
-.quote {
-    color: #ABABAB !important;
+.season-toggle {
+  color: var(--first-color) !important;
 }
 
-.above-comment-bg {
-    background-color: #454545 !important;
+/* Lists Page */
+
+/* Add List / Reorder */
+#btn-list-add,
+#btn-list-edit-lists {
+  font-size: 13px;
+  color: var(--second-color);
 }
 
-#header-search {
-    background-color: #202020 !important;
+#btn-list-add:hover,
+#btn-list-edit-lists:hover,
+#btn-list-edit-lists.active {
+  font-size: 13px;
+  color: var(--first-color) !important;
 }
+
+#btn-list-edit-lists .icon {
+  transition: all 0s;
+}
+
+/* Sort Direction */
+#sort-direction {
+  color: var(--second-color);
+}
+
+#sort-direction.selected {
+  color: var(--first-color);
+}
+
+/* by *name* color */
+.comment-wrapper.list .above-comment .user-name h4 a.username {
+  color: var(--first-color);
+}
+
+/* create custom calander icon */
+.custom-list .list-info .user-actions .icon.btn-list-subscribe,
+.custom-list .list-info .user-actions .icon.btn-list-clone {
+  color: var(--first-color);
+}
+
+.comment-wrapper.list .selected {
+  color: var(--fifth-color) !important;
+}
+
+.custom-list .list-info .info .overview[data-readmore][aria-expanded="false"] .shade {
+  width: 0%;
+}
+
+/* clone and subscribe buttons */
+.subnav-wrapper .left h2 .right a {
+  color: var(--second-color);
+}
+
+.subnav-wrapper .left h2 .right a:hover {
+  color: var(--first-color);
+}
+
+/* Show Page */
+
+/* Rate this show */
+@keyframes fade-in {
+  from {
+    color: var(--first-color);
+  }
+  to {
+    color: var(--fifth-color);
+  }
+}
+
+@keyframes fade-out {
+  from {
+    color: var(--fifth-color);
+  }
+  to {
+    color: var(--first-color);
+  }
+}
+
+.fa-heart-o {
+  animation-name: fade-out;
+  animation-duration: 0.5s;
+  color: var(--first-color);
+}
+
+.fa-heart-o:hover {
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  color: var(--fifth-color);
+}
+
+/* Checkin/Watched/Collection/Add to List/Comment */
+.btn-checkin {
+  color: var(--fifth-color) !important;
+  background-color: transparent !important;
+}
+
+.btn-checkin:hover {
+  color: var(--first-color) !important;
+  background-color: var(--fifth-color) !important;
+}
+
+.btn-watch {
+  background-color: transparent !important;
+}
+
+.btn-watch:hover {
+  background-color: var(--seventh-color) !important;
+}
+
+.btn-collect {
+  background-color: transparent !important;
+}
+
+.btn-collect:hover {
+  background-color: var(--third-color) !important;
+}
+
+.btn-list {
+  background-color: transparent !important;
+}
+
+.btn-list:hover {
+  background-color: var(--fourth-color) !important;
+}
+
+.btn-comment {
+  background-color: transparent !important;
+}
+
+.btn-comment:hover {
+  background-color: var(--eight-color) !important;
+}
+
+/* Sidebar Navigation */
+.sidebar .external li a {
+  color: var(--first-color) !important;
+}
+
+.sidebar .sections li a:hover {
+  background-color: transparent !important;
+  color: var(--first-color) !important;
+}
+
+/* Summary and user activity */
+.summary-activity .tabs .tab {
+  background: var(--bg-dark) !important;
+  color: var(--first-color) !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+  transition: all 0s !important;
+}
+
+.summary-activity .tabs .tab:hover {
+  background: var(--bg2) !important;
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+  transition: all 0s !important;
+}
+
+.summary-activity .tabs .tab.selected {
+  background: var(--bg-dark) !important;
+  color: var(--first-color) !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+  transition: all 0s !important;
+}
+
+.summary-activity .tabs .tab.selected:hover {
+  background: var(--bg2) !important;
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+  transition: all 0s !important;
+}
+
+.summary-activity .tab-content .tab-pane .users-wrapper {
+  background: var(--bg2) !important;
+  color: var(--first-color) !important;
+  border: 1px solid var(--border) !important;
+}
+
+/* Actors */
+#info-wrapper .info #actors .posters ul li .character {
+  color: var(--first-color) !important;
+}
+
+#info-wrapper .info #actors .posters ul:hover li .titles .name {
+  color: var(--first-color) !important;
+  opacity: 100% !important;
+}
+
+.tooltip-inner {
+  color: var(--first-color) !important;
+  background-color: var(--bg) !important;
+  border: 1px solid var(--border) !important;
+}
+
+.tooltip .alt {
+  color: var(--first-color) !important;
+}
+
+/* Seasons Page */
+/* season navigation bar */
+.subnav-wrapper {
+  background-color: var(--bg-dark) !important;
+}
+
+.season-links {
+  color: var(--second-color) !important;
+  border-top: 1px solid var(--border) !important;
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.season-links .links ul li a {
+  color: var(--second-color) !important;
+}
+
+.season-links .links ul li a.selected {
+  color: var(--first-color) !important;
+}
+
+.season-links .links ul li a:hover {
+  color: var(--first-color) !important;
+}
+
+/* Episode Info */
+.under-info .titles {
+  background-color: var(--bg2) !important;
+  border: 1px solid var(--border) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+.under-info h3 a {
+  color: var(--fifth-color) !important;
+}
+
+#seasons-episodes-sortable .episode-stats a {
+  color: var(--first-color) !important;
+}
+
+/* Comments page */
+body.comments #info-wrapper .above-comment-bg,
+body.comments_season #info-wrapper .above-comment-bg,
+body.comments_episode #info-wrapper .above-comment-bg,
+body.list_comments #info-wrapper .above-comment-bg comment blockquote {
+  background-color: var(--bg-dark) !important;
+}
+
+body.comments #info-wrapper .info #read .comment-wrapper .comment blockquote,
+body.comments_season #info-wrapper .info #read .comment-wrapper .comment blockquote,
+body.comments_episode #info-wrapper .info #read .comment-wrapper .comment blockquote,
+body.list_comments #info-wrapper .info #read .comment-wrapper .comment blockquote {
+  background-color: var(--bg-dark) !important;
+}
+
+.comment-wrapper .comment blockquote {
+  background-color: var(--bg-dark) !important;
+}
+
+/* Shouts page */
+body.comments #info-wrapper .above-comment-bg,
+body.comments_liked #info-wrapper .above-comment-bg,
+body.comments_season #info-wrapper .above-comment-bg,
+body.comments_episode #info-wrapper .above-comment-bg,
+body.list_comments #info-wrapper .above-comment-bg {
+  background-color: var(--bg-dark) !important;
+}
+
+/*Settings Page */
+/* General */
+.panel-default {
+  border-color: var(--border) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+.panel-heading {
+  color: var(--first-color) !important;
+  background-color: var(--bg-dark) !important;
+  border-color: var(--border) !important;
+}
+
+.panel-body {
+  color: var(--first-color) !important;
+  background-color: var(--bg-dark) !important;
+  border-color: var(--border) !important;
+}
+
+.input-group .form-control:first-child {
+  background: var(--bg-dark) !important;
+  color: var(--first-color) !important;
+  border-color: var(--border) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+#avatar-file-upload {
+  background: var(--bg-dark) !important;
+  color: var(--first-color) !important;
+  border-color: var(--border) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+#avatar-file-upload:hover {
+  background: var(--transparent3);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+body.settings .buttons .btn {
+  background: var(--bg-dark);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+body.settings .buttons .btn:hover {
+  background: var(--transparent3);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+/* Sharing and Notifications */
+body.settings .notifications-table .table tbody>tr>td {
+  border: 1px solid var(--border);
+}
+
+body.settings .notifications-table .table tbody>tr:hover {
+  background: var(--transparent3);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+h3.instructions {
+  background-color: var(--bg-dark) !important;
+}
+
+/* Hidden Items */
+body.settings .subnav-wrapper {
+  color: var(--first-color) !important;
+  border-bottom: solid 1px var(--border) !important;
+}
+
+/* Connected Apps */
+body.authorized_applications .subnav-wrapper {
+  color: var(--first-color) !important;
+  border-bottom: solid 1px var(--border) !important;
+}
+
+/* Your API Apps */
+#authorized-applications .btn-primary,
+#authorized-applications .btn-success {
+  background: var(--bg-dark);
+  color: var(--first-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+#authorized-applications .btn-primary:hover,
+#authorized-applications .btn-success:hover {
+  background: var(--transparent3);
+  color: var(--first-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+
 }
 
 @-moz-document domain("trakt.tv") {
@@ -452,32 +1132,28 @@ h3.instructions {
 #huckster-desktop-top,
 #huckster-desktop-bottom,
 #posters.huckster {
-    display: none;
+  display: none;
 }
 
 .huckster-grid-item.grid-item {
-    display: none;
+  display: none;
 }
 
 .huckster {
-    display: none;
+  display: none;
 }
 
 #huckster-sidenav {
-    display: none
+  display: none
 }
 
 #info-wrapper .streaming-links .section {
-    display: none
+  display: none
 }
 
 .col-sm-6.col-md-4.col-xlg-3.huckster-grid-item.grid-item {
-    display: none;
-}
+  display: none;
 }
 
-@-moz-document url-prefix("https://trakt.tv/users/journey-over"), url-prefix("http://trakt.tv/users/journey-over") {
-#cover-wrapper {
-    background-image: url(https://goo.gl/oazJ7A) !important;
-}
+
 }

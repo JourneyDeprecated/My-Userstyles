@@ -1,0 +1,50 @@
+:root {
+--bg: #1d1e22 !important;             /*  var(--bg) darker blue  */
+--border: #000102 !important;             /* var(--border) Black Border */
+--first-color: #ffffff !important;             /* var(--first-color) white  */
+--second-color: #6e7a83 !important;             /* var(--second-color) light blue-grey  */
+--transparent: rgba(0, 0, 0, .75) !important;             /* var(--transparent) */
+--transparent2: rgba(0, 0, 0, .5) !important;             /* var(--transparent2) */
+}
+
+body {
+  background-color: var(--bg);
+}
+
+p {
+  color: var(--second-color);
+}
+
+.border {
+  border: 1px solid var(--border);
+}
+
+.page-header {
+  border-color: var(--border);
+  color: var(--first-color);
+}
+
+.flour,
+.jumbotron h1 {
+  color: var(--first-color);
+}
+
+.jumbotron {
+  background-color: var(--bg);
+  padding-top: 55px;
+  padding-bottom: 55px;
+}
+
+.btn {
+  background: var(--bg);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent);
+}
+
+.btn:hover {
+  background: var(--transparent2);
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  box-shadow: 1px 1px 5px 1px var(--transparent);
+}
