@@ -1,7 +1,7 @@
 @-moz-document domain("trakt.tv") {
 
 /*
-* Trakt.tv Dark v2.0
+* Trakt.tv Dark v2.1
 * Copyright 2016 JourneyOver
 */
 
@@ -47,13 +47,37 @@ footer {
 
 /* Profile Headers */
 #cover-wrapper {
-  background-image: url(https://goo.gl/oazJ7A) !important;
+  background-image: url(/*[[url]]*/) !important;
 }
 
 /* Navigation Menu */
 .no-touch header#top-nav,
 .no-touch header#top-nav:hover {
   background: var(--transparent1);
+}
+
+/* Navigation Menu Logo IMG */
+#top-brand img {
+  visibility: hidden !important;
+}
+
+#top-brand {
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt_tv/trakt_tv_dark/Style/img/Trakt_TV_Header_Logo.png");
+  width: 65px !important;
+  height: 65px !important;
+}
+
+header#top-nav #top-brand .bottom-wrapper .bottom {
+  background: none !important;
+}
+
+header#top-nav #top-brand .bottom-wrapper {
+  position: static !important;
+  height: 1px !important;
+  width: 65px;
+  z-index: -1;
+  bottom: 0;
+  overflow: hidden;
 }
 
 /* Header Search */
