@@ -1,9 +1,13 @@
 @-moz-document domain("trakt.tv") {
 
-/*
-* Trakt.tv Dark v2.1
-* Copyright 2016 JourneyOver
-*/
+/* +------------------------------------------------------------------------------------------------------------------------+ */
+/* |                                                                                                                        | */
+/* |                                                 Trakt.tv Dark v2.2                                                     | */
+/* |                                             Copyright 2016 JourneyOver                                                 | */
+/* |                                                                                                                        | */
+/* +------------------------------------------------------------------------------------------------------------------------+ */
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: SETTINGS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 :root {
 --bg: #2c2c33 !important;             /*  var(--bg) blue  */
@@ -23,6 +27,8 @@
 --transparent3: rgba(0, 0, 0, .5) !important;             /* var(--transparent3) */
 --transparent4: rgba(0, 0, 0, .10) !important;             /* var(--transparent4) */
 }
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: THEME :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /* Main Globals */
 
@@ -62,7 +68,7 @@ footer {
 }
 
 #top-brand {
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt_tv/trakt_tv_dark/Style/img/Trakt_TV_Header_Logo.png");
+  background: url("https://goo.gl/5XAQJw");
   width: 65px !important;
   height: 65px !important;
 }
@@ -78,6 +84,11 @@ header#top-nav #top-brand .bottom-wrapper {
   z-index: -1;
   bottom: 0;
   overflow: hidden;
+}
+
+/* Navigation Menu User Menu */
+#user-menu {
+  background: var(--transparent1) !important;
 }
 
 /* Header Search */
@@ -571,6 +582,19 @@ Rank/Comments/Recently Added dropdowns/Friends */
   color: var(--first-color);
   border: 1px solid var(--border);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+/* Spoiler Stuff */
+.comment-wrapper .comment.visible pre {
+  word-break: normal !important;
+  word-wrap: normal !important;
+  color: var(--first-color) !important;
+  background-color: var(--bg-dark) !important;
+  border: 0px !important;
+}
+
+.comment-wrapper .comment code {
+  border: 0px !important;
 }
 
 /* TV/Movies/Calender/Discover page */
