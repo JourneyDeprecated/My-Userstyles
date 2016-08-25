@@ -1,8 +1,7 @@
 @-moz-document domain("trakt.tv") {
-
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 Trakt.tv Dark v2.2                                                     | */
+/* |                                                 Trakt.tv Dark v2.2.1                                                   | */
 /* |                                             Copyright 2016 JourneyOver                                                 | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -34,8 +33,8 @@
 
 /* Background + footer background */
 section {
-  background-color: var(--bg-dark) !important;
   color: var(--first-color);
+  background-color: var(--bg-dark) !important;
 }
 
 footer {
@@ -47,13 +46,13 @@ footer {
 }
 
 #main-search input.footer-search {
-  background: transparent;
   color: var(--first-color);
+  background: transparent;
 }
 
 /* Profile Headers */
 #cover-wrapper {
-  background-image: url(/*[[url]]*/) !important;
+  background-image: url("/*[[url]]*/") !important;
 }
 
 /* Navigation Menu */
@@ -68,9 +67,9 @@ footer {
 }
 
 #top-brand {
-  background: url("https://goo.gl/5XAQJw");
   width: 65px !important;
   height: 65px !important;
+  background: url("https://goo.gl/5XAQJw");
 }
 
 header#top-nav #top-brand .bottom-wrapper .bottom {
@@ -78,11 +77,11 @@ header#top-nav #top-brand .bottom-wrapper .bottom {
 }
 
 header#top-nav #top-brand .bottom-wrapper {
-  position: static !important;
-  height: 1px !important;
-  width: 65px;
   z-index: -1;
+  position: static !important;
   bottom: 0;
+  width: 65px;
+  height: 1px !important;
   overflow: hidden;
 }
 
@@ -94,29 +93,29 @@ header#top-nav #top-brand .bottom-wrapper {
 /* Header Search */
 #header-search,
 header#top-nav #header-search #header-search-button.btn-primary {
-  background: var(--bg);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--bg);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 #header-search:hover,
 header#top-nav #header-search #header-search-button.btn-primary:hover {
-  background: var(--transparent3);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 header#top-nav #header-search #header-search-query.open {
-  background: transparent;
   color: var(--first-color);
+  background: transparent;
 }
 
 header#top-nav #header-search #header-search-type.shown .dropdown-toggle {
-  background: transparent;
-  border-left: transparent;
   color: var(--first-color);
+  border-left: transparent;
+  background: transparent;
 }
 
 header#top-nav #header-search #header-search-type.shown .dropdown-menu {
@@ -140,16 +139,16 @@ header#top-nav #header-search #header-search-type a:hover {
 
 /* Alert */
 .alert {
-  background-color: transparent !important;
-  border: 1px solid var(--sixth-color) !important;
   color: var(--first-color) !important;
+  border: 1px solid var(--sixth-color) !important;
+  background-color: transparent !important;
 }
 
 /* Toast */
 #toast-container.toast-top-full-width .toast.toast-success {
-  background-color: transparent !important;
-  border: 1px solid var(--sixth-color) !important;
   color: var(--first-color) !important;
+  border: 1px solid var(--sixth-color) !important;
+  background-color: transparent !important;
 }
 
 /* watchlist/collections Dropdown Menu */
@@ -157,14 +156,14 @@ header#top-nav #header-search #header-search-type a:hover {
   color: var(--first-color) !important;
 }
 
-.popover.with-list .popover-content,
-.popover.remove .popover-content {
+.popover.remove .popover-content,
+.popover.with-list .popover-content {
   background-color: var(--bg-dark) !important;
 }
 
 .popover-title {
-  background-color: var(--bg-dark) !important;
   border-bottom: 1px solid var(--bg2) !important;
+  background-color: var(--bg-dark) !important;
 }
 
 ul.lists li {
@@ -175,19 +174,19 @@ ul.lists li.selected {
   color: var(--first-color) !important;
 }
 
-.popover.remove .popover-content>button,
-.popover.remove .popover-content>button.btn-cancel {
-  background: var(--bg);
+.popover.remove .popover-content > button,
+.popover.remove .popover-content > button.btn-cancel {
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--bg);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-.popover.remove .popover-content>button:hover,
-.popover.remove .popover-content>button.btn-cancel:hover {
-  background: var(--transparent3);
+.popover.remove .popover-content > button.btn-cancel:hover,
+.popover.remove .popover-content > button:hover {
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
@@ -202,8 +201,8 @@ ul.lists li.selected {
 }
 
 .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline {
+  border-top: 1px solid var(--bg2);
   background-color: var(--bg);
-  border-top: 1px solid var(--bg2)
 }
 
 .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline button {
@@ -215,20 +214,20 @@ ul.lists li.selected {
   color: var(--first-color);
 }
 
-.xdsoft_datetimepicker .xdsoft_label>.xdsoft_select {
+.xdsoft_datetimepicker .xdsoft_label > .xdsoft_select {
   background: var(--bg);
 }
 
 .generic-datepicker .xdsoft_calendar td.xdsoft_current,
-.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div {
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div {
   background: var(--bg-dark) !important;
 }
 
 .xdsoft_datetimepicker .xdsoft_calendar td,
 .xdsoft_datetimepicker .xdsoft_calendar th,
-.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box>div>div {
-  background: var(--bg) !important;
+.xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div {
   color: var(--first-color) !important;
+  background: var(--bg) !important;
   font-size: 13px !important;
 }
 
@@ -236,10 +235,10 @@ ul.lists li.selected {
 .user-avatar img {
   display: block;
   width: 100%;
-  border: solid 1px var(--border) !important;
-  background-color: var(--bg-dark) !important;
-  border-radius: 0%;
   margin-left: 5px;
+  border: solid 1px var(--border) !important;
+  border-radius: 0;
+  background-color: var(--bg-dark) !important;
 }
 
 .user-avatar .corner-rating {
@@ -296,28 +295,28 @@ ul.lists li.selected {
 }
 
 .quick-icons {
-  border-width: 0px !important;
   margin-top: 2px !important;
+  border-width: 0 !important;
   background-color: var(--transparent4) !important;
 }
 
-.quick-icons .actions a.watch:hover,
-.quick-icons .actions a.watch.selected {
+.quick-icons .actions a.watch.selected,
+.quick-icons .actions a.watch:hover {
   color: var(--first-color) !important;
 }
 
-.quick-icons .actions a.collect:hover,
-.quick-icons .actions a.collect.selected {
+.quick-icons .actions a.collect.selected,
+.quick-icons .actions a.collect:hover {
   color: var(--first-color) !important;
 }
 
-.quick-icons .actions a.list:hover,
-.quick-icons .actions a.list.selected {
+.quick-icons .actions a.list.selected,
+.quick-icons .actions a.list:hover {
   color: var(--first-color) !important;
 }
 
-.quick-icons .actions a.ignore:hover,
-.quick-icons .actions a.ignore.selected {
+.quick-icons .actions a.ignore.selected,
+.quick-icons .actions a.ignore:hover {
   color: var(--first-color) !important;
 }
 
@@ -346,10 +345,10 @@ ul.lists li.selected {
   color: var(--first-color);
 }
 
-.filter-dropdown.selected .icon,
-.filter-dropdown.selected .caret,
+.filter-dropdown .selected .caret,
 .filter-dropdown .selected .icon,
-.filter-dropdown .selected .caret {
+.filter-dropdown.selected .caret,
+.filter-dropdown.selected .icon {
   color: var(--first-color) !important;
 }
 
@@ -375,78 +374,78 @@ ul.lists li.selected {
 
 /* Twitter Button */
 .btn-twitter {
-  background: var(--bg-dark);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--bg-dark);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 .btn-twitter:hover {
-  background: var(--transparent3);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 /* Facebook Button */
 .btn-facebook {
-  background: var(--bg-dark);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--bg-dark);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 .btn-facebook:hover {
-  background: var(--transparent3);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 /* Google+ Button */
-.btn-gplus,
-.btn-google-plus {
-  background: var(--bg-dark);
+.btn-google-plus,
+.btn-gplus {
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--bg-dark);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-.btn-gplus:hover,
-.btn-google-plus:hover {
-  background: var(--transparent3);
+.btn-google-plus:hover,
+.btn-gplus:hover {
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
- 
+
 /* Tumblr Button */
 .btn-tumblr {
-  background: var(--bg-dark);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--bg-dark);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 .btn-tumblr:hover {
-  background: var(--transparent3);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 /* Medium Button */
 .btn-medium {
-  background: var(--bg-dark);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--bg-dark);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 .btn-medium:hover {
-  background: var(--transparent3);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
@@ -458,8 +457,8 @@ ul.lists li.selected {
 }
 
 #cover-wrapper #avatar-wrapper .avatar {
+  border: 0;
   border-radius: 1%;
-  border: 0px;
   background-color: transparent;
 }
 
@@ -477,40 +476,40 @@ ul.lists li.selected {
 Recently Watched/Recently Collected/Personal Lists,
 Rank/Comments/Recently Added dropdowns/Friends */
 .btn-default {
-  background: var(--transparent3);
   color: var(--first-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 .dropdown .btn-default {
-  background: var(--bg-dark);
   color: var(--first-color);
   border: 1px solid var(--border);
+  background: var(--bg-dark);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-.dropdown .btn-default:hover,
-.btn-default:focus,
-.btn-default:active,
 .btn-default.active,
+.btn-default:active,
+.btn-default:focus,
+.dropdown .btn-default:hover,
 .open > .btn-default.dropdown-toggle {
-  background: var(--transparent3);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 .dropdown-menu,
-.dropdown-menu>li>a {
-  background: var(--bg-dark);
+.dropdown-menu > li > a {
   color: var(--second-color);
+  background: var(--bg-dark);
 }
 
-.dropdown-menu>li>a:hover,
-.dropdown-menu>li>a:focus {
-  background: var(--sixth-color);
+.dropdown-menu > li > a:focus,
+.dropdown-menu > li > a:hover {
   color: var(--first-color);
+  background: var(--sixth-color);
 }
 
 /* Items/Plays/Watched/TLTW/Shows/lists/comments/People Count */
@@ -519,24 +518,24 @@ Rank/Comments/Recently Added dropdowns/Friends */
 }
 
 .comment-wrapper {
-  border-width: 0px !important;
+  border-width: 0 !important;
   background-color: transparent !important;
 }
 
-.comment-wrapper .interactions,
-#main-comment .interactions {
+#main-comment .interactions,
+.comment-wrapper .interactions {
   font-size: 13px;
 }
 
 .comment-wrapper.wider .above-comment .interactions a {
-  color: var(--first-color);
   margin: 15px;
+  color: var(--first-color);
 }
 
 /* Page numbers */
 .pagination li a {
-  background-color: transparent !important;
   color: var(--first-color) !important;
+  background-color: transparent !important;
 }
 
 /* Comments */
@@ -554,47 +553,47 @@ Rank/Comments/Recently Added dropdowns/Friends */
 
 /* Add Comment */
 .new-comment-focus.main {
-  font-size: 13px;
   color: var(--second-color);
+  font-size: 13px;
 }
 
 .new-comment-focus.main:hover {
-  font-size: 13px;
   color: var(--first-color);
+  font-size: 13px;
 }
 
 /* reply Box */
 .new-reply-wrapper .reply-field textarea {
-  background-color: var(--bg);
   border: solid 1px var(--border);
+  background-color: var(--bg);
 }
 
 .new-reply-wrapper .buttons .comment-submit {
-  background: var(--bg-dark);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--bg-dark);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-.new-reply-wrapper .buttons .comment-submit:hover,
-.new-reply-wrapper .buttons .comment-submit:active {
-  background: var(--transparent3);
+.new-reply-wrapper .buttons .comment-submit:active,
+.new-reply-wrapper .buttons .comment-submit:hover {
   color: var(--first-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 /* Spoiler Stuff */
 .comment-wrapper .comment.visible pre {
+  color: var(--first-color) !important;
+  border: 0 !important;
+  background-color: var(--bg-dark) !important;
   word-break: normal !important;
   word-wrap: normal !important;
-  color: var(--first-color) !important;
-  background-color: var(--bg-dark) !important;
-  border: 0px !important;
 }
 
 .comment-wrapper .comment code {
-  border: 0px !important;
+  border: 0 !important;
 }
 
 /* TV/Movies/Calender/Discover page */
@@ -606,13 +605,14 @@ Rank/Comments/Recently Added dropdowns/Friends */
 
 .frame-wrapper #huckster-desktop-wrapper.visible {
   display: block;
-  padding: 0 0 0 0;
+  padding: 0;
   background: var(--bg-dark);
 }
 
 .container-fluid {
   background: var(--bg-dark);
 }
+
 /* End Globals */
 
 /* Sign in page */
@@ -620,69 +620,69 @@ Rank/Comments/Recently Added dropdowns/Friends */
 /* Trakt Logo */
 #auth-form-wrapper .logo-wrapper .logo,
 .checkin-modal .logo-wrapper .logo {
-  background: url(http://i.imgur.com/iMVkiDx.png) no-repeat;
+  background: url("http://i.imgur.com/iMVkiDx.png") no-repeat;
   background-size: 128px 128px;
 }
 
 /* Login form */
 #auth-form-wrapper,
 .checkin-modal {
-  background-color: var(--bg-dark);
   color: var(--second-color);
   border-radius: 1px;
+  background-color: var(--bg-dark);
 }
 
 /* Text area */
 .form-control {
   color: var(--first-color);
-  background-color: var(--bg-dark);
   border: 1px solid var(--border);
+  background-color: var(--bg-dark);
 }
 
 /* Sign-in Button */
 #auth-form-wrapper .btn-primary,
 .checkin-modal .btn-primary {
-  background: var(--bg-dark);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--bg-dark);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 #auth-form-wrapper .btn-primary:hover,
 .checkin-modal .btn-primary:hover {
-  background: var(--transparent3);
   color: var(--first-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 /* Bottom Section of login form */
 #auth-form-wrapper .bottom-wrapper,
 .checkin-modal .bottom-wrapper {
+  color: var(--second-color);
   border-top: solid 1px var(--bg2);
   background-color: var(--bg-dark);
-  Color: var(--second-color);
 }
 
 /* Apps Page */
 .btn-group.in-wrapper .btn {
-  background: var(--bg-dark);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--bg-dark);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 .btn-group.in-wrapper .btn:hover {
-  background: var(--transparent3);
   color: var(--first-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 .btn-group.in-wrapper .btn-primary {
-  background: var(--bg-dark);
   color: var(--fifth-color);
   border: 1px solid var(--border);
+  background: var(--bg-dark);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
@@ -691,8 +691,8 @@ Rank/Comments/Recently Added dropdowns/Friends */
 /* Avatar */
 #results-top-wrapper.user-wrapper .user-avatar img {
   border-color: var(--bg-dark) !important;
+  border-width: 0 !important;
   background-color: var(--bg-dark) !important;
-  border-width: 0px !important;
 }
 
 /* Stats Wrapper */
@@ -711,8 +711,8 @@ Rank/Comments/Recently Added dropdowns/Friends */
 
 /* Network Activity */
 #network-wrapper .posters .poster-under {
-  background-color: transparent !important;
   color: var(--first-color) !important;
+  background-color: transparent !important;
 }
 
 #network-wrapper .posters .poster-under .text a.username {
@@ -724,10 +724,10 @@ Rank/Comments/Recently Added dropdowns/Friends */
 }
 
 #network-wrapper .posters .activity-date {
-  background-color: var(--bg2);
   color: var(--first-color);
+  background-color: var(--bg2);
 }
-  
+
 /* profile page */
 
 /* About/Last Watched/WATCHED TV SHOWS/MOST WATCHED TV SHOW,
@@ -736,19 +736,19 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   border: 1px solid var(--border);
 }
 
-#boxes-wrapper .row .stat-box h2,
 #boxes-wrapper .row .last-comment h3 span,
 #boxes-wrapper .row .stat-box .shade h3,
-#boxes-wrapper .row .stat-box .shade h4 {
-  font-family: "Proxima Nova";
+#boxes-wrapper .row .stat-box .shade h4,
+#boxes-wrapper .row .stat-box h2 {
   left: 70px;
+  margin-right: 0;
+  font-family: "Proxima Nova";
   font-size: 15px;
-  margin-right: 0px;
 }
 
 #boxes-wrapper .row .last-comment h3 .fa {
+  margin: 0;
   font-size: 30px;
-  margin: 0 0 0 0;
 }
 
 #boxes-wrapper .row .last-comment {
@@ -790,10 +790,10 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
 
 /* Season Bar */
 .seasons {
-  background-color: var(--bg2) !important;
   width: 85% !important;
   margin-left: 3% !important;
   border-radius: 15px;
+  background-color: var(--bg2) !important;
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
   text-align: center;
 }
@@ -807,15 +807,15 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
 /* Add List / Reorder */
 #btn-list-add,
 #btn-list-edit-lists {
-  font-size: 13px;
   color: var(--second-color);
+  font-size: 13px;
 }
 
 #btn-list-add:hover,
-#btn-list-edit-lists:hover,
-#btn-list-edit-lists.active {
-  font-size: 13px;
+#btn-list-edit-lists.active,
+#btn-list-edit-lists:hover {
   color: var(--first-color) !important;
+  font-size: 13px;
 }
 
 #btn-list-edit-lists .icon {
@@ -837,8 +837,8 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
 }
 
 /* create custom calander icon */
-.custom-list .list-info .user-actions .icon.btn-list-subscribe,
-.custom-list .list-info .user-actions .icon.btn-list-clone {
+.custom-list .list-info .user-actions .icon.btn-list-clone,
+.custom-list .list-info .user-actions .icon.btn-list-subscribe {
   color: var(--first-color);
 }
 
@@ -847,7 +847,7 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
 }
 
 .custom-list .list-info .info .overview[data-readmore][aria-expanded="false"] .shade {
-  width: 0%;
+  width: 0;
 }
 
 /* clone and subscribe buttons */
@@ -881,15 +881,15 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
 }
 
 .fa-heart-o {
-  animation-name: fade-out;
-  animation-duration: 0.5s;
   color: var(--first-color);
+  animation-duration: .5s;
+  animation-name: fade-out;
 }
 
 .fa-heart-o:hover {
-  animation-name: fade-in;
-  animation-duration: 0.5s;
   color: var(--fifth-color);
+  animation-duration: .5s;
+  animation-name: fade-in;
 }
 
 /* Checkin/Watched/Collection/Add to List/Comment */
@@ -941,47 +941,47 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
 }
 
 .sidebar .sections li a:hover {
-  background-color: transparent !important;
   color: var(--first-color) !important;
+  background-color: transparent !important;
 }
 
 /* Summary and user activity */
 .summary-activity .tabs .tab {
-  background: var(--bg-dark) !important;
   color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
   transition: all 0s !important;
 }
 
 .summary-activity .tabs .tab:hover {
-  background: var(--bg2) !important;
   color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+  background: var(--bg2) !important;
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
   transition: all 0s !important;
 }
 
 .summary-activity .tabs .tab.selected {
-  background: var(--bg-dark) !important;
   color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
   transition: all 0s !important;
 }
 
 .summary-activity .tabs .tab.selected:hover {
-  background: var(--bg2) !important;
   color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+  background: var(--bg2) !important;
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
   transition: all 0s !important;
 }
 
 .summary-activity .tab-content .tab-pane .users-wrapper {
-  background: var(--bg2) !important;
   color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
+  background: var(--bg2) !important;
 }
 
 /* Actors */
@@ -996,8 +996,8 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
 
 .tooltip-inner {
   color: var(--first-color) !important;
-  background-color: var(--bg) !important;
   border: 1px solid var(--border) !important;
+  background-color: var(--bg) !important;
 }
 
 .tooltip .alt {
@@ -1005,6 +1005,7 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
 }
 
 /* Seasons Page */
+
 /* season navigation bar */
 .subnav-wrapper {
   background-color: var(--bg-dark) !important;
@@ -1030,8 +1031,8 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
 
 /* Episode Info */
 .under-info .titles {
-  background-color: var(--bg2) !important;
   border: 1px solid var(--border) !important;
+  background-color: var(--bg2) !important;
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -1045,15 +1046,15 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
 
 /* Comments page */
 body.comments #info-wrapper .above-comment-bg,
-body.comments_season #info-wrapper .above-comment-bg,
 body.comments_episode #info-wrapper .above-comment-bg,
+body.comments_season #info-wrapper .above-comment-bg,
 body.list_comments #info-wrapper .above-comment-bg comment blockquote {
   background-color: var(--bg-dark) !important;
 }
 
 body.comments #info-wrapper .info #read .comment-wrapper .comment blockquote,
-body.comments_season #info-wrapper .info #read .comment-wrapper .comment blockquote,
 body.comments_episode #info-wrapper .info #read .comment-wrapper .comment blockquote,
+body.comments_season #info-wrapper .info #read .comment-wrapper .comment blockquote,
 body.list_comments #info-wrapper .info #read .comment-wrapper .comment blockquote {
   background-color: var(--bg-dark) !important;
 }
@@ -1064,14 +1065,15 @@ body.list_comments #info-wrapper .info #read .comment-wrapper .comment blockquot
 
 /* Shouts page */
 body.comments #info-wrapper .above-comment-bg,
+body.comments_episode #info-wrapper .above-comment-bg,
 body.comments_liked #info-wrapper .above-comment-bg,
 body.comments_season #info-wrapper .above-comment-bg,
-body.comments_episode #info-wrapper .above-comment-bg,
 body.list_comments #info-wrapper .above-comment-bg {
   background-color: var(--bg-dark) !important;
 }
 
-/*Settings Page */
+/* Settings Page */
+
 /* General */
 .panel-default {
   border-color: var(--border) !important;
@@ -1080,60 +1082,60 @@ body.list_comments #info-wrapper .above-comment-bg {
 
 .panel-heading {
   color: var(--first-color) !important;
-  background-color: var(--bg-dark) !important;
   border-color: var(--border) !important;
+  background-color: var(--bg-dark) !important;
 }
 
 .panel-body {
   color: var(--first-color) !important;
-  background-color: var(--bg-dark) !important;
   border-color: var(--border) !important;
+  background-color: var(--bg-dark) !important;
 }
 
 .input-group .form-control:first-child {
-  background: var(--bg-dark) !important;
   color: var(--first-color) !important;
   border-color: var(--border) !important;
+  background: var(--bg-dark) !important;
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 #avatar-file-upload {
-  background: var(--bg-dark) !important;
   color: var(--first-color) !important;
   border-color: var(--border) !important;
+  background: var(--bg-dark) !important;
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 #avatar-file-upload:hover {
-  background: var(--transparent3);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 body.settings .buttons .btn {
-  background: var(--bg-dark);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--bg-dark);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 body.settings .buttons .btn:hover {
-  background: var(--transparent3);
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 /* Sharing and Notifications */
-body.settings .notifications-table .table tbody>tr>td {
+body.settings .notifications-table .table tbody > tr > td {
   border: 1px solid var(--border);
 }
 
-body.settings .notifications-table .table tbody>tr:hover {
-  background: var(--transparent3);
+body.settings .notifications-table .table tbody > tr:hover {
   color: var(--second-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
@@ -1156,30 +1158,29 @@ body.authorized_applications .subnav-wrapper {
 /* Your API Apps */
 #authorized-applications .btn-primary,
 #authorized-applications .btn-success {
-  background: var(--bg-dark);
   color: var(--first-color);
   border: 1px solid var(--border);
+  background: var(--bg-dark);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
 #authorized-applications .btn-primary:hover,
 #authorized-applications .btn-success:hover {
-  background: var(--transparent3);
   color: var(--first-color);
   border: 1px solid var(--border);
+  background: var(--transparent3);
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
-
 
 }
 
 @-moz-document domain("trakt.tv") {
-.welcome,
 #huckster-content-page,
-#huckster-desktop-wrapper,
-#huckster-desktop-top,
 #huckster-desktop-bottom,
-#posters.huckster {
+#huckster-desktop-top,
+#huckster-desktop-wrapper,
+#posters.huckster,
+.welcome {
   display: none;
 }
 
@@ -1192,16 +1193,20 @@ body.authorized_applications .subnav-wrapper {
 }
 
 #huckster-sidenav {
-  display: none
+  display: none;
+}
+
+.huckster-dfp,
+.huckster-vip-info {
+  display: none;
 }
 
 #info-wrapper .streaming-links .section {
-  display: none
+  display: none;
 }
 
 .col-sm-6.col-md-4.col-xlg-3.huckster-grid-item.grid-item {
   display: none;
 }
-
 
 }
