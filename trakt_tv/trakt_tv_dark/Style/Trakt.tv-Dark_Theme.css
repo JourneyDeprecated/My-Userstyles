@@ -2,7 +2,7 @@
 
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 Trakt.tv Dark v2.2.1                                                   | */
+/* |                                                 Trakt.tv Dark v2.2.2                                                   | */
 /* |                                             Copyright 2016 JourneyOver                                                 | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -688,6 +688,11 @@ Rank/Comments/Recently Added dropdowns/Friends */
 }
 
 /* Dashboard */
+
+/* On deck to watch */
+#ondeck-wrapper .posters .titles-link {
+  color: var(--first-color);
+}
 
 /* Avatar */
 #results-top-wrapper.user-wrapper .user-avatar img {
