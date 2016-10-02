@@ -2,7 +2,7 @@
 
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 Trakt.tv Dark v2.2.3                                                   | */
+/* |                                                 Trakt.tv Dark v2.3.0                                                   | */
 /* |                                             Copyright 2016 JourneyOver                                                 | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -1185,38 +1185,15 @@ body.authorized_applications .subnav-wrapper {
 }
 
 @-moz-document domain("trakt.tv") {
-#huckster-content-page,
-#huckster-desktop-bottom,
-#huckster-desktop-top,
-#huckster-desktop-wrapper,
-#posters.huckster,
-.welcome {
-  display: none;
+[class*=huckster], [id*=huckster], [class*=streaming-links] {
+	display: /*[[Ads]]*/!important;
 }
 
-.huckster-grid-item.grid-item {
-  display: none;
-}
-
-.huckster {
-  display: none;
-}
-
-#huckster-sidenav {
-  display: none;
-}
-
-.huckster-dfp,
-.huckster-vip-info {
-  display: none;
-}
-
-#info-wrapper .streaming-links .section {
-  display: none;
-}
-
-.col-sm-6.col-md-4.col-xlg-3.huckster-grid-item.grid-item {
-  display: none;
+a[href='/vip/filtering'] {
+	display: block !important;
+	opacity: 1 !important;
+	width: initial !important;
+	height: initial !important;
 }
 
 }
