@@ -2,7 +2,7 @@
 
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 Trakt.tv Dark v2.2.2                                                   | */
+/* |                                                 Trakt.tv Dark v2.2.3                                                   | */
 /* |                                             Copyright 2016 JourneyOver                                                 | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -52,8 +52,12 @@ footer {
 }
 
 /* Profile Headers */
-#cover-wrapper {
+#cover-wrapper .full-bg {
   background-image: url("/*[[url]]*/") !important;
+}
+
+#cover-wrapper #backdrop-info {
+  display: none !important;
 }
 
 /* Navigation Menu */
