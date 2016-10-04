@@ -2,7 +2,7 @@
 
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 Trakt.tv Dark v2.3.0                                                   | */
+/* |                                                 Trakt.tv Dark v2.3.1                                                   | */
 /* |                                             Copyright 2016 JourneyOver                                                 | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -955,6 +955,43 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   background-color: transparent !important;
 }
 
+/* Trailers/opening & Closing Credits */
+/* I didn't see "imdb" links, but they're pretty common so we'll attempt to include them */
+#info-wrapper .streaming-links .section .title,
+#info-wrapper .streaming-links .section a:not([href*="youtube"]):not([href*="imdb"]) {
+  display: none!important;
+}
+
+/* Assuming .title has no unique selector, it has been removed, so we'll recreate it */
+#info-wrapper .streaming-links .section a[href*="youtube"]:first-of-type:before {
+  content: "Videos";
+  pointer-events: none;
+  position: absolute;
+  font-size: 14px;
+  font-family: "Proxima Nova Semibold";
+  text-transform: uppercase;
+  color: var(--second-color);
+  margin: -23px 0 0 -1px;
+}
+
+#info-wrapper .streaming-links .section {
+  margin-top: 22px !important;
+}
+
+#info-wrapper .streaming-links .section a {
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  background: var(--bg-dark);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
+#info-wrapper .streaming-links .section a:hover {
+  color: var(--second-color);
+  border: 1px solid var(--border);
+  background: var(--transparent3);
+  box-shadow: 1px 1px 5px 1px var(--transparent2);
+}
+
 /* Summary and user activity */
 .summary-activity .tabs .tab {
   color: var(--first-color) !important;
@@ -1185,7 +1222,7 @@ body.authorized_applications .subnav-wrapper {
 }
 
 @-moz-document domain("trakt.tv") {
-[class*=huckster], [id*=huckster], [class*=streaming-links] {
+[class*=huckster], [id*=huckster] {
 	display: /*[[Ads]]*/!important;
 }
 
