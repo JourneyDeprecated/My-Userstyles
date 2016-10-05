@@ -2,7 +2,7 @@
 
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 Trakt.tv Dark v2.3.1                                                   | */
+/* |                                                 Trakt.tv Dark v2.4.0                                                   | */
 /* |                                             Copyright 2016 JourneyOver                                                 | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -30,9 +30,9 @@
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: THEME :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/* Main Globals */
+/*::: Main Global :::*/
 
-/* Background + footer background */
+/*::: Background + footer background :::*/
 section {
   color: var(--first-color);
   background-color: var(--bg-dark) !important;
@@ -51,22 +51,13 @@ footer {
   background: transparent;
 }
 
-/* Profile Headers */
-#cover-wrapper .full-bg {
-  background-image: url("/*[[url]]*/") !important;
-}
-
-#cover-wrapper #backdrop-info {
-  display: none !important;
-}
-
-/* Navigation Menu */
+/*::: Navigation Menu :::*/
 .no-touch header#top-nav,
 .no-touch header#top-nav:hover {
   background: var(--transparent1);
 }
 
-/* Navigation Menu Logo IMG */
+/*::: Navigation Menu Logo IMG :::*/
 #top-brand img {
   visibility: hidden !important;
 }
@@ -90,12 +81,12 @@ header#top-nav #top-brand .bottom-wrapper {
   overflow: hidden;
 }
 
-/* Navigation Menu User Menu */
+/*::: Navigation Menu User Menu :::*/
 #user-menu {
   background: var(--transparent1) !important;
 }
 
-/* Header Search */
+/*::: Header Search :::*/
 #header-search,
 header#top-nav #header-search #header-search-button.btn-primary {
   color: var(--second-color);
@@ -142,21 +133,21 @@ header#top-nav #header-search #header-search-type a:hover {
   background: var(--bg);
 }
 
-/* Alert */
+/*::: Alert :::*/
 .alert {
   color: var(--first-color) !important;
   border: 1px solid var(--sixth-color) !important;
   background-color: transparent !important;
 }
 
-/* Toast */
+/*::: Toast :::*/
 #toast-container.toast-top-full-width .toast.toast-success {
   color: var(--first-color) !important;
   border: 1px solid var(--sixth-color) !important;
   background-color: transparent !important;
 }
 
-/* watchlist/collections Dropdown Menu */
+/*::: watchlist/collections Dropdown Menu :::*/
 .quick-icons .actions .popover .popover-title {
   color: var(--first-color) !important;
 }
@@ -195,7 +186,7 @@ ul.lists li.selected {
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-/* Add To Collection *Other Date* */
+/*::: Add To Collection *Other Date*  :::*/
 .popover .data-wrapper input {
   color: var(--first-color);
   background: var(--bg-dark);
@@ -236,7 +227,7 @@ ul.lists li.selected {
   font-size: 13px !important;
 }
 
-/* Avatars on various pages */
+/*::: Avatars on various pages  :::*/
 .user-avatar img {
   display: block;
   width: 100%;
@@ -254,7 +245,7 @@ ul.lists li.selected {
   right: -17px !important;
 }
 
-/* Fanart/Poster images */
+/*::: Fanart/Poster images  :::*/
 .fanart {
   visibility: hidden !important;
 }
@@ -290,7 +281,7 @@ ul.lists li.selected {
   border: hidden !important;
 }
 
-/* Quick Icons */
+/*::: Quick Icons :::*/
 .titles-link h3 {
   color: var(--first-color) !important;
 }
@@ -325,7 +316,7 @@ ul.lists li.selected {
   color: var(--first-color) !important;
 }
 
-/* Divider/Eye/Cal/Rss/CSV icons + See more text */
+/*::: Divider/Eye/Cal/Rss/CSV icons + See more text :::*/
 .see-more {
   color: var(--second-color) !important;
 }
@@ -377,7 +368,7 @@ ul.lists li.selected {
   color: var(--first-color);
 }
 
-/* Twitter Button */
+/*::: Twitter Button :::*/
 .btn-twitter {
   color: var(--second-color);
   border: 1px solid var(--border);
@@ -392,7 +383,7 @@ ul.lists li.selected {
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-/* Facebook Button */
+/*::: Facebook Button :::*/
 .btn-facebook {
   color: var(--second-color);
   border: 1px solid var(--border);
@@ -407,7 +398,7 @@ ul.lists li.selected {
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-/* Google+ Button */
+/*::: Google+ Button :::*/
 .btn-google-plus,
 .btn-gplus {
   color: var(--second-color);
@@ -424,7 +415,7 @@ ul.lists li.selected {
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-/* Tumblr Button */
+/*::: Tumblr Button :::*/
 .btn-tumblr {
   color: var(--second-color);
   border: 1px solid var(--border);
@@ -439,7 +430,7 @@ ul.lists li.selected {
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-/* Medium Button */
+/*::: Medium Button :::*/
 .btn-medium {
   color: var(--second-color);
   border: 1px solid var(--border);
@@ -454,9 +445,11 @@ ul.lists li.selected {
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-/* Profile Globals */
+/*::: Profile Globals :::*/
 
-/* Cover Wrapper */
+/*::: Profile Header :::*/
+/*[[pheader]]*/
+
 #cover-wrapper .shadow {
   display: none;
 }
@@ -469,17 +462,17 @@ ul.lists li.selected {
 
 #cover-wrapper #backdrop-info a,
 #cover-wrapper #backdrop-info a .year {
-  color: var(--fifth-color);
+  color: var(--first-color);
 }
 
-/* Links Wrapper */
+/*::: Links Wrapper :::*/
 #links-wrapper {
   background: var(--transparent1);
 }
 
-/* All Types/All Ratings/Recently Rated/Watched,
+/*::: All Types/All Ratings/Recently Rated/Watched,
 Recently Watched/Recently Collected/Personal Lists,
-Rank/Comments/Recently Added dropdowns/Friends */
+Rank/Comments/Recently Added dropdowns/Friends :::*/
 .btn-default {
   color: var(--first-color);
   border: 1px solid var(--border);
@@ -517,7 +510,7 @@ Rank/Comments/Recently Added dropdowns/Friends */
   background: var(--sixth-color);
 }
 
-/* Items/Plays/Watched/TLTW/Shows/lists/comments/People Count */
+/*::: Items/Plays/Watched/TLTW/Shows/lists/comments/People Count :::*/
 .above-comment {
   background-color: transparent !important;
 }
@@ -537,26 +530,26 @@ Rank/Comments/Recently Added dropdowns/Friends */
   color: var(--first-color);
 }
 
-/* Page numbers */
+/*::: Page numbers :::*/
 .pagination li a {
   color: var(--first-color) !important;
   background-color: transparent !important;
 }
 
-/* Comments */
+/*::: Comments :::*/
 
-/* Thumbs Up Button */
+/*::: Thumbs Up Button :::*/
 .comment-wrapper .above-comment .selected {
   color: var(--fifth-color) !important;
 }
 
-/* Date and Time */
+/*::: Date and Time :::*/
 .comment-wrapper .above-comment .date {
   color: var(--first-color);
   font-family: "Proxima Nova" !important;
 }
 
-/* Add Comment */
+/*::: Add Comment :::*/
 .new-comment-focus.main {
   color: var(--second-color);
   font-size: 13px;
@@ -567,7 +560,7 @@ Rank/Comments/Recently Added dropdowns/Friends */
   font-size: 13px;
 }
 
-/* reply Box */
+/*::: reply Box :::*/
 .new-reply-wrapper .reply-field textarea {
   border: solid 1px var(--border);
   background-color: var(--bg);
@@ -588,7 +581,7 @@ Rank/Comments/Recently Added dropdowns/Friends */
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-/* Spoiler Stuff */
+/*::: Spoiler Stuff :::*/
 .comment-wrapper .comment.visible pre {
   color: var(--first-color) !important;
   border: 0 !important;
@@ -601,9 +594,9 @@ Rank/Comments/Recently Added dropdowns/Friends */
   border: 0 !important;
 }
 
-/* TV/Movies/Calender/Discover page */
+/*::: TV/Movies/Calender/Discover page :::*/
 
-/* Body */
+/*::: Body :::*/
 .frame-wrapper {
   background-color: var(--bg-dark);
 }
@@ -618,18 +611,18 @@ Rank/Comments/Recently Added dropdowns/Friends */
   background: var(--bg-dark);
 }
 
-/* End Globals */
+/*::: End Globals :::*/
 
-/* Sign in page */
+/*::: Sign in page :::*/
 
-/* Trakt Logo */
+/*::: Trakt Logo :::*/
 #auth-form-wrapper .logo-wrapper .logo,
 .checkin-modal .logo-wrapper .logo {
   background: url("http://i.imgur.com/iMVkiDx.png") no-repeat;
   background-size: 128px 128px;
 }
 
-/* Login form */
+/*::: Login form :::*/
 #auth-form-wrapper,
 .checkin-modal {
   color: var(--second-color);
@@ -637,14 +630,14 @@ Rank/Comments/Recently Added dropdowns/Friends */
   background-color: var(--bg-dark);
 }
 
-/* Text area */
+/*::: Text area :::*/
 .form-control {
   color: var(--first-color);
   border: 1px solid var(--border);
   background-color: var(--bg-dark);
 }
 
-/* Sign-in Button */
+/*::: Sign-in Button :::*/
 #auth-form-wrapper .btn-primary,
 .checkin-modal .btn-primary {
   color: var(--second-color);
@@ -661,7 +654,7 @@ Rank/Comments/Recently Added dropdowns/Friends */
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-/* Bottom Section of login form */
+/*::: Bottom Section of login form :::*/
 #auth-form-wrapper .bottom-wrapper,
 .checkin-modal .bottom-wrapper {
   color: var(--second-color);
@@ -669,7 +662,7 @@ Rank/Comments/Recently Added dropdowns/Friends */
   background-color: var(--bg-dark);
 }
 
-/* Apps Page */
+/*::: Apps Page :::*/
 .btn-group.in-wrapper .btn {
   color: var(--second-color);
   border: 1px solid var(--border);
@@ -691,26 +684,26 @@ Rank/Comments/Recently Added dropdowns/Friends */
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-/* Dashboard */
+/*::: Dashboard :::*/
 
-/* On deck to watch */
+/*::: On deck to watch :::*/
 #ondeck-wrapper .posters .titles-link {
   color: var(--first-color);
 }
 
-/* Avatar */
+/*::: Avatar :::*/
 #results-top-wrapper.user-wrapper .user-avatar img {
   border-color: var(--bg-dark) !important;
   border-width: 0 !important;
   background-color: var(--bg-dark) !important;
 }
 
-/* Stats Wrapper */
+/*::: Stats Wrapper :::*/
 #results-top-wrapper.user-wrapper .stats-wrapper {
   background-color: var(--bg2);
 }
 
-/* Last 30 days at a glance */
+/*::: Last 30 days at a glance :::*/
 #charts-wrapper h3 {
   color: var(--first-color);
 }
@@ -719,7 +712,7 @@ Rank/Comments/Recently Added dropdowns/Friends */
   color: var(--first-color);
 }
 
-/* Network Activity */
+/*::: Network Activity :::*/
 #network-wrapper .posters .poster-under {
   color: var(--first-color) !important;
   background-color: transparent !important;
@@ -738,10 +731,10 @@ Rank/Comments/Recently Added dropdowns/Friends */
   background-color: var(--bg2);
 }
 
-/* profile page */
+/*::: profile page :::*/
 
-/* About/Last Watched/WATCHED TV SHOWS/MOST WATCHED TV SHOW,
-MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
+/*::: About/Last Watched/WATCHED TV SHOWS/MOST WATCHED TV SHOW,
+MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 #boxes-wrapper .row .stat-box {
   border: 1px solid var(--border);
 }
@@ -782,12 +775,12 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   color: var(--first-color) !important;
 }
 
-/* Favorites */
+/*::: Favorites :::*/
 #favorites-wrapper.col-stat.alt {
   background: transparent;
 }
 
-/* Ratings */
+/*::: Ratings :::*/
 #chart-ratings-wrapper.col-stat.alt {
   background: transparent;
 }
@@ -796,9 +789,9 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   border: 1px solid var(--border);
 }
 
-/* Progress Page */
+/*::: Progress Page :::*/
 
-/* Season Bar */
+/*::: Season Bar :::*/
 .seasons {
   width: 85% !important;
   margin-left: 3% !important;
@@ -812,9 +805,9 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   color: var(--first-color) !important;
 }
 
-/* Lists Page */
+/*::: Lists Page :::*/
 
-/* Add List / Reorder */
+/*::: Add List / Reorder :::*/
 #btn-list-add,
 #btn-list-edit-lists {
   color: var(--second-color);
@@ -832,7 +825,7 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   transition: all 0s;
 }
 
-/* Sort Direction */
+/*::: Sort Direction :::*/
 #sort-direction {
   color: var(--second-color);
 }
@@ -841,12 +834,12 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   color: var(--first-color);
 }
 
-/* by *name* color */
+/*::: by *name* color :::*/
 .comment-wrapper.list .above-comment .user-name h4 a.username {
   color: var(--first-color);
 }
 
-/* create custom calander icon */
+/*::: create custom calander icon :::*/
 .custom-list .list-info .user-actions .icon.btn-list-clone,
 .custom-list .list-info .user-actions .icon.btn-list-subscribe {
   color: var(--first-color);
@@ -860,7 +853,7 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   width: 0;
 }
 
-/* clone and subscribe buttons */
+/*::: clone and subscribe buttons :::*/
 .subnav-wrapper .left h2 .right a {
   color: var(--second-color);
 }
@@ -869,9 +862,9 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   color: var(--first-color);
 }
 
-/* Show Page */
+/*::: Show Page :::*/
 
-/* Rate this show */
+/*::: Rate this show :::*/
 @keyframes fade-in {
   from {
     color: var(--first-color);
@@ -902,7 +895,7 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   animation-name: fade-in;
 }
 
-/* Checkin/Watched/Collection/Add to List/Comment */
+/*::: Checkin/Watched/Collection/Add to List/Comment :::*/
 .btn-checkin {
   color: var(--fifth-color) !important;
   background-color: transparent !important;
@@ -945,7 +938,7 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   background-color: var(--eight-color) !important;
 }
 
-/* Sidebar Navigation */
+/*::: Sidebar Navigation :::*/
 .sidebar .external li a {
   color: var(--first-color) !important;
 }
@@ -955,14 +948,14 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   background-color: transparent !important;
 }
 
-/* Trailers/opening & Closing Credits */
-/* I didn't see "imdb" links, but they're pretty common so we'll attempt to include them */
+/*::: Trailers/opening & Closing Credits :::*/
+/*::: I didn't see "imdb" links, but they're pretty common so we'll attempt to include them :::*/
 #info-wrapper .streaming-links .section .title,
 #info-wrapper .streaming-links .section a:not([href*="youtube"]):not([href*="imdb"]) {
   display: none!important;
 }
 
-/* Assuming .title has no unique selector, it has been removed, so we'll recreate it */
+/*::: Assuming .title has no unique selector, it has been removed, so we'll recreate it :::*/
 #info-wrapper .streaming-links .section a[href*="youtube"]:first-of-type:before {
   content: "Videos";
   pointer-events: none;
@@ -992,7 +985,7 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-/* Summary and user activity */
+/*::: Summary and user activity :::*/
 .summary-activity .tabs .tab {
   color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
@@ -1031,7 +1024,7 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   background: var(--bg2) !important;
 }
 
-/* Actors */
+/*::: Actors :::*/
 #info-wrapper .info #actors .posters ul li .character {
   color: var(--first-color) !important;
 }
@@ -1051,9 +1044,9 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   color: var(--first-color) !important;
 }
 
-/* Seasons Page */
+/*::: Seasons Page :::*/
 
-/* season navigation bar */
+/*::: season navigation bar :::*/
 .subnav-wrapper {
   background-color: var(--bg-dark) !important;
 }
@@ -1076,7 +1069,7 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   color: var(--first-color) !important;
 }
 
-/* Episode Info */
+/*::: Episode Info :::*/
 .under-info .titles {
   border: 1px solid var(--border) !important;
   background-color: var(--bg2) !important;
@@ -1091,7 +1084,7 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES */
   color: var(--first-color) !important;
 }
 
-/* Comments page */
+/*::: Comments page :::*/
 body.comments #info-wrapper .above-comment-bg,
 body.comments_episode #info-wrapper .above-comment-bg,
 body.comments_season #info-wrapper .above-comment-bg,
@@ -1110,7 +1103,7 @@ body.list_comments #info-wrapper .info #read .comment-wrapper .comment blockquot
   background-color: var(--bg-dark) !important;
 }
 
-/* Shouts page */
+/*::: Shouts page :::*/
 body.comments #info-wrapper .above-comment-bg,
 body.comments_episode #info-wrapper .above-comment-bg,
 body.comments_liked #info-wrapper .above-comment-bg,
@@ -1119,9 +1112,9 @@ body.list_comments #info-wrapper .above-comment-bg {
   background-color: var(--bg-dark) !important;
 }
 
-/* Settings Page */
+/*::: Settings Page :::*/
 
-/* General */
+/*::: General :::*/
 .panel-default {
   border-color: var(--border) !important;
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
@@ -1174,7 +1167,7 @@ body.settings .buttons .btn:hover {
   box-shadow: 1px 1px 5px 1px var(--transparent2);
 }
 
-/* Sharing and Notifications */
+/*::: Sharing and Notifications :::*/
 body.settings .notifications-table .table tbody > tr > td {
   border: 1px solid var(--border);
 }
@@ -1190,19 +1183,19 @@ h3.instructions {
   background-color: var(--bg-dark) !important;
 }
 
-/* Hidden Items */
+/*::: Hidden Items :::*/
 body.settings .subnav-wrapper {
   color: var(--first-color) !important;
   border-bottom: solid 1px var(--border) !important;
 }
 
-/* Connected Apps */
+/*::: Connected Apps :::*/
 body.authorized_applications .subnav-wrapper {
   color: var(--first-color) !important;
   border-bottom: solid 1px var(--border) !important;
 }
 
-/* Your API Apps */
+/*::: Your API Apps :::*/
 #authorized-applications .btn-primary,
 #authorized-applications .btn-success {
   color: var(--first-color);
@@ -1222,15 +1215,8 @@ body.authorized_applications .subnav-wrapper {
 }
 
 @-moz-document domain("trakt.tv") {
-[class*=huckster], [id*=huckster] {
-	display: /*[[Ads]]*/!important;
-}
 
-a[href='/vip/filtering'] {
-	display: block !important;
-	opacity: 1 !important;
-	width: initial !important;
-	height: initial !important;
-}
+/*::: VIP/AD Blocking :::*/
+/*[[Ads]]*/
 
 }
