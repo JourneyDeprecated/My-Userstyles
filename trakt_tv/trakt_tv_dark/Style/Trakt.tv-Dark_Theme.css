@@ -2,7 +2,7 @@
 
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 Trakt.tv Dark v2.4.0                                                   | */
+/* |                                                 Trakt.tv Dark v2.4.1                                                   | */
 /* |                                             Copyright 2016 JourneyOver                                                 | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -940,12 +940,17 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 
 /*::: Sidebar Navigation :::*/
 .sidebar .external li a {
-  color: var(--first-color) !important;
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
-.sidebar .sections li a:hover {
-  color: var(--first-color) !important;
-  background-color: transparent !important;
+.sidebar .external li a:hover {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Trailers/opening & Closing Credits :::*/
