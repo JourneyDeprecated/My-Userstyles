@@ -1,4 +1,4 @@
-![](http://journeyover.github.io/Userstyles/trakt_tv/trakt_tv_dark/img/preview.jpg)
+![](https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/images/trakt.preview.jpg)
 
 # Trakt.tv Dark
 

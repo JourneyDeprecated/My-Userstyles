@@ -1,4 +1,4 @@
-![](http://journeyover.github.io/Userstyles/runescape/runemetrics/img/preview.png)
+![](https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/images/runemetrics.preview.png)
 
 # Runemetrics Dark
 
