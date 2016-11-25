@@ -849,9 +849,9 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
   color: var(--fifth-color) !important;
 }
 
-[class*=shade] {
+/* [class*=shade] {
   display: none  !important;
-}
+} */
 
 /*::: clone and subscribe buttons :::*/
 .subnav-wrapper .left h2 .right a {
