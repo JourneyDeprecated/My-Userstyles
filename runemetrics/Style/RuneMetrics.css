@@ -35,6 +35,7 @@ h6 {
   fill: rgb(255, 0, 0);
 }
 
+
 /* header */
 
 .header-bar {
@@ -72,6 +73,7 @@ h6 {
 .back-to-profile:hover .back-to-profile__link {
   color: rgb(255, 0, 0) !important;
 }
+
 
 /* header search */
 
@@ -172,6 +174,7 @@ input[type=text][readonly] {
   border: 1px solid black;
 }
 
+
 /* section behind blocks */
 
 .row.collapse .row {
@@ -207,6 +210,7 @@ input[type=text][readonly] {
   float: right;
 }
 
+
 /* Activity block */
 
 .activity-block {
@@ -227,7 +231,8 @@ input[type=text][readonly] {
   padding: 2px 0;
   border-bottom: 1px solid rgb(0, 1, 2);
 }
-  
+
+
 /* Skills block */
 
 .skills-block {
@@ -254,23 +259,24 @@ input[type=text][readonly] {
   padding: 1px 0;
   border-bottom: 0px solid;
 }
-  
+
+
 /* Clan block */
 
 .clan-block {
-    margin: 2px 0;
-    padding: 0 10px;
-    background: rgba(0, 0, 0, .5);
-    border: 3px solid rgb(0, 1, 2);
+  margin: 2px 0;
+  padding: 0 10px;
+  background: rgba(0, 0, 0, .5);
+  border: 3px solid rgb(0, 1, 2);
 }
 
 .clan-block__banner {
-    min-width: 190px;
-    height: 87px;
-    margin: 10px 0 10px;
+  min-width: 190px;
+  height: 87px;
+  margin: 10px 0 10px;
 }
 
-  
+
 /* Quest block */
 
 .quests-block {
@@ -298,7 +304,8 @@ input[type=text][readonly] {
 .pie-chart {
   display: none;
 }
-  
+
+
 /* XP Split|Xp Gain|Kills|Drops|Wealth block */
 
 .summary-block {
@@ -331,12 +338,13 @@ input[type=text][readonly] {
   color: rgb(255, 255, 255);
   text-align: left;
 }
-  
+
 .bar-chart__bg {
   stroke-width: 2px;
   stroke: rgb(0, 1, 2);
 }
-  
+
+
 /* sidebar links */
 
 .navigation {
@@ -387,6 +395,7 @@ input[type=text][readonly] {
   color: rgb(255, 0, 0);
 }
 
+
 /* links */
 
 .activity-block__base-link,
@@ -433,7 +442,8 @@ input[type=text][readonly] {
 .summary-block__base-link:after {
   display: none;
 }
-  
+
+
 /* levels page */
 
 .levels-summary__block {
@@ -450,7 +460,8 @@ input[type=text][readonly] {
   background: rgb(0, 1, 2);
   border: 2px solid rgb(0, 0, 0);
 }
-  
+
+
 /* XP Gain - Monthly page */
 
 .xp-gains-summary-table {
@@ -484,31 +495,33 @@ input[type=text][readonly] {
   background: rgb(14, 17, 19);
   color: rgb(255, 0, 0);
 }
-  
+
+
 /* XP Gain - Daily page */
 
 .settings-menu-toggle__icon {
-	color: rgb(255, 255, 255);
-	background-color: rgba(0, 0, 0, 0);
-	border: 1px solid rgb(0, 0, 0);
-	padding-top: 5px;
+  color: rgb(255, 255, 255);
+  background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  padding-top: 5px;
 }
 
 .settings-menu-toggle__icon--isActive {
-	color: rgb(128, 128, 128);
+  color: rgb(128, 128, 128);
 }
 
 .settings-menu {
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgb(14, 17, 19);
-    padding: 10px 0;
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgb(14, 17, 19);
+  padding: 10px 0;
 }
 
 input[type=checkbox]+label::before {
-    border: 1px solid rgb(0, 0, 0);
-    background-color: rgba(0, 0, 0, 0);
+  border: 1px solid rgb(0, 0, 0);
+  background-color: rgba(0, 0, 0, 0);
 }
-  
+
+
 /* XP Split page */
 
 .xp-gains-skill-table tr {
@@ -521,7 +534,8 @@ input[type=checkbox]+label::before {
   background: rgb(0, 1, 2);
   border: 2px solid rgb(0, 0, 0);
 }
-  
+
+
 /* Event Log page */
 
 .activities-block {
@@ -541,7 +555,8 @@ input[type=checkbox]+label::before {
 .rss-btn:hover {
   color: rgb(255, 255, 255);
 }
-  
+
+
 /* Wealth page */
 
 .wealth-change-table td,
@@ -549,7 +564,8 @@ input[type=checkbox]+label::before {
   background: rgb(14, 17, 19);
   border: 2px solid rgb(0, 0, 0);
 }
-  
+
+
 /* Kills and drops page */
 
 .pvm-kills-table {
@@ -569,7 +585,8 @@ input[type=checkbox]+label::before {
 .table-header__title {
   border-bottom: 1px solid rgb(0, 0, 0);
 }
-  
+
+
 /* Friends list page */
 
 .page-summary-block {
@@ -579,19 +596,20 @@ input[type=checkbox]+label::before {
 }
 
 .base-tbl {
-  background: rgb(0, 1, 2) !important;
-  border: 2px solid rgb(0, 0, 0) !important;
+	background: rgb(0, 1, 2) !important;
+	border: 2px solid rgb(0, 0, 0) !important;
 }
 
 .small-avatar--table {
-  border-radius: 0;
-  border: 1px solid rgb(0, 1, 2);
+	border-radius: 0;
+	border: 1px solid rgb(0, 1, 2);
 }
-  
+
+
 /* Friends' Event Log page */
 
 .small-avatar {
-  border-radius: 0;
-  border: 1px solid rgb(0, 1, 2);
+	border-radius: 0;
+	border: 1px solid rgb(0, 1, 2);
 }
 }
