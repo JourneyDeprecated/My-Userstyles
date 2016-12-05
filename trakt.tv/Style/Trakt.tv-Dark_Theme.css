@@ -2,7 +2,7 @@
 
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 Trakt.tv Dark v2.4.1                                                   | */
+/* |                                                 Trakt.tv Dark v2.4.2                                                   | */
 /* |                                             Copyright 2016 JourneyOver                                                 | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -849,9 +849,10 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
   color: var(--fifth-color) !important;
 }
 
-/* [class*=shade] {
-  display: none  !important;
-} */
+/*::: Get rid of white shade on bottom of list overview :::*/
+.custom-list .list-info .info .overview[data-readmore][aria-expanded="false"] .shade {
+  width: 0;
+}
 
 /*::: clone and subscribe buttons :::*/
 .subnav-wrapper .left h2 .right a {
@@ -938,6 +939,25 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
   background-color: var(--eight-color) !important;
 }
 
+/*::: Sidebar Watch Now :::*/
+.btn-watch-now {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+.btn-watch-now:hover {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+.streaming-links .title {
+  border-bottom: solid 1px var(--bg);
+}
+
 /*::: Sidebar Navigation :::*/
 .sidebar .external li a {
   color: var(--second-color) !important;
@@ -954,40 +974,22 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 }
 
 /*::: Trailers/opening & Closing Credits :::*/
-/*::: I didn't see "imdb" links, but they're pretty common so we'll attempt to include them :::*/
-#info-wrapper .streaming-links .section .title,
-#info-wrapper .streaming-links .section a:not([href*="youtube"]):not([href*="imdb"]) {
-  display: none!important;
-}
-
-/*::: Assuming .title has no unique selector, it has been removed, so we'll recreate it :::*/
-#info-wrapper .streaming-links .section a[href*="youtube"]:first-of-type:before {
-  content: "Videos";
-  pointer-events: none;
-  position: absolute;
-  font-size: 14px;
-  font-family: "Proxima Nova Semibold";
-  text-transform: uppercase;
-  color: var(--second-color);
-  margin: -23px 0 0 -1px;
-}
-
-#info-wrapper .streaming-links .section {
+.affiliate-links .section {
   margin-top: 22px !important;
 }
 
-#info-wrapper .streaming-links .section a {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--bg-dark);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+.affiliate-links .section a {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
-#info-wrapper .streaming-links .section a:hover {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+.affiliate-links .section a:hover {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Summary and user activity :::*/
