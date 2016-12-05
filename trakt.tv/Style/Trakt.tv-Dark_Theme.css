@@ -959,6 +959,14 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 }
 
 /*::: Sidebar Navigation :::*/
+.sidebar .sections li a {
+  color: var(--second-color) !important;
+}
+
+.sidebar .sections li a:hover {
+  color: var(--first-color) !important;
+}
+
 .sidebar .external li a {
   color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
