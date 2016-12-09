@@ -1,24 +1,24 @@
-![](https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/images/trakt.preview.jpg)
+![](https://raw.githubusercontent.com/JourneyOver/Userstyles/dev/images/dark_minimal_userstyles_preview1.png)
 
-# Trakt.tv Dark
+# Dark Minimal Userstyles
 
-Dark theme for Trakt.tv - Switch off the lights on Trakt.tv and browse Trakt.tv in nighttime mode.
+Dark theme for UserStyles - Switch off the lights on UserStyles and browse UserStyles in nighttime mode.
 
 ### How to use
 
 Install a userstyle manager for your favorite browser:
 
 - Chrome: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en
-- Firefox: https://addons.mozilla.org/en-US/firefox/addon/stylish/ (be sure to place the CSS inside the `@-moz-document domain("trakt.tv")` block)
+- Firefox: https://addons.mozilla.org/en-US/firefox/addon/stylish/ (be sure to place the CSS inside the `@-moz-document domain("userstyles.org")` & `@-moz-document domain("forum.userstyles.org")` block)
 - Safari: http://sobolev.us/stylish
 
-Then, copy-pasta the styles from `Trakt.tv-Dark_Theme.css` into a new userstyle. Be sure to specify that it apply to sites beginning with `https://trakt.tv/*`.
+Then, copy-pasta the styles from `dark_minimal_userstyles.css` into a new userstyle. Be sure to specify that it applies to domains with the urls `userstyles.org` & `forum.userstyles.org`
 
 ### Userstyles.org
 
 If you use the Stylish addon on Chrome or Firefox you can find one-click installs including automatic updates via the packages below.
 
-[Trakt.tv Dark](https://userstyles.org/styles/125666)
+[Theme Link Goes Here](Theme Link Goes Here)
 
 ### Bug reports
 
