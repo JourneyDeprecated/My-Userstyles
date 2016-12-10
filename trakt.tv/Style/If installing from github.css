@@ -13,12 +13,12 @@ place below code below /*::: VIP/AD Blocking :::*/ if you dont want ads.
 
 [class*=huckster],
 [id*=huckster] {
-  display: none  !important;
+  display: none !important;
 }
 
 a[href='/vip/filtering'] {
-	display: block !important;
-	opacity: 1 !important;
-	width: initial !important;
-	height: initial !important;
+  display: block !important;
+  opacity: 1 !important;
+  width: initial !important;
+  height: initial !important;
 }

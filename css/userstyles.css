@@ -1,8 +1,8 @@
 :root {
---bg: #0E1113 !important;             /*  var(--bg) black  */
---border: #191A1F !important;             /* var(--border) dark blue Border */
+--bg: #111 !important;             /*  var(--bg) darker  */
+--border: #000102 !important;             /* var(--border) Black Border */
 --first-color: #ffffff !important;             /* var(--first-color) white  */
---second-color: #969ab0 !important;             /* var(--second-color) light grey  */
+--second-color: #6e7a83 !important;             /* var(--second-color) light blue-grey  */
 --transparent: rgba(0, 0, 0, .75) !important;             /* var(--transparent) */
 --transparent2: rgba(0, 0, 0, .5) !important;             /* var(--transparent2) */
 }

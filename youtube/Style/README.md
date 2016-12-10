@@ -1,25 +1,25 @@
 ![](https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/images/trakt.preview.jpg)
 
-# Trakt.tv Dark
+# Youtube Things
 
-Dark theme for Trakt.tv - Switch off the lights on Trakt.tv and browse Trakt.tv in nighttime mode.
+Quick fixes and colorizations for youtube
 
-### How to use
+## How to use
 
 Install a userstyle manager for your favorite browser:
 
-- Chrome: https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en
-- Firefox: https://addons.mozilla.org/en-US/firefox/addon/stylish/ (be sure to place the CSS inside the `@-moz-document domain("trakt.tv")` block)
-- Safari: http://sobolev.us/stylish
+-   Chrome: <https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en>
+-   Firefox: <https://addons.mozilla.org/en-US/firefox/addon/stylish/>
+-   Safari: <http://sobolev.us/stylish>
 
-Then, copy-pasta the styles from `Trakt.tv-Dark_Theme.css` into a new userstyle. Be sure to specify that it apply to sites beginning with `https://trakt.tv/*`.
+Then, copy-pasta the styles from `youtube_things.css` into a new userstyle.
 
-### Userstyles.org
+## Userstyles.org
 
 If you use the Stylish addon on Chrome or Firefox you can find one-click installs including automatic updates via the packages below.
 
-[Trakt.tv Dark](https://userstyles.org/styles/125666)
+[Theme Link Goes Here](https://example.com/)
 
-### Bug reports
+## Bug reports
 
 Open an issue or submit a pull request, please.
