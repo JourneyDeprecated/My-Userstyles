@@ -1,0 +1,26 @@
+#stylish-installed-style-needs-update {
+  top: 470px;
+  display: inline-block !important;
+}
+
+#stylish-installed-style-needs-update::after {
+  content: "(Gecko)";
+}
+
+#stylish-installed-style-needs-update-chrome {
+  top: 470px;
+  display: inline-block !important;
+}
+
+#stylish-installed-style-needs-update-chrome::after {
+  content: "(Webkit)";
+}
+
+#stylish-installed-style-needs-update-opera {
+  top: 470px;
+  display: inline-block !important;
+}
+
+#stylish-installed-style-needs-update-opera::after {
+  content: "(Presto)";
+}
