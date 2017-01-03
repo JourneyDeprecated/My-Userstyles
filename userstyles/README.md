@@ -1,4 +1,4 @@
-![](https://raw.githubusercontent.com/JourneyOver/Userstyles/dev/images/userstyles/dark_minimal_userstyles_preview1.png)
+![](https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/imgp/userstyles/dark_minimal_userstyles_preview1.png)
 
 # Dark Minimal Userstyles
 
@@ -8,9 +8,9 @@ Dark theme for UserStyles - Switch off the lights on UserStyles and browse UserS
 
 Install a userstyle manager for your favorite browser:
 
--   Chrome: <https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en>
--   Firefox: <https://addons.mozilla.org/en-US/firefox/addon/stylish/>
--   Safari: <http://sobolev.us/stylish>
+- Chrome: <https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en>
+- Firefox: <https://addons.mozilla.org/en-US/firefox/addon/stylish/>
+- Safari: <https://sobolev.us/stylish>
 
 Then, copy-pasta the styles from `dark_minimal_userstyles.css` into a new userstyle.
 
@@ -18,7 +18,7 @@ Then, copy-pasta the styles from `dark_minimal_userstyles.css` into a new userst
 
 If you use the Stylish addon on Chrome or Firefox you can find one-click installs including automatic updates via the packages below.
 
-[Theme Link Goes Here](http://example.com/)
+[Theme Link Goes Here](https://example.com/)
 
 ## Bug reports
 

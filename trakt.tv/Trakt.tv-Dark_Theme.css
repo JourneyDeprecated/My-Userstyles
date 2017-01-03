@@ -3,10 +3,12 @@
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
 /* |                                                 Trakt.tv Dark v2.4.2                                                   | */
-/* |                                             Copyright 2016 JourneyOver                                                 | */
+/* |                                             Copyright 2016-2017 JourneyOver                                            | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
+}
 
+@-moz-document domain("trakt.tv") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: SETTINGS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 :root {
@@ -65,7 +67,7 @@ footer {
 #top-brand {
   width: 65px !important;
   height: 65px !important;
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/Style/img/Trakt_TV_Header_Logo.png");
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/img/Trakt_TV_Header_Logo.png");
 }
 
 header#top-nav #top-brand .bottom-wrapper .bottom {
@@ -618,7 +620,7 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 /*::: Trakt Logo :::*/
 #auth-form-wrapper .logo-wrapper .logo,
 .checkin-modal .logo-wrapper .logo {
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/Style/img/Trakt_TV_Login.png") no-repeat;
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/img/Trakt_TV_Login.png") no-repeat;
   background-size: 128px 128px;
 }
 

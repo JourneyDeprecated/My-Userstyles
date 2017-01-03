@@ -10,7 +10,7 @@ Install a userstyle manager for your favorite browser:
 
 - Chrome: <https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en>
 - Firefox: <https://addons.mozilla.org/en-US/firefox/addon/stylish/>
-- Safari: <http://sobolev.us/stylish>
+- Safari: <https://sobolev.us/stylish>
 
 Then, copy-pasta the styles from `youtube_things.css` into a new userstyle.
 
