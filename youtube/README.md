@@ -18,7 +18,7 @@ Then, copy-pasta the styles from `youtube_things.css` into a new userstyle.
 
 If you use the Stylish addon on Chrome or Firefox you can find one-click installs including automatic updates via the packages below.
 
-[Theme Link Goes Here](https://example.com/)
+[quick-fixes-and-colorizations-for-youtube](https://userstyles.org/styles/137220/quick-fixes-and-colorizations-for-youtube)
 
 ## Bug reports
 

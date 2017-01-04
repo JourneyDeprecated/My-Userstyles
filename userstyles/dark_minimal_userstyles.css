@@ -196,28 +196,35 @@ body {
 }
 
 #left-sidebar #sidebar-browse a::before {
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/userstyles/img/folder_icon.svg");
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/userstyles/img/folder_icon.png");
   background-size: 26px 26px;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 #left-sidebar #sidebar-my-account a::before {
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/userstyles/img/account_icon.svg");
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/userstyles/img/account_icon.png");
   background-size: 26px 26px;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 #left-sidebar #sidebar-help a::before {
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/userstyles/img/help_icon.svg");
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/userstyles/img/help_icon.png");
   background-size: 26px 26px;
   background-position: center center;
   background-repeat: no-repeat;
 }
 
 #left-sidebar #sidebar-forum a::before {
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/userstyles/img/forum_icon.svg");
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/userstyles/img/forum_icon.png");
+  background-size: 26px 26px;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+#left-sidebar #sidebar-login a::before {
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/userstyles/img/account_login.png");
   background-size: 26px 26px;
   background-position: center center;
   background-repeat: no-repeat;
@@ -655,7 +662,6 @@ a:hover {
 
 #Head {
   background: #222;
-  position: fixed;
   width: 100%;
   top: 0;
   z-index: 10;

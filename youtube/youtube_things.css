@@ -8,7 +8,7 @@
 }
 
 @-moz-document domain("youtube.com") {
-/* dark theme for the YouTube+ greasemonkey script  */
+/*::: dark theme for the YouTube+ greasemonkey script  :::*/
 
 #P-settings {
   background: transparent;
@@ -58,7 +58,7 @@
 }
 
 @-moz-document domain("youtube.com") {
-/* re-add youtube watched badge */
+/*::: re-add youtube watched badge :::*/
 
 .resume-playback-background {
   background: rgba(0, 0, 0, 0.7);
@@ -117,7 +117,7 @@
 }
 
 @-moz-document domain("youtube.com") {
-/* Dark mode for Social Blade Plugin */
+/*::: Dark mode for Social Blade Plugin :::*/
 
 div#ChanOver {
   background-color: #1A1A1A !important;
@@ -161,7 +161,7 @@ fa.fa.fa-paperclip {
 }
 
 @-moz-document domain("youtube.com") {
-/* Alientube Fix */
+/*::: Alientube Fix :::*/
 
 .comments.embedded {
   overflow: hidden;
