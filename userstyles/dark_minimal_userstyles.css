@@ -1,7 +1,7 @@
 @-moz-document domain("userstyles.org") {
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 UserStyles Dark v1.0.0                                                 | */
+/* |                                                 UserStyles Dark v1.0.1                                                 | */
 /* |                                             Copyright 2016-2017 JourneyOver                                            | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -98,6 +98,8 @@ body {
   height: 100%;
   border-right: 1px solid #333;
   background-color: #111;
+  margin: 0;
+  padding: 0;
 }
 
 #left-sidebar nav {
@@ -157,10 +159,13 @@ body {
 #advanced-search {
   display: none;
   clear: both;
-  font-size: small;
   border-bottom: 1px solid gray;
   margin-bottom: 3px;
   padding-bottom: 3px;
+}
+
+#advanced-search select {
+  font-size: 130%;
 }
 
 #left-sidebar nav li {
@@ -518,6 +523,13 @@ div+footer {
 }
 
 /*:: Content ::*/
+
+#additional-info-text b {
+  color: #888;
+  transition: 0.3s ease;
+  -webkit-transition: 0.3s ease;
+}
+
 #content-wrapper {
   float: none;
   margin-top: 60px;
@@ -555,6 +567,14 @@ div+footer {
 
 #additional-info-text:hover {
   color: #bfbfbf;
+}
+
+#additional-info-text:hover>b {
+  color: #ddd;
+}
+
+#additional-info-text>a>b {
+  color: #05C961 !important;
 }
 
 #discussions-area {
