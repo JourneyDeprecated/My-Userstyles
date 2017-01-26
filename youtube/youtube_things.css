@@ -1,7 +1,7 @@
 @-moz-document domain("youtube.com") {
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 Youtube Things v1.0.1                                                  | */
+/* |                                                 Youtube Things v1.0.2                                                  | */
 /* |                                             Copyright 2016-2017 JourneyOver                                            | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -60,59 +60,83 @@
 @-moz-document domain("youtube.com") {
 /*::: re-add youtube watched badge :::*/
 
-.resume-playback-background {
-  background: rgba(0, 0, 0, 0.7);
-  opacity: 1;
-  height: 100%;
-  pointer-events: none
-}
-
-.resume-playback-progress-bar {
-  background: no-repeat url(data:image/png;base64,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);
-  color: blue;
-  opacity: 0.95;
-  width: 100% !important;
-  height: 100% !important;
-  background-size: 100% 100%;
-  pointer-events: none;
-}
-
+/* Hide existing native 'watched' badges so they don't conflict with the code */
 .watched-badge {
   display: none
 }
 
+/* Add 'watched' badges with dark overlay for videos you've watched;
+should work on more pages than YouTube's native badges. */
+.resume-playback-background:before {
+  content: "";
+  position: absolute;
+  display: block;
+  top: -107px;
+  width: 196px;
+  height: 111px;
+  background: no-repeat url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAMQAAABuCAYAAAB4IbzjAAAABmJLR0QAAAAAAAD5Q7t/AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH4AsSESgUDTOstwAAAB1pVFh0Q29tbWVudAAAAAAAQ3JlYXRlZCB3aXRoIEdJTVBkLmUHAAAGV0lEQVR42u3bX4xcZRnH8Tkzm5myNUIrpmttgQQSxAvlhtoYTWoIAhcQo5CUVsALitEIMTFGJb0Y441XJiZN1BKo4YKYBTXeECSkjBoDhE3V8ict08LY1c1a2nWm25k5Z+a8v9eb0+T49j1ndtvZLbvn+7lqJ8+855x3zvO+z/ues6USAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAKwaSS2bIumUL84Ys9s6jDFPZLT5mtPm+3nnYIx51HoYY/ZlfceOQVbbcRx/WdIBSUclfSBpKOmspOOSfmeM+V6/39++lHPKu+6lxI/juvJiJYXJtb0t6XljzOP9fv+6IifEr91O6na7U564X3o68wU3rtVq1SRFTtyhEefwp4wfq7GaCTEcDj8n6chSvivJSPrDWk+IjGuLJR1qt9tXFy4hjDEPux0Sx/E9npv2mKfj2tPT02XnptrpGekfyjp+v9+/TpIyfhj5RuKVSAhjzG5J4eW0sV4SItX/x6MouqVQCRGG4fWejvhJOqbb7U5lddpgMLjVubG+68bkTcHGmB/m/SjGmB8s53qWe1MmSbzDlwySXo3j+N5Op7NpdnZ2QzKDPH+lE2K5v3FWG9PT0+XTp09vjKLoZmPMY5L+5emDU51OZ1PRyqb3nE54cdT6IXXDPua09RunrZMjjv1meqr2/CBHVzIh6vV6IOlvnuM+OzMzM5GxxrhD0sJaTwjX4uLitb7yVdJvi5YQTzsdcHbU+iEVOz1ikf5U1nEHg8Fnndg/SnrdMwt9ZqUSIo7juz3XNDs/Pz+Z970oij4laW49JURSDWyRdMaNHw6HO1b7vixfqYSw1v7f4jUIgs1hGN6Y+mhXKjZyOvSL6dIqCILr89pOm5iY2OvETltrnxsVN9ZOL5fv8fTHL6ampnp536vVasfK5fLW9TY4bty48T+lUumg+3mlUnmwMDNEv9/f7imFHvCtHyS9nC5zrLU2iqKbktH2K571w7acUmU21e5wcXHxYxlrmlP1ej1YiRlC0lHPaHjbJQ4sY9/5GsdW8nL7xLcxIulI0cqmk04H/My3fjDG7Jf0c+ezbyRt/NRp40ROqfIlt1zKeo6R7HztWqGEuKg8uNRF5HpJiG63u8W3o1iYkinxivP/HUn5tMu5gRqSDjsl1oWyaeeINtOlilsuPef7d1b8GF20195sNhdLBdZqtRY8H3+kaM8jvu6MCN1Go1FJP3+Q1G02m9V2u31NekdI0rtJ7Hln5tib0eE1SW23XMp7NiHpv61Wq7YCM8TZlZwh1tqiulQqlc6fP//xD8MMcUX1er1PesqUO931Q+pGeiMv1lpre73e1oxy6WtOuy95btRXPefz1RVIiHdGPVspWkIMh8PbPAnxRqFKpsnJyX9ba084Zcr3c3aMDo+IbU5OTs4tpVwKguAO9wcIgmDnKpVNr3l2VG4vcslULpfvWkJJXYiF9ZN5C7bhcPiF1Ch/54jH/gd9x0jKrfBSFpySwna7fc04R0NjzP2e47RGlWdJWff+epshOp3OJknz7is0g8Hg04VLCGPMnpybsdtsNqsXYufn5yclDXKeYD+QcYx9l7MLY4x5ZJwJMTMzMyGp6bneQ41Go5K1LSlpbr09qV5YWPiopJc8ffFkIafKXq+3NSchXvbMKH/Jiu/1ep/ImIUazg3+rZwE/ZHnPF4ZZ0Iks93dkoznWH+N4/jec+fObW61WrXBYHCrpKfTsWs5Ier1ejA3N3dVGIY3GmP2STrh6YO3Rz21X+9l0/GMkXm/J/bHGclzLKPM2J7ePZJkut3ulqxziaLopow3YLeNMyGS5PuOLykK/rbrP8IwvOGKrWU+JDnRyBrZPZ8dXk4b1Wp1TxAE6SfOf05eFfCq1WonrLV/dxbgQbVa3TPui65UKgck3WWtfW+Jo+7AWvvMehwUrbVDa+2vzpw58/kNGza0irzB4H2z1V0/XNBsNquSep7ZZHdGUh114r69hPN5YjlvwF5uidFoNCpxHN+XlEbvSFpI/hgolPTP5K/Kvpl+brKWZwhJUXKNb0n6ffIXc9tKAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAWF3/A7fSkelKi8eLAAAAAElFTkSuQmCC);
+  background-color: rgba(0, 0, 0, 0.8);
+  background-size: 100% 100%;
+  text-align: center;
+  line-height: 104px;
+  font-size: 3em;
+  font-weight: 500;
+  color: #fff;
+  text-shadow: 0 0 5px #111;
+  transition: 0.2s;
+  pointer-events: none;
+}
+
+/* Hide red portion of progress bar */
+.resume-playback-progress-bar {
+  display: none;
+}
+
+/* Hide grey portion of progress bar and Fix opacity on thumbnail images */
+.resume-playback-background {
+  background: rgba(0, 0, 0, 0);
+  opacity: 1;
+  pointer-events: none
+}
+
+/* Makes time in video thumbnails stand out properly. */
 .video-time {
   z-index: 1;
 }
 
-.video-list-item:hover .resume-playback-background,
-.yt-lockup-thumbnail:hover .resume-playback-background,
-.yt-uix-tile:hover .resume-playback-background {
-  opacity: 0!important;
-  transition: .1s!important;
+/* Make thumbnails of watched videos fully visible on hover. */
+.contains-addto:hover .resume-playback-background:before,
+.video-list-item:hover .resume-playback-background:before {
+  content: "";
+  background: rgba(0, 0, 0, 0);
+  transition: 0.2s;
 }
 
-.video-list-item:hover .resume-playback-progress-bar,
-.yt-lockup-thumbnail:hover .resume-playback-progress-bar,
-.yt-uix-tile:hover .resume-playback-progress-bar {
-  opacity: 0!important;
-  transition: .1s!important;
+/* Fixes 'watched' badges in recommended sidebars. */
+.related-list-item .resume-playback-background:before {
+  top: -94px;
+  width: 168px;
+  height: 98px;
+  line-height: 90px;
+  font-size: 1.8em;
 }
 
-.contains-percent-duration-watched .video-thumb {
-  -webkit-filter: grayscale(0.99)!important;
-  -moz-filter: grayscale(0.99)!important;
-  -o-filter: grayscale(0.99)!important;
-  filter: grayscale(0.99)!important;
-  transition: .2s!important
+/* Fixes 'watched' badges on playlist pages. */
+.pl-video-thumb .resume-playback-background:before {
+  top: -37px;
+  width: 72px;
+  height: 41px;
+  line-height: 36px;
+  font-size: 1em;
 }
 
-.contains-percent-duration-watched:hover .video-thumb {
-  -webkit-filter: grayscale(0)!important;
-  -moz-filter: grayscale(0)!important;
-  -o-filter: grayscale(0)!important;
-  filter: grayscale(0)!important;
-  transition: .2s!important
+/* Fixes 'watched' badges on search pages. */
+.search .resume-playback-background:before {
+  top: -134px;
+  width: 246px;
+  height: 138px;
+  line-height: 131px;
+  font-size: 2.3em;
 }
 }
 
@@ -255,5 +279,27 @@ fa.fa.fa-paperclip {
   .content-snap-width-2 .flex-width-enabled.flex-width-enabled-snap .content-alignment {
     width: 1055px;
   }
+}
+}
+
+@-moz-document domain("youtube.com") {
+/*::: seek preview and time not overlapping :::*/
+
+html .ytp-tooltip.ytp-preview {
+  /*margin-top: calc(-2px - 1em);*/
+}
+
+html .ytp-tooltip.ytp-preview .ytp-tooltip-bg {}
+
+html .ytp-tooltip.ytp-preview:not(.ytp-text-detail) .ytp-tooltip-text-wrapper,
+html .ytp-tooltip.ytp-preview .ytp-tooltip-text-wrapper,
+html .ytp-storyboard-lens-timestamp-wrapper {
+  position: static;
+}
+
+html .ytp-tooltip.ytp-preview .ytp-tooltip-text-wrapper .ytp-tooltip-text,
+html .ytp-storyboard-lens-timestamp-wrapper .ytp-storyboard-lens-timestamp {
+  padding-top: 0;
+  padding-bottom: 0;
 }
 }
