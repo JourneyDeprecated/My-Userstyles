@@ -2,7 +2,7 @@
 
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 Trakt.tv Dark v2.4.2                                                   | */
+/* |                                                 Trakt.tv Dark v2.4.3                                                   | */
 /* |                                             Copyright 2016-2017 JourneyOver                                            | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -36,12 +36,12 @@
 
 /*::: Background + footer background :::*/
 section {
-  color: var(--first-color);
+  color: var(--first-color) !important;
   background-color: var(--bg-dark) !important;
 }
 
 footer {
-  background: var(--bg-dark);
+  background: var(--bg-dark) !important;
 }
 
 #main-search {
@@ -49,14 +49,14 @@ footer {
 }
 
 #main-search input.footer-search {
-  color: var(--first-color);
-  background: transparent;
+  color: var(--first-color) !important;
+  background: transparent !important;
 }
 
 /*::: Navigation Menu :::*/
 .no-touch header#top-nav,
 .no-touch header#top-nav:hover {
-  background: var(--transparent1);
+  background: var(--transparent1) !important;
 }
 
 /*::: Navigation Menu Logo IMG :::*/
@@ -67,10 +67,11 @@ footer {
 #top-brand {
   width: 65px !important;
   height: 65px !important;
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/img/Trakt_TV_Header_Logo.png");
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/Style/img/Trakt_TV_Header_Logo.png");
 }
 
-header#top-nav #top-brand .bottom-wrapper .bottom {
+header#top-nav #top-brand .bottom-wrapper .bottom,
+.no-touch header#top-nav:hover #top-brand .bottom-wrapper .bottom {
   background: none !important;
 }
 
