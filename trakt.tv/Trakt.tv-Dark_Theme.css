@@ -2,7 +2,7 @@
 
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 Trakt.tv Dark v2.4.3                                                   | */
+/* |                                                 Trakt.tv Dark v2.4.4                                                   | */
 /* |                                             Copyright 2016-2017 JourneyOver                                            | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -67,7 +67,7 @@ footer {
 #top-brand {
   width: 65px !important;
   height: 65px !important;
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/Style/img/Trakt_TV_Header_Logo.png");
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/Style/img/Trakt_TV_Header_Logo.png") !important;
 }
 
 header#top-nav #top-brand .bottom-wrapper .bottom,
@@ -76,12 +76,12 @@ header#top-nav #top-brand .bottom-wrapper .bottom,
 }
 
 header#top-nav #top-brand .bottom-wrapper {
-  z-index: -1;
+  z-index: -1 !important;
   position: static !important;
-  bottom: 0;
-  width: 65px;
+  bottom: 0 !important;
+  width: 65px !important;
   height: 1px !important;
-  overflow: hidden;
+  overflow: hidden !important;
 }
 
 /*::: Navigation Menu User Menu :::*/
@@ -92,48 +92,48 @@ header#top-nav #top-brand .bottom-wrapper {
 /*::: Header Search :::*/
 #header-search,
 header#top-nav #header-search #header-search-button.btn-primary {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--bg);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 #header-search:hover,
 header#top-nav #header-search #header-search-button.btn-primary:hover {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 header#top-nav #header-search #header-search-query.open {
-  color: var(--first-color);
-  background: transparent;
+  color: var(--first-color) !important;
+  background: transparent !important;
 }
 
 header#top-nav #header-search #header-search-type.shown .dropdown-toggle {
-  color: var(--first-color);
-  border-left: transparent;
-  background: transparent;
+  color: var(--first-color) !important;
+  border-left: transparent !important;
+  background: transparent !important;
 }
 
 header#top-nav #header-search #header-search-type.shown .dropdown-menu {
-  background: var(--bg);
+  background: var(--bg) !important;
 }
 
 header#top-nav #header-search #header-search-type.shown .dropdown-menu {
-  background: var(--bg);
+  background: var(--bg) !important;
 }
 
 header#top-nav #header-search #header-search-type a {
-  color: var(--first-color);
-  background: var(--bg);
-  cursor: pointer;
+  color: var(--first-color) !important;
+  background: var(--bg) !important;
+  cursor: pointer !important;
 }
 
 header#top-nav #header-search #header-search-type a:hover {
-  color: var(--fifth-color);
-  background: var(--bg);
+  color: var(--fifth-color) !important;
+  background: var(--bg) !important;
 }
 
 /*::: Alert :::*/
@@ -175,46 +175,46 @@ ul.lists li.selected {
 
 .popover.remove .popover-content > button,
 .popover.remove .popover-content > button.btn-cancel {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--bg);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .popover.remove .popover-content > button.btn-cancel:hover,
 .popover.remove .popover-content > button:hover {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Add To Collection *Other Date*  :::*/
 .popover .data-wrapper input {
-  color: var(--first-color);
-  background: var(--bg-dark);
+  color: var(--first-color) !important;
+  background: var(--bg-dark) !important;
 }
 
 .popover .data-wrapper {
-  background-color: var(--bg);
+  background-color: var(--bg) !important;
 }
 
 .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline {
-  border-top: 1px solid var(--bg2);
-  background-color: var(--bg);
+  border-top: 1px solid var(--bg2) !important;
+  background-color: var(--bg) !important;
 }
 
 .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline button {
-  opacity: 100;
+  opacity: 100 !important;
 }
 
 .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline .xdsoft_month,
 .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline .xdsoft_year {
-  color: var(--first-color);
+  color: var(--first-color) !important;
 }
 
 .xdsoft_datetimepicker .xdsoft_label > .xdsoft_select {
-  background: var(--bg);
+  background: var(--bg) !important;
 }
 
 .generic-datepicker .xdsoft_calendar td.xdsoft_current,
@@ -232,11 +232,11 @@ ul.lists li.selected {
 
 /*::: Avatars on various pages  :::*/
 .user-avatar img {
-  display: block;
-  width: 100%;
-  margin-left: 5px;
+  display: block !important;
+  width: 100% !important;
+  margin-left: 5px !important;
   border: solid 1px var(--border) !important;
-  border-radius: 0;
+  border-radius: 0 !important;
   background-color: var(--bg-dark) !important;
 }
 
@@ -337,11 +337,11 @@ ul.lists li.selected {
 }
 
 .filter-dropdown .hide-dividers .icon {
-  color: var(--second-color);
+  color: var(--second-color) !important;
 }
 
 .filter-dropdown .hide-dividers .icon:hover {
-  color: var(--first-color);
+  color: var(--first-color) !important;
 }
 
 .filter-dropdown .selected .caret,
@@ -352,100 +352,100 @@ ul.lists li.selected {
 }
 
 .filter-dropdown .icon .line {
-  background: var(--first-color);
+  background: var(--first-color) !important;
 }
 
 .filter-dropdown .dropdown-toggle {
-  color: var(--second-color);
+  color: var(--second-color) !important;
 }
 
 .filter-dropdown .dropdown-toggle:hover {
-  color: var(--first-color);
+  color: var(--first-color) !important;
 }
 
 .subnav-wrapper .right .feed-icon .icon {
-  color: var(--second-color);
+  color: var(--second-color) !important;
 }
 
 .subnav-wrapper .right .feed-icon .icon:hover {
-  color: var(--first-color);
+  color: var(--first-color) !important;
 }
 
 /*::: Twitter Button :::*/
 .btn-twitter {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--bg-dark);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-twitter:hover {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Facebook Button :::*/
 .btn-facebook {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--bg-dark);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-facebook:hover {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Google+ Button :::*/
 .btn-google-plus,
 .btn-gplus {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--bg-dark);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-google-plus:hover,
 .btn-gplus:hover {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Tumblr Button :::*/
 .btn-tumblr {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--bg-dark);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-tumblr:hover {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Medium Button :::*/
 .btn-medium {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--bg-dark);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-medium:hover {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Profile Globals :::*/
@@ -454,40 +454,53 @@ ul.lists li.selected {
 /*[[pheader]]*/
 
 #cover-wrapper .shadow {
-  display: none;
+  display: none !important;
 }
 
 #cover-wrapper #avatar-wrapper .avatar {
-  border: 0;
-  border-radius: 1%;
-  background-color: transparent;
+  border: 0 !important;
+  border-radius: 1% !important;
+  background-color: transparent !important;
 }
 
 #cover-wrapper #backdrop-info a,
 #cover-wrapper #backdrop-info a .year {
-  color: var(--first-color);
+  color: var(--first-color) !important;
+}
+
+#cover-wrapper .label-vip .years {
+	right: 50px !important;
+	left: 5px !important;
+}
+
+#cover-wrapper .label-vip .trakt-icon-trakt {
+	display: none !important;
+}
+
+#cover-wrapper .label-vip {
+	background-color: transparent !important;
 }
 
 /*::: Links Wrapper :::*/
 #links-wrapper {
-  background: var(--transparent1);
+  background: var(--transparent1) !important;
 }
 
 /*::: All Types/All Ratings/Recently Rated/Watched,
 Recently Watched/Recently Collected/Personal Lists,
 Rank/Comments/Recently Added dropdowns/Friends :::*/
 .btn-default {
-  color: var(--first-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--first-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .dropdown .btn-default {
-  color: var(--first-color);
-  border: 1px solid var(--border);
-  background: var(--bg-dark);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--first-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-default.active,
@@ -495,22 +508,22 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 .btn-default:focus,
 .dropdown .btn-default:hover,
 .open > .btn-default.dropdown-toggle {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .dropdown-menu,
 .dropdown-menu > li > a {
-  color: var(--second-color);
-  background: var(--bg-dark);
+  color: var(--second-color) !important;
+  background: var(--bg-dark) !important;
 }
 
 .dropdown-menu > li > a:focus,
 .dropdown-menu > li > a:hover {
-  color: var(--first-color);
-  background: var(--sixth-color);
+  color: var(--first-color) !important;
+  background: var(--sixth-color) !important;
 }
 
 /*::: Items/Plays/Watched/TLTW/Shows/lists/comments/People Count :::*/
@@ -525,12 +538,12 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 
 #main-comment .interactions,
 .comment-wrapper .interactions {
-  font-size: 13px;
+  font-size: 13px !important;
 }
 
 .comment-wrapper.wider .above-comment .interactions a {
-  margin: 15px;
-  color: var(--first-color);
+  margin: 15px !important;
+  color: var(--first-color) !important;
 }
 
 /*::: Page numbers :::*/
@@ -548,40 +561,40 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 
 /*::: Date and Time :::*/
 .comment-wrapper .above-comment .date {
-  color: var(--first-color);
+  color: var(--first-color) !important;
   font-family: "Proxima Nova" !important;
 }
 
 /*::: Add Comment :::*/
 .new-comment-focus.main {
-  color: var(--second-color);
-  font-size: 13px;
+  color: var(--second-color) !important;
+  font-size: 13px !important;
 }
 
 .new-comment-focus.main:hover {
-  color: var(--first-color);
-  font-size: 13px;
+  color: var(--first-color) !important;
+  font-size: 13px !important;
 }
 
 /*::: reply Box :::*/
 .new-reply-wrapper .reply-field textarea {
-  border: solid 1px var(--border);
-  background-color: var(--bg);
+  border: solid 1px var(--border) !important;
+  background-color: var(--bg) !important;
 }
 
 .new-reply-wrapper .buttons .comment-submit {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--bg-dark);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .new-reply-wrapper .buttons .comment-submit:active,
 .new-reply-wrapper .buttons .comment-submit:hover {
-  color: var(--first-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--first-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Spoiler Stuff :::*/
@@ -601,17 +614,17 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 
 /*::: Body :::*/
 .frame-wrapper {
-  background-color: var(--bg-dark);
+  background-color: var(--bg-dark) !important;
 }
 
 .frame-wrapper #huckster-desktop-wrapper.visible {
-  display: block;
-  padding: 0;
-  background: var(--bg-dark);
+  display: block !important;
+  padding: 0 !important;
+  background: var(--bg-dark) !important;
 }
 
 .container-fluid {
-  background: var(--bg-dark);
+  background: var(--bg-dark) !important;
 }
 
 /*::: End Globals :::*/
@@ -621,77 +634,77 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 /*::: Trakt Logo :::*/
 #auth-form-wrapper .logo-wrapper .logo,
 .checkin-modal .logo-wrapper .logo {
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/img/Trakt_TV_Login.png") no-repeat;
-  background-size: 128px 128px;
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/Style/img/Trakt_TV_Login.png") no-repeat !important;
+  background-size: 128px 128px !important;
 }
 
 /*::: Login form :::*/
 #auth-form-wrapper,
 .checkin-modal {
-  color: var(--second-color);
-  border-radius: 1px;
-  background-color: var(--bg-dark);
+  color: var(--second-color) !important;
+  border-radius: 1px !important;
+  background-color: var(--bg-dark) !important;
 }
 
 /*::: Text area :::*/
 .form-control {
-  color: var(--first-color);
-  border: 1px solid var(--border);
-  background-color: var(--bg-dark);
+  color: var(--first-color) !important;
+  border: 1px solid var(--border) !important;
+  background-color: var(--bg-dark) !important;
 }
 
 /*::: Sign-in Button :::*/
 #auth-form-wrapper .btn-primary,
 .checkin-modal .btn-primary {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--bg-dark);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 #auth-form-wrapper .btn-primary:hover,
 .checkin-modal .btn-primary:hover {
-  color: var(--first-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--first-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Bottom Section of login form :::*/
 #auth-form-wrapper .bottom-wrapper,
 .checkin-modal .bottom-wrapper {
-  color: var(--second-color);
-  border-top: solid 1px var(--bg2);
-  background-color: var(--bg-dark);
+  color: var(--second-color) !important;
+  border-top: solid 1px var(--bg2) !important;
+  background-color: var(--bg-dark) !important;
 }
 
 /*::: Apps Page :::*/
 .btn-group.in-wrapper .btn {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--bg-dark);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-group.in-wrapper .btn:hover {
-  color: var(--first-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--first-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-group.in-wrapper .btn-primary {
-  color: var(--fifth-color);
-  border: 1px solid var(--border);
-  background: var(--bg-dark);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--fifth-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Dashboard :::*/
 
 /*::: On deck to watch :::*/
 #ondeck-wrapper .posters .titles-link {
-  color: var(--first-color);
+  color: var(--first-color) !important;
 }
 
 /*::: Avatar :::*/
@@ -703,16 +716,16 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 
 /*::: Stats Wrapper :::*/
 #results-top-wrapper.user-wrapper .stats-wrapper {
-  background-color: var(--bg2);
+  background-color: var(--bg2) !important;
 }
 
 /*::: Last 30 days at a glance :::*/
 #charts-wrapper h3 {
-  color: var(--first-color);
+  color: var(--first-color) !important;
 }
 
 #charts-wrapper .genre-bars.light .bar label {
-  color: var(--first-color);
+  color: var(--first-color) !important;
 }
 
 /*::: Network Activity :::*/
@@ -730,8 +743,8 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 }
 
 #network-wrapper .posters .activity-date {
-  color: var(--first-color);
-  background-color: var(--bg2);
+  color: var(--first-color) !important;
+  background-color: var(--bg2) !important;
 }
 
 /*::: profile page :::*/
@@ -739,39 +752,39 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 /*::: About/Last Watched/WATCHED TV SHOWS/MOST WATCHED TV SHOW,
 MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 #boxes-wrapper .row .stat-box {
-  border: 1px solid var(--border);
+  border: 1px solid var(--border) !important;
 }
 
 #boxes-wrapper .row .last-comment h3 span,
 #boxes-wrapper .row .stat-box .shade h3,
 #boxes-wrapper .row .stat-box .shade h4,
 #boxes-wrapper .row .stat-box h2 {
-  left: 70px;
-  margin-right: 0;
-  font-family: "Proxima Nova";
-  font-size: 15px;
+  left: 70px !important;
+  margin-right: 0 !important;
+  font-family: "Proxima Nova" !important;
+  font-size: 15px !important;
 }
 
 #boxes-wrapper .row .last-comment h3 .fa {
-  margin: 0;
-  font-size: 30px;
+  margin: 0 !important;
+  font-size: 30px !important;
 }
 
 #boxes-wrapper .row .last-comment {
-  background-color: var(--bg-dark);
+  background-color: var(--bg-dark) !important;
 }
 
 #boxes-wrapper .row .stats,
 #boxes-wrapper .row .stats .bottom-shade {
-  background-color: var(--bg-dark);
+  background-color: var(--bg-dark) !important;
 }
 
 #boxes-wrapper .row .stats .under-stat {
-  color: var(--fifth-color);
+  color: var(--fifth-color) !important;
 }
 
 #boxes-wrapper .row .stat-box {
-  background-color: var(--bg-dark);
+  background-color: var(--bg-dark) !important;
 }
 
 #boxes-wrapper .row .stat-box .see-more {
@@ -780,16 +793,16 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 
 /*::: Favorites :::*/
 #favorites-wrapper.col-stat.alt {
-  background: transparent;
+  background: transparent !important;
 }
 
 /*::: Ratings :::*/
 #chart-ratings-wrapper.col-stat.alt {
-  background: transparent;
+  background: transparent !important;
 }
 
 #chart-ratings-wrapper #chart-ratings {
-  border: 1px solid var(--border);
+  border: 1px solid var(--border) !important;
 }
 
 /*::: Progress Page :::*/
@@ -798,10 +811,10 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 .seasons {
   width: 85% !important;
   margin-left: 3% !important;
-  border-radius: 15px;
+  border-radius: 15px !important;
   background-color: var(--bg2) !important;
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
-  text-align: center;
+  text-align: center !important;
 }
 
 .season-toggle {
@@ -813,39 +826,39 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 /*::: Add List / Reorder :::*/
 #btn-list-add,
 #btn-list-edit-lists {
-  color: var(--second-color);
-  font-size: 13px;
+  color: var(--second-color) !important;
+  font-size: 13px !important;
 }
 
 #btn-list-add:hover,
 #btn-list-edit-lists.active,
 #btn-list-edit-lists:hover {
   color: var(--first-color) !important;
-  font-size: 13px;
+  font-size: 13px !important;
 }
 
 #btn-list-edit-lists .icon {
-  transition: all 0s;
+  transition: all 0s !important;
 }
 
 /*::: Sort Direction :::*/
 #sort-direction {
-  color: var(--second-color);
+  color: var(--second-color) !important;
 }
 
 #sort-direction.selected {
-  color: var(--first-color);
+  color: var(--first-color) !important;
 }
 
 /*::: by *name* color :::*/
 .comment-wrapper.list .above-comment .user-name h4 a.username {
-  color: var(--first-color);
+  color: var(--first-color) !important;
 }
 
 /*::: create custom calander icon :::*/
 .custom-list .list-info .user-actions .icon.btn-list-clone,
 .custom-list .list-info .user-actions .icon.btn-list-subscribe {
-  color: var(--first-color);
+  color: var(--first-color) !important;
 }
 
 .comment-wrapper.list .selected {
@@ -853,17 +866,18 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 }
 
 /*::: Get rid of white shade on bottom of list overview :::*/
-.custom-list .list-info .info .overview[data-readmore][aria-expanded="false"] .shade {
-  width: 0;
+.custom-list .list-info .info .overview[data-readmore][aria-expanded="false"] .shade,
+.subnav-text .text[data-readmore][aria-expanded="false"] .shade {
+  width: 0 !important;
 }
 
 /*::: clone and subscribe buttons :::*/
 .subnav-wrapper .left h2 .right a {
-  color: var(--second-color);
+  color: var(--second-color) !important;
 }
 
 .subnav-wrapper .left h2 .right a:hover {
-  color: var(--first-color);
+  color: var(--first-color) !important;
 }
 
 /*::: Show Page :::*/
@@ -871,32 +885,32 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 /*::: Rate this show :::*/
 @keyframes fade-in {
   from {
-    color: var(--first-color);
+    color: var(--first-color) !important;
   }
   to {
-    color: var(--fifth-color);
+    color: var(--fifth-color) !important;
   }
 }
 
 @keyframes fade-out {
   from {
-    color: var(--fifth-color);
+    color: var(--fifth-color) !important;
   }
   to {
-    color: var(--first-color);
+    color: var(--first-color) !important;
   }
 }
 
 .fa-heart-o {
-  color: var(--first-color);
-  animation-duration: .5s;
-  animation-name: fade-out;
+  color: var(--first-color) !important;
+  animation-duration: .5s !important;
+  animation-name: fade-out !important;
 }
 
 .fa-heart-o:hover {
-  color: var(--fifth-color);
-  animation-duration: .5s;
-  animation-name: fade-in;
+  color: var(--fifth-color) !important;
+  animation-duration: .5s !important;
+  animation-name: fade-in !important;
 }
 
 /*::: Checkin/Watched/Collection/Add to List/Comment :::*/
@@ -958,7 +972,7 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 }
 
 .streaming-links .title {
-  border-bottom: solid 1px var(--bg);
+  border-bottom: solid 1px var(--bg) !important;
 }
 
 /*::: Sidebar Navigation :::*/
@@ -1165,36 +1179,36 @@ body.list_comments #info-wrapper .above-comment-bg {
 }
 
 #avatar-file-upload:hover {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 body.settings .buttons .btn {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--bg-dark);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 body.settings .buttons .btn:hover {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Sharing and Notifications :::*/
 body.settings .notifications-table .table tbody > tr > td {
-  border: 1px solid var(--border);
+  border: 1px solid var(--border) !important;
 }
 
 body.settings .notifications-table .table tbody > tr:hover {
-  color: var(--second-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 h3.instructions {
@@ -1216,18 +1230,18 @@ body.authorized_applications .subnav-wrapper {
 /*::: Your API Apps :::*/
 #authorized-applications .btn-primary,
 #authorized-applications .btn-success {
-  color: var(--first-color);
-  border: 1px solid var(--border);
-  background: var(--bg-dark);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--first-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 #authorized-applications .btn-primary:hover,
 #authorized-applications .btn-success:hover {
-  color: var(--first-color);
-  border: 1px solid var(--border);
-  background: var(--transparent3);
-  box-shadow: 1px 1px 5px 1px var(--transparent2);
+  color: var(--first-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 }
