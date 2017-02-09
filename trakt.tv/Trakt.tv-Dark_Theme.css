@@ -2,7 +2,7 @@
 
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 Trakt.tv Dark v2.4.4                                                   | */
+/* |                                                 Trakt.tv Dark v2.4.5                                                   | */
 /* |                                             Copyright 2016-2017 JourneyOver                                            | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -33,6 +33,111 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: THEME :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Main Global :::*/
+
+/*::: HP Trakt Logo :::*/
+.trakt-full img {
+  visibility: hidden !important;
+}
+
+.trakt-full {
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/Style/img/Trakt_TV_Header_Logo.png") no-repeat !important;
+  border-bottom: none !important;
+}
+
+/*::: HP Join Trakt.tv Buttons :::*/
+#watching-wrapper .btn-primary {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+#watching-wrapper .btn-primary:hover {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+body.main.home header#top-nav.scrolled .btn-primary {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+body.main.home header#top-nav.scrolled .btn-primary:hover {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+/*::: HP Scrobble & sync
+from your media center. :::*/
+#scrobblers-wrapper .full-screenshot.lazy.enabled {
+  background-image: url("https://services.tegrazone.com/sites/default/files/article-feature-images/plex-media-server.jpg") !important;
+}
+
+#scrobblers-wrapper .btn-primary {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+#scrobblers-wrapper .btn-primary:hover {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+/*::: HP Find where to watch TV & movies. :::*/
+#watchnow-wrapper .shade {
+  display: none !important;
+}
+
+/*::: HP Apps for all
+your devices. :::*/
+#apps-wrapper .btn-primary {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+#apps-wrapper .btn-primary:hover {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+/*::: HP Create using the API :::*/
+#api-wrapper .full-screenshot.lazy.enabled,
+#api-wrapper {
+  background-image: none !important;
+  border-top: none !important;
+}
+
+#api-wrapper .shade {
+  display: none !important;
+}
+
+#api-wrapper .btn-primary {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+#api-wrapper .btn-primary:hover {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
 
 /*::: Background + footer background :::*/
 section {
@@ -67,7 +172,7 @@ footer {
 #top-brand {
   width: 65px !important;
   height: 65px !important;
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/Style/img/Trakt_TV_Header_Logo.png") !important;
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/Style/img/Trakt_TV_Header_Logo.png") no-repeat !important;
 }
 
 header#top-nav #top-brand .bottom-wrapper .bottom,
