@@ -2,7 +2,7 @@
 
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 Trakt.tv Dark v2.4.7                                                   | */
+/* |                                                 Trakt.tv Dark v2.4.8                                                   | */
 /* |                                             Copyright 2016-2017 JourneyOver                                            | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -599,19 +599,6 @@ ul.lists li.selected {
 #cover-wrapper #backdrop-info a,
 #cover-wrapper #backdrop-info a .year {
   color: var(--first-color) !important;
-}
-
-#cover-wrapper .label-vip .years {
-	right: 50px !important;
-	left: 5px !important;
-}
-
-#cover-wrapper .label-vip .trakt-icon-trakt {
-	display: none !important;
-}
-
-#cover-wrapper .label-vip {
-	background-color: transparent !important;
 }
 
 /*::: Links Wrapper :::*/
