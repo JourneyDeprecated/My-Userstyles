@@ -2,7 +2,7 @@
 
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 Trakt.tv Dark v2.4.5                                                   | */
+/* |                                                 Trakt.tv Dark v2.4.7                                                   | */
 /* |                                             Copyright 2016-2017 JourneyOver                                            | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -294,6 +294,29 @@ ul.lists li.selected {
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
+/*::: Add To Collection *Metadata*  :::*/
+.popover .metadata-wrapper {
+  background-color: var(--bg-dark) !important;
+}
+
+.popover i.add-metadata {
+  color: var(--first-color) !important;
+}
+
+.popover .metadata-wrapper button {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--bg-dark) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
+.popover .metadata-wrapper button:hover {
+  color: var(--second-color) !important;
+  border: 1px solid var(--border) !important;
+  background: var(--transparent3) !important;
+  box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+}
+
 /*::: Add To Collection *Other Date*  :::*/
 .popover .data-wrapper input {
   color: var(--first-color) !important;
@@ -387,6 +410,11 @@ ul.lists li.selected {
 
 .posters .poster {
   border: hidden !important;
+}
+
+/*::: Show Ratings on Posters :::*/
+.corner-rating {
+  visibility: visible !important;
 }
 
 /*::: Quick Icons :::*/
@@ -784,6 +812,10 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 }
 
 /*::: Apps Page :::*/
+#apps-icon-wrapper {
+  background: var(--bg-dark) !important;
+}
+
 .btn-group.in-wrapper .btn {
   color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
