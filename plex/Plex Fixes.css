@@ -4,7 +4,7 @@ regexp("https?://.*:/*[[PORT]]*//.*") {
 
 /* +------------------------------------------------------------------------------------------------------------------------+ */
 /* |                                                                                                                        | */
-/* |                                                 Plex Fixes v0.0.4                                                      | */
+/* |                                                 Plex Fixes v0.0.5                                                      | */
 /* |                                                 Copyright 2017 JourneyOver                                             | */
 /* |                                                                                                                        | */
 /* +------------------------------------------------------------------------------------------------------------------------+ */
@@ -16,31 +16,34 @@ regexp("https?://.*:/*[[PORT]]*//.*") {
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/* Make main background come back to pre-3.0.0 color */
-div[class^='background-container']>div>div>div:nth-child(2) {
+/*::: Make main background come back to pre-3.0.0 color :::*/
+.background-container [data-reactroot] div>div[style] {
   background: rgba(32, 32, 32, 1.0) !important;
-  filter: blur(0px) grayscale(0%);
-  /* if you want to blur & grayscale it */
-  background-size: cover;
+  background-size: cover !important;
 }
 
-/* Max Width Of Summary Container */
+/*::: Max Width Of Summary Container :::*/
 div[class^='PrePlaySummary-summary-'] {
   max-width: none !important;
 }
 
-/* Make Sure Overflow Of Summary Container is always visible */
+/*::: Make Sure Overflow Of Summary Container is always visible :::*/
 div[class^='PrePlaySummary-summary-']>div {
   overflow: visible !important;
   max-height: none !important;
 }
 
-/* Hide Read More Button Since It's Useless Now */
+/*::: Hide Read More Button Since It's Useless Now :::*/
 [class*='CollapsibleText-readMore-'] {
   display: none !important;
 }
 
-/* Image Container */
+/*::: hide Plex Pass Button :::*/
+.plex-pass-label {
+  display: none;
+}
+
+/*::: Image Container :::*/
 div[class^='PrePlayArtwork-imageContainer-'] {
   position: fixed !important;
   top: 0 !important;
@@ -52,13 +55,11 @@ div[class^='PrePlayArtwork-imageContainer-'] {
   height: 100% !important;
   margin: 0 !important;
   background: #1f1f1f !important;
-  -webkit-animation: 0.6s ease-in plexbgfadein;
-  -moz-animation: 0.6s ease-in plexbgfadein;
-  -o-animation: 0.6s ease-in plexbgfadein;
-  animation: 0.6s ease-in plexbgfadein;
+  -webkit-animation: plexbgfadein 0.6s ease-in;
+  animation: plexbgfadein 0.6s ease-in;
 }
 
-/* Image */
+/*::: Image :::*/
 div[class^='PrePlayArtwork-imageContainer-']>div {
   height: 100% !important;
   width: 100% !important;
@@ -66,33 +67,20 @@ div[class^='PrePlayArtwork-imageContainer-']>div {
   opacity: 0.25 !important;
 }
 
-/* Item Thumbnail */
+/*::: Resizing adds extra divs :::*/
+[class^="PrePlayArtwork-imageContainer-"]>div+div {
+  display: none !important;
+}
+
+/*::: Item Thumbnail :::*/
 div[class^='PrePlayArtwork-imageContainer-']+div {
   position: fixed !important;
   top: 180px !important;
   background-position: center !important;
 }
 
-/* Background Fade-in */
+/*::: Background Fade-in :::*/
 @-webkit-keyframes plexbgfadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-moz-keyframes plexbgfadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@-o-keyframes plexbgfadein {
   from {
     opacity: 0;
   }
@@ -112,7 +100,11 @@ div[class^='PrePlayArtwork-imageContainer-']+div {
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: NEW ADDITIONS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-/* Posters */
+/*[[EE]]*/
+
+/*[[CS]]*/
+
+/*::: Posters :::*/ /*::: Credits to @IanCeling :::*/
 div[class^='VirtualListScroller-scroller-'] div[class^='virtualized-cell-']:first-child:hover div[class^='MetadataPosterCard-cardContainer-'] {
   transform: scale(1.05) translateX(5px) translateY(-5px);
 }
@@ -131,7 +123,7 @@ div[class^='MetadataPosterCard-cardContainer-']:hover div[class^='PosterCardImg-
   filter: grayscale(50%) brightness(105%) contrast(220%)
 }
 
-/* Poster Play Button */
+/*::: Poster Play Button :::*/ /*::: Credits to @IanCeling :::*/
 div[class^='MetadataPosterCardOverlay-playCircle-'] {
   opacity: 0.0;
   filter: blur(10px);
@@ -145,10 +137,12 @@ div[class^='MetadataPosterCard-cardContainer-']:hover div[class^='MetadataPoster
   zoom: 1.5;
 }
 
-/* Pulsate Status */
+/*::: Pulsate Status :::*/ /*::: Credits to @IanCeling :::*/
 .nav-bar li.active i {
   -webkit-animation: pulsate 5s ease-out;
   -webkit-animation-iteration-count: infinite;
+  animation: pulsate 5s ease-out;
+  animation-iteration-count: infinite;
   opacity: 0.1
 }
 
@@ -163,6 +157,21 @@ div[class^='MetadataPosterCard-cardContainer-']:hover div[class^='MetadataPoster
   }
   100% {
     -webkit-transform: scale(1.7, 1);
+    opacity: 1.0;
+  }
+}
+
+@keyframes pulsate {
+  0% {
+    transform: scale(1.7, 1);
+    opacity: 1.0;
+  }
+  50% {
+    transform: scale(0.85, 0.85);
+    opacity: 0.3;
+  }
+  100% {
+    transform: scale(1.7, 1);
     opacity: 1.0;
   }
 }
