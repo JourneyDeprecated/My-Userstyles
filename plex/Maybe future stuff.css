@@ -1,21 +1,21 @@
 /* Cast Cards */
-div[class^='TagPosterCard-card-'] {
+div[class^="TagPosterCard-card-"] {
   margin-top: 5px;
   box-shadow: 0px 12px 20px -8px #000;
   border-radius: 0%;
   transition: transform 0.26s ease-out;
 }
 
-div[class^='TagPosterCard-card-']:hover {
+div[class^="TagPosterCard-card-"]:hover {
   transform: scale(1.05);
   border: 1px solid #cc7b19;
 }
 
-[class*='PrePlayCastCell-cardLink-'] {
+[class*="PrePlayCastCell-cardLink-"] {
   border-radius: 1px !important;
 }
 
 /* Change color of how long movie/episodes are, unwatched status, date to be a bit more noticable on lighter/darker backgrounds */
-div[class^='PrePlayTertiaryTitle-tertiaryTitle-'] {
+div[class^="PrePlayTertiaryTitle-tertiaryTitle-"] {
   color: #fff !important;
 }
