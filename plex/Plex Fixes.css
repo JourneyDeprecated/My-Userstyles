@@ -10,9 +10,9 @@ regexp("https?://.*:/*[[PORT]]*//.*") {
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 10 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 03 / 24 / 2017                                                    || */
+/* ||* Updated     : 03 / 25 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 0.0.5                                                             || */
+/* ||* Version     : 0.0.6                                                             || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2017                                                              || */
 /* ||                                                                                  || */
@@ -28,28 +28,6 @@ regexp("https?://.*:/*[[PORT]]*//.*") {
 /*::: Make main background come back to pre-3.0.0 color :::*/
 .background-container [data-reactroot] div>div[style] {
   background: rgba(32, 32, 32, 1.0) !important;
-  background-size: cover !important;
-}
-
-/*::: Max Width Of Summary Container :::*/
-div[class^="PrePlaySummary-summary-"] {
-  max-width: none !important;
-}
-
-/*::: Make Sure Overflow Of Summary Container is always visible :::*/
-div[class^="PrePlaySummary-summary-"]>div {
-  overflow: visible !important;
-  max-height: none !important;
-}
-
-/*::: Hide Read More Button Since It's Useless Now :::*/
-[class^="CollapsibleText-readMore-"] {
-  display: none !important;
-}
-
-/*::: hide Plex Pass Button :::*/
-.plex-pass-label {
-  display: none;
 }
 
 /*::: Image Container :::*/
@@ -109,9 +87,41 @@ div[class^="PrePlayArtwork-imageContainer-"]+div {
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: NEW ADDITIONS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
+/*::: Max Width Of Summary Container :::*/
+div[class^="PrePlaySummary-summary-"] {
+  max-width: none !important;
+}
+
+/*::: Make Sure Overflow Of Summary Container is always visible :::*/
+div[class^="PrePlaySummary-summary-"]>div {
+  overflow: visible !important;
+  max-height: none !important;
+}
+
+/*::: Hide Read More Button Since It's Useless Now :::*/
+[class^="CollapsibleText-readMore-"] {
+  display: none !important;
+}
+
+/*::: Hide The Go Premium  Button :::*/
+.plex-pass-label {
+  display: none !important;
+}
+
 /*[[EE]]*/
 
 /*[[CS]]*/
+
+/*::: make continue watching title containers a bit smaller :::*/
+div[class*="MetadataPosterCell-continueWatchingTitleContainer-"] {
+  padding: 4px 5px !important;
+  background-color: rgba(0, 0, 0, 0.35);
+}
+
+/*::: shorten the padding on headers on dashboard to bring inline with being closer to continue watching title container :::*/
+div[class*="HubCellHeader-hubCellHeader-"] {
+  padding: 4px 0 0 5px !important;
+}
 
 /*::: Posters :::*/ /*::: Credits to @IanCeling :::*/
 div[class^="VirtualListScroller-scroller-"] div[class^="virtualized-cell-"]:first-child:hover div[class^="MetadataPosterCard-cardContainer-"] {

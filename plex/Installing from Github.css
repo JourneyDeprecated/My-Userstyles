@@ -20,18 +20,18 @@
 
 .sidebar-container {
   width: 65px !important;
-  transition: 0.2s !important;
+  transition: all 0.5s ease !important;
 }
 
 .sidebar-container:hover {
   width: 240px !important;
-  -webkit-transition-delay: 0.6s !important;
-  transition-delay: 0.6s !important;
+  transition: all 1.5s ease !important;
 }
 
 [class^="SidebarLink-title"],
 [class^="SidebarServerLibraries-librariesTitle"],
-[class^="SidebarList-sidebarListHeader"] {
+[class^="SidebarList-sidebarListHeader"],
+[class^="ServerMenuButton-serverMenuTitle-"] {
   font-size: 0px !important;
 }
 
@@ -39,22 +39,25 @@
 .sidebar-container:hover [class^="SidebarServerLibraries-librariesTitle"],
 .sidebar-container:hover [class^="SidebarList-sidebarListHeader"] {
   font-size: 12px !important;
-  -webkit-transition-delay: 0.8s !important;
-  transition-delay: 0.8s !important;
+  transition: all 2s ease !important;
 }
 
 [class^="SidebarLibrariesActions-actions"],
 [class^="SidebarLink-children"],
-[class^="ServerMenuButton-serverMenuTitle"] {
+[class^="DisclosureArrow-disclosureArrow-"] {
   display: none !important;
 }
 
 .sidebar-container:hover [class^="SidebarLibrariesActions-actions"],
 .sidebar-container:hover [class^="SidebarLink-children"],
-.sidebar-container:hover [class^="ServerMenuButton-serverMenuTitle"] {
-  display: block !important;
-  -webkit-transition-delay: 0.8s !important;
-  transition-delay: 0.8s !important;
+.sidebar-container:hover [class^="DisclosureArrow-disclosureArrow"]  {
+  display: inline-block !important;
+  transition: all 2s ease !important;
+}
+
+.sidebar-container:hover [class^="ServerMenuButton-serverMenuTitle-"] {
+  font-size: 14px !important;
+  transition: all 3s ease !important;
 }
 
 [class^="SidebarLibraryItem-action"] {
