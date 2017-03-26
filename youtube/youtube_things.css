@@ -8,9 +8,9 @@
 /* ||                                                                                  || */
 /* ||* Created     : 01 / 03 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 01 / 25 / 2017                                                    || */
+/* ||* Updated     : 03 / 25 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 1.0.2                                                             || */
+/* ||* Version     : 1.0.3                                                             || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2016-2017                                                         || */
 /* ||                                                                                  || */
@@ -217,27 +217,22 @@ fa.fa.fa-paperclip {
 }
 }
 
-@-moz-document regexp("https?://www.youtube.(com|([a-z]{2}))(.[a-z]{2})?/((\\?|channel|c|user).*)") {
+@-moz-document domain("youtube.com") {
 /*::: Max channel width :::*/
 
-.content-snap-width-3 .flex-width-enabled.flex-width-enabled-snap .content-alignment {
+.flex-width-enabled .content-alignment {
   width: 98.97% !important;
-  margin-left: 20px;
+  margin-left: 20px !important;
 }
 
-.content-snap-width-3 .flex-width-enabled-snap .not-fixed-width-tab-widescreen #c4-header-bg-container {
-  height: 309.138px;
+[id*=c4-header-bg-container] {
+  height: 309.138px !important;
 }
 
-.content-snap-width-2 .flex-width-enabled.flex-width-enabled-snap .content-alignment {
-  width: 98.97% !important;
-  margin-left: 20px;
-}
-
-.channel-header-profile-image-container {
-  top: 330px;
-  left: 25px;
-  z-index: 99;
+[class*=channel-header-profile-image-container] {
+  top: 10px !important;
+  left: 25px !important;
+  z-index: 99 !important;
 }
 }
 

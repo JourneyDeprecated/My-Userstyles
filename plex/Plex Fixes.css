@@ -1,6 +1,6 @@
 @-moz-document url-prefix("https://app.plex.tv/"),
 url-prefix("http://app.plex.tv/"),
-regexp("https?://.*:/*[[PORT]]*//.*") {
+regexp("https?:\/\/.*:/*[[PORT]]*/\/.*") {
 
 /* ++----------------------------------------------------------------------------------++ */
 /* ||                                                                                  || */
@@ -21,7 +21,7 @@ regexp("https?://.*:/*[[PORT]]*//.*") {
 
 @-moz-document url-prefix("https://app.plex.tv/"),
 url-prefix("http://app.plex.tv/"),
-regexp("https?://.*:/*[[PORT]]*//.*") {
+regexp("https?:\/\/.*:/*[[PORT]]*/\/.*") {
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 

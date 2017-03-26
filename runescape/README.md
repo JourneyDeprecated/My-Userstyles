@@ -1,25 +1,34 @@
-![](https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/imgp/runemetrics/runemetrics.preview.png)
-
 # Runemetrics Dark
 
+## Description
+
 Dark theme for Runemetrics (runescape) - Switch off the lights on runemetrics and browse runemetrics in nighttime mode.
+
+![Runemetrics Preview](../ipreviews/runescape/runemetrics.preview.png?raw=true "Runemetrics Preview")
 
 ## How to use
 
 Install a userstyle manager for your favorite browser:
 
-- Chrome: <https://chrome.google.com/webstore/detail/stylish/fjnbnpbmkenffdnngjfgmeleoegfcffe?hl=en>
-- Firefox: <https://addons.mozilla.org/en-US/firefox/addon/stylish/>
-- Safari: <https://sobolev.us/stylish>
+- Chrome (Stylish): **[Install Stylish][1]**
+- Chrome (Stylus): **[Install Stylus][2]**
+- Firefox: **[Install Stylish][3]**
+- Safari: **[Install Stylish][4]**
 
 Then, copy-pasta the styles from `RuneMetrics.css` into a new userstyle.
 
 ## Userstyles.org
 
-If you use the Stylish addon on Chrome or Firefox you can find one-click installs including automatic updates via the packages below.
+If you use the Stylish/Stylus addon on Chrome or Firefox you can find one-click installs including automatic updates via the packages below.
 
-[Runemetrics Dark](https://userstyles.org/styles/128866/dark-runemetrics)
+> **[Runemetrics Dark][5]**
 
 ## Bug reports
 
 Open an issue or submit a pull request, please.
+
+[1]: https://chrome.google.com/webstore/detail/stylish-custom-themes-for/fjnbnpbmkenffdnngjfgmeleoegfcffe
+[2]: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
+[3]: https://addons.mozilla.org/en-US/firefox/addon/stylish
+[4]: https://sobolev.us/stylish
+[5]: https://userstyles.org/styles/128866

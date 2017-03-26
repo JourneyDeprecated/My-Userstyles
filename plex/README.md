@@ -1,10 +1,12 @@
-# Youtube Things
+# Plex Fixes
 
 ## Description
 
-Quick fixes and colorizations for youtube
+Bringing some parts of plex back to how they where before the 3.0.0 update, with new things coming as well.
 
-![Youtube Preview](../ipreviews/youtube/youtube_preview.png?raw=true "Youtube Preview")
+![TV Preview](../ipreviews/plex/tv.png?raw=true "TV Preview")
+![Movie Preview](../ipreviews/plex/movie.png?raw=true "Movie Preview")
+![Music Preview](../ipreviews/plex/music.png?raw=true "Music Preview")
 
 ## How to use
 
@@ -15,13 +17,13 @@ Install a userstyle manager for your favorite browser:
 - Firefox: **[Install Stylish][3]**
 - Safari: **[Install Stylish][4]**
 
-Then, copy-pasta the styles from `youtube_things.css` into a new userstyle.
+Then, copy-pasta the styles from `Plex Fixes.css` into a new userstyle.
 
 ## Userstyles.org
 
 If you use the Stylish/Stylus addon on Chrome or Firefox you can find one-click installs including automatic updates via the packages below.
 
-> **[Quick fixes and colorizations for youtube][5]**
+> **[Plex Fixes][5]**
 
 ## Bug reports
 
@@ -31,4 +33,4 @@ Open an issue or submit a pull request, please.
 [2]: https://chrome.google.com/webstore/detail/stylus/clngdbkpkpeebahjckkjfobafhncgmne
 [3]: https://addons.mozilla.org/en-US/firefox/addon/stylish
 [4]: https://sobolev.us/stylish
-[5]: https://userstyles.org/styles/137220
+[5]: https://userstyles.org/styles/139979
