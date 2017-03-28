@@ -10,9 +10,9 @@ regexp("https?:\/\/.*:/*[[PORT]]*/\/.*") {
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 10 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 03 / 25 / 2017                                                    || */
+/* ||* Updated     : 03 / 27 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 0.0.6                                                             || */
+/* ||* Version     : 0.0.7                                                             || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2017                                                              || */
 /* ||                                                                                  || */
@@ -108,9 +108,15 @@ div[class^="PrePlaySummary-summary-"]>div {
   display: none !important;
 }
 
-/*[[EE]]*/
+/*[[CastL]]*/
 
-/*[[CS]]*/
+/*[[ExtrasM]]*/
+
+/*[[RelatedL]]*/
+
+/*[[PosterHE]]*/
+
+/*[[CompactSB]]*/
 
 /*::: make continue watching title containers a bit smaller :::*/
 div[class*="MetadataPosterCell-continueWatchingTitleContainer-"] {
@@ -121,39 +127,6 @@ div[class*="MetadataPosterCell-continueWatchingTitleContainer-"] {
 /*::: shorten the padding on headers on dashboard to bring inline with being closer to continue watching title container :::*/
 div[class*="HubCellHeader-hubCellHeader-"] {
   padding: 4px 0 0 5px !important;
-}
-
-/*::: Posters :::*/ /*::: Credits to @IanCeling :::*/
-div[class^="VirtualListScroller-scroller-"] div[class^="virtualized-cell-"]:first-child:hover div[class^="MetadataPosterCard-cardContainer-"] {
-  transform: scale(1.05) translateX(5px) translateY(-5px);
-}
-
-div[class^="MetadataPosterCard-cardContainer-"] {
-  margin-top: 5px;
-  box-shadow: 0px 12px 20px -8px #000;
-  transition: transform 0.26s ease-out;
-}
-
-div[class^="MetadataPosterCard-cardContainer-"]:hover {
-  transform: scale(1.05) translateY(-5px);
-}
-
-div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="PosterCardImg-imageContainer-"] {
-  filter: grayscale(50%) brightness(105%) contrast(220%)
-}
-
-/*::: Poster Play Button :::*/ /*::: Credits to @IanCeling :::*/
-div[class^="MetadataPosterCardOverlay-playCircle-"] {
-  opacity: 0.0;
-  filter: blur(10px);
-  box-shadow: 0px 6px 10px -4px #000;
-  transition: all 0.5s ease-out;
-}
-
-div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="MetadataPosterCardOverlay-playCircle-"] {
-  opacity: 1.0;
-  filter: blur(0px);
-  zoom: 1.5;
 }
 
 /*::: Pulsate Status :::*/ /*::: Credits to @IanCeling :::*/
