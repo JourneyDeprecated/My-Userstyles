@@ -10,9 +10,9 @@ regexp("https?:\/\/.*:/*[[PORT]]*/\/.*") {
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 10 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 03 / 27 / 2017                                                    || */
+/* ||* Updated     : 03 / 29 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 0.0.7                                                             || */
+/* ||* Version     : 0.0.8                                                             || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2017                                                              || */
 /* ||                                                                                  || */
@@ -26,7 +26,7 @@ regexp("https?:\/\/.*:/*[[PORT]]*/\/.*") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Make main background come back to pre-3.0.0 color :::*/
-.background-container [data-reactroot] div>div[style] {
+.background-container [data-reactroot] div > div[style] {
   background: rgba(32, 32, 32, 1.0) !important;
 }
 
@@ -42,12 +42,11 @@ div[class^="PrePlayArtwork-imageContainer-"] {
   height: 100% !important;
   margin: 0 !important;
   background: #1f1f1f !important;
-  -webkit-animation: plexbgfadein 0.6s ease-in;
-  animation: plexbgfadein 0.6s ease-in;
+  -webkit-animation: plexbgfadein 0.6s ease-in !important;
 }
 
 /*::: Image :::*/
-div[class^="PrePlayArtwork-imageContainer-"]>div {
+div[class^="PrePlayArtwork-imageContainer-"] > div {
   height: 100% !important;
   width: 100% !important;
   position: fixed !important;
@@ -55,12 +54,12 @@ div[class^="PrePlayArtwork-imageContainer-"]>div {
 }
 
 /*::: Resizing adds extra divs :::*/
-div[class^="PrePlayArtwork-imageContainer-"]>div+div {
+div[class^="PrePlayArtwork-imageContainer-"] > div + div {
   display: none !important;
 }
 
 /*::: Item Thumbnail :::*/
-div[class^="PrePlayArtwork-imageContainer-"]+div {
+div[class^="PrePlayArtwork-imageContainer-"] + div {
   position: fixed !important;
   top: 180px !important;
   background-position: center !important;
@@ -68,15 +67,6 @@ div[class^="PrePlayArtwork-imageContainer-"]+div {
 
 /*::: Background Fade-in :::*/
 @-webkit-keyframes plexbgfadein {
-  from {
-    opacity: 0;
-  }
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes plexbgfadein {
   from {
     opacity: 0;
   }
@@ -93,7 +83,7 @@ div[class^="PrePlaySummary-summary-"] {
 }
 
 /*::: Make Sure Overflow Of Summary Container is always visible :::*/
-div[class^="PrePlaySummary-summary-"]>div {
+div[class^="PrePlaySummary-summary-"] > div {
   overflow: visible !important;
   max-height: none !important;
 }
@@ -121,7 +111,7 @@ div[class^="PrePlaySummary-summary-"]>div {
 /*::: make continue watching title containers a bit smaller :::*/
 div[class*="MetadataPosterCell-continueWatchingTitleContainer-"] {
   padding: 4px 5px !important;
-  background-color: rgba(0, 0, 0, 0.35);
+  background-color: rgba(0, 0, 0, 0.35) !important;
 }
 
 /*::: shorten the padding on headers on dashboard to bring inline with being closer to continue watching title container :::*/
@@ -133,8 +123,6 @@ div[class*="HubCellHeader-hubCellHeader-"] {
 .nav-bar li.active i {
   -webkit-animation: pulsate 5s ease-out;
   -webkit-animation-iteration-count: infinite;
-  animation: pulsate 5s ease-out;
-  animation-iteration-count: infinite;
   opacity: 0.1
 }
 
@@ -149,21 +137,6 @@ div[class*="HubCellHeader-hubCellHeader-"] {
   }
   100% {
     -webkit-transform: scale(1.7, 1);
-    opacity: 1.0;
-  }
-}
-
-@keyframes pulsate {
-  0% {
-    transform: scale(1.7, 1);
-    opacity: 1.0;
-  }
-  50% {
-    transform: scale(0.85, 0.85);
-    opacity: 0.3;
-  }
-  100% {
-    transform: scale(1.7, 1);
     opacity: 1.0;
   }
 }

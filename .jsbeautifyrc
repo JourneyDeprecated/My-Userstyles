@@ -29,13 +29,14 @@
       "wrap_line_length": 0 // Lines should wrap at next opportunity after this number of characters (0 disables)
     },
     "css": {
-      "brace_style": "collapse-preserve-inline",
-      "end_with_newline": false, // End output with newline
-      "indent_char": " ", // Indentation character
       "indent_size": 2, // Indentation size
+      "indent_char": " ", // Indentation character
+      "preserve_newlines": false, //whether existing line breaks should be preserved
+      "selector_separator_newline": true, // Separate selectors with newline or not (e.g. "a,\nbr" or "a, br")
+      //"selector_separator": " ",
+      "end_with_newline": false, // End output with newline
       "newline_between_rules": true, // Add a new line after every css rule
-      "selector_separator": " ",
-      "selector_separator_newline": true // Separate selectors with newline or not (e.g. "a,\nbr" or "a, br")
+      "space_around_selector_separator": true //  ensure space around selector separators: '>', '+', '~' (e.g. "a>b" -> "a > b")
     },
     "js": {
       "brace_style": "collapse-preserve-inline",
