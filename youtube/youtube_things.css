@@ -167,44 +167,87 @@ should work on more pages than YouTube's native badges. */
 @-moz-document domain("youtube.com") {
 /*::: Dark mode for Social Blade Plugin :::*/
 
-div#ChanOver {
-  background-color: #1a1a1a !important;
+#ChanOver,
+#AccountOver {
+  background-color: #1e1e1e !important;
 }
 
-#ChanOver.element.style {
-  border-bottom: #2703e6 !important;
-}
-
-#VL30D {
-  color: #bfbfbf !important;
-}
-
-#SL30D {
-  color: #bfbfbf !important;
-}
-
-#DSA {
-  color: #bfbfbf !important;
-}
-
-#DVA {
-  color: #bfbfbf !important;
-}
-
-#ST {
-  color: #bfbfbf !important;
-}
-
+#SL30D,
+#VL30D,
+#DSA,
+#DVA,
+#ST,
 #VT {
-  color: #bfbfbf !important;
+  color: #a0a0a0 !important;
 }
 
-#ERR {
-  color: #fff;
+#ChanOver > div:nth-child(1) > div > div:nth-child(1),
+#ChanOver > div:nth-child(1) > div > div:nth-child(2),
+#ChanOver > div:nth-child(3) > div > div:nth-child(1),
+#ChanOver > div:nth-child(4) > div > div:nth-child(1) {
+  border-right: 1px solid #333 !important;
+  border-bottom: 1px solid #333 !important;
 }
 
-fa.fa.fa-paperclip {
-  color: #fff;
+#ChanOver > div:nth-child(1) > div > div:nth-child(3),
+#ChanOver > div:nth-child(3) > div > div:nth-child(2),
+#ChanOver > div:nth-child(4) > div > div:nth-child(2),
+#AccountOver > div:nth-child(2),
+#AccountOver > div:nth-child(4) {
+  border-bottom: 1px solid #333 !important;
+}
+
+#ChanOver > div:nth-child(2) > div > div:nth-child(1),
+#ChanOver > div:nth-child(5) > div > div:nth-child(1) {
+  border-right: 1px solid #333 !important;
+}
+
+#vid-tags > span:nth-child(n) {
+  color: #a0a0a0 !important;
+  background-color: #292929 !important;
+}
+
+#SBL > div,
+#SBLC > div {
+  background: #1e1e1e !important;
+}
+
+#SBL > div > h3,
+#SBLC > div > h3 {
+  color: #909090 !important;
+}
+
+#SBL > div > h3:hover,
+#SBLC > div > h3:hover {
+  color: #6783ab !important;
+}
+}
+
+@-moz-document url-prefix("https://www.youtube.com/channel") {
+/*::: Dark mode for Social Blade Plugin PT 2 :::*/
+
+#ChanOver > div:nth-child(1) > div > div:nth-child(4),
+#ChanOver > div:nth-child(2) > div > div:nth-child(1),
+#ChanOver > div:nth-child(2) > div > div:nth-child(2) {
+  border-bottom: 1px solid #333 !important;
+}
+
+#ChanOver > div:nth-child(1) > div > div:nth-child(3),
+#ChanOver > div:nth-child(3) > div > div:nth-child(2),
+#ChanOver > div:nth-child(3) > div > div:nth-child(3) {
+  border-right: 1px solid #333 !important;
+}
+
+#sb-data tr:nth-child(odd) {
+  background-color: #1e1e1e !important;
+}
+
+#sb-data tr:nth-child(even) {
+  background-color: #272727 !important;
+}
+
+td {
+  border: 1px solid #333 !important;
 }
 }
 
