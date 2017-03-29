@@ -33,24 +33,29 @@ regexp("https?:\/\/.*:/*[[PORT]]*/\/.*") {
 /*::: Image Container :::*/
 div[class^="PrePlayArtwork-imageContainer-"] {
   position: fixed !important;
+  z-index: -1 !important;
   top: 0 !important;
   right: 0 !important;
   bottom: 0 !important;
   left: 0 !important;
-  z-index: -1 !important;
+
   width: 100% !important;
   height: 100% !important;
   margin: 0 !important;
+
+  -webkit-animation: plexbgfadein .6s ease-in !important;
+
   background: #1f1f1f !important;
-  -webkit-animation: plexbgfadein 0.6s ease-in !important;
 }
 
 /*::: Image :::*/
 div[class^="PrePlayArtwork-imageContainer-"] > div {
-  height: 100% !important;
-  width: 100% !important;
   position: fixed !important;
-  opacity: 0.25 !important;
+
+  width: 100% !important;
+  height: 100% !important;
+
+  opacity: .25 !important;
 }
 
 /*::: Resizing adds extra divs :::*/
@@ -62,6 +67,7 @@ div[class^="PrePlayArtwork-imageContainer-"] > div + div {
 div[class^="PrePlayArtwork-imageContainer-"] + div {
   position: fixed !important;
   top: 180px !important;
+
   background-position: center !important;
 }
 
@@ -85,6 +91,7 @@ div[class^="PrePlaySummary-summary-"] {
 /*::: Make Sure Overflow Of Summary Container is always visible :::*/
 div[class^="PrePlaySummary-summary-"] > div {
   overflow: visible !important;
+
   max-height: none !important;
 }
 
@@ -111,7 +118,8 @@ div[class^="PrePlaySummary-summary-"] > div {
 /*::: make continue watching title containers a bit smaller :::*/
 div[class*="MetadataPosterCell-continueWatchingTitleContainer-"] {
   padding: 4px 5px !important;
-  background-color: rgba(0, 0, 0, 0.35) !important;
+
+  background-color: rgba(0, 0, 0, .35) !important;
 }
 
 /*::: shorten the padding on headers on dashboard to bring inline with being closer to continue watching title container :::*/
@@ -123,20 +131,24 @@ div[class*="HubCellHeader-hubCellHeader-"] {
 .nav-bar li.active i {
   -webkit-animation: pulsate 5s ease-out;
   -webkit-animation-iteration-count: infinite;
-  opacity: 0.1
+
+  opacity: .1;
 }
 
 @-webkit-keyframes pulsate {
   0% {
     -webkit-transform: scale(1.7, 1);
+
     opacity: 1.0;
   }
   50% {
-    -webkit-transform: scale(0.85, 0.85);
-    opacity: 0.3;
+    -webkit-transform: scale(.85, .85);
+
+    opacity: .3;
   }
   100% {
     -webkit-transform: scale(1.7, 1);
+
     opacity: 1.0;
   }
 }

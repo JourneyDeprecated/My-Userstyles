@@ -10,13 +10,14 @@ div[class^="PrePlayCastList-castList-"] {
 /*::: Hover effect on CAST cards :::*/
 a[class^="PrePlayCastCell-cardLink-"],
 div[class^="TagPosterCard-card-"] {
-  transition: all 0.5s ease-out !important;
+  transition: all .5s ease-out !important;
 }
 
 a[class^="PrePlayCastCell-cardLink-"]:hover,
 a[class^="PrePlayCastCell-cardLink-"]:hover > div {
-  border-radius: 5% !important;
   transform: scale(1.05) !important;
+
+  border-radius: 5% !important;
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::: Movie Extras ::::::::::::::::::::::::::::::::::::::::::::::::*/
@@ -29,15 +30,18 @@ div[class^="PrePlayExtrasList-extrasHubCell-"] {
 /*::: Expand 'Extras' display for movies (shows as grid instead of scroller) :::*/
 [class^="PrePlayExtrasList-extrasHubCell-"] > div:nth-child(2),
 [class^="PrePlayExtrasList-extrasHubCell-"] > div:nth-child(2) > [class^="Measure-container-"] > div > div {
-  height: auto !important;
   width: auto !important;
+  height: auto !important;
 }
 
 [class^="PrePlayExtrasList-extrasHubCell-"] > div:nth-child(2) > [class^="Measure-container-"] > div > div > div {
   position: relative !important;
+
   display: inline-block !important;
-  transform: translate3d(10px, 10px, 0) !important;
+
   margin: 10px !important;
+
+  transform: translate3d(10px, 10px, 0) !important;
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::: Related Lists ::::::::::::::::::::::::::::::::::::::::::::::::*/
@@ -51,13 +55,15 @@ div[class^="PrePlayRelatedList-relatedList-"] {
 
 /*::: Posters Hover Effects :::*/ /*::: Credits to @IanCeling :::*/
 div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover {
-  transform: scale(0.97) translateY(-5px) !important;
+  transform: scale(.97) translateY(-5px) !important;
 }
 
 div[class^="MetadataPosterCard-cardContainer-"] {
   margin-top: 5px !important;
+
+  transition: transform .26s ease-out !important;
+
   box-shadow: 0 12px 20px -8px #000 !important;
-  transition: transform 0.26s ease-out !important;
 }
 
 div[class^="MetadataPosterCard-cardContainer-"]:hover {
@@ -70,16 +76,20 @@ div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="PosterCardImg-
 
 /*::: Poster Play Button :::*/ /*::: Credits to @IanCeling :::*/
 div[class^="MetadataPosterCardOverlay-playCircle-"] {
+  transition: all .5s ease-out !important;
+
   opacity: 0 !important;
-  filter: blur(10px) !important;
   box-shadow: 0 6px 10px -4px #000 !important;
-  transition: all 0.5s ease-out !important;
+
+  filter: blur(10px) !important;
 }
 
 div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="MetadataPosterCardOverlay-playCircle-"] {
-  opacity: 1 !important;
-  filter: blur(0) !important;
   zoom: 1.5 !important;
+
+  opacity: 1 !important;
+
+  filter: blur(0) !important;
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::::: Side Bar ::::::::::::::::::::::::::::::::::::::::::::::::*/
@@ -92,11 +102,13 @@ div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="MetadataPoster
 
 .sidebar-container {
   width: 65px !important;
-  transition: all 0.5s ease !important;
+
+  transition: all .5s ease !important;
 }
 
 .sidebar-container:hover {
   width: 240px !important;
+
   transition: all 1.5s ease !important;
 }
 
@@ -111,6 +123,7 @@ div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="MetadataPoster
 .sidebar-container:hover [class^="SidebarServerLibraries-librariesTitle"],
 .sidebar-container:hover [class^="SidebarList-sidebarListHeader"] {
   font-size: 12px !important;
+
   transition: all 2s ease !important;
 }
 
@@ -124,11 +137,13 @@ div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="MetadataPoster
 .sidebar-container:hover [class^="SidebarLink-children"],
 .sidebar-container:hover [class^="DisclosureArrow-disclosureArrow"] {
   display: inline-block !important;
+
   transition: all 2s ease !important;
 }
 
 .sidebar-container:hover [class^="ServerMenuButton-serverMenuTitle-"] {
   font-size: 14px !important;
+
   transition: all 3s ease !important;
 }
 
