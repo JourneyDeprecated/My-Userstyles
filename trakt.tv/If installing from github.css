@@ -16,9 +16,11 @@ place below code below /*::: VIP/AD Blocking :::*/ if you dont want ads.
   display: none !important;
 }
 
-a[href='/vip/filtering'] {
+a[href="/vip/filtering"] {
   display: block !important;
-  opacity: 1 !important;
+
   width: initial !important;
   height: initial !important;
+
+  opacity: 1 !important;
 }

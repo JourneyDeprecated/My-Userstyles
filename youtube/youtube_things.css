@@ -8,9 +8,9 @@
 /* ||                                                                                  || */
 /* ||* Created     : 01 / 03 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 03 / 25 / 2017                                                    || */
+/* ||* Updated     : 03 / 29 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 1.0.3                                                             || */
+/* ||* Version     : 1.0.4                                                             || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2016-2017                                                         || */
 /* ||                                                                                  || */
@@ -36,33 +36,34 @@
   color: #fff;
 }
 
-#P-content input[type='text'] {
-  color: #fff
+#P-content input[type="text"] {
+  color: #fff;
 }
 
 #P-content input {
   background: transparent;
 }
 
-#P-sidebar-list>li:hover {
+#P-sidebar-list > li:hover {
   background: #808080;
 }
 
 #DNT:hover {
-  background: linear-gradient(to right, #167AC6 50%, #808080) !important;
+  background: linear-gradient(to right, #167ac6 50%, #808080) !important;
 }
 
-#P-content input[type='checkbox']:checked+label:before {
+#P-content input[type="checkbox"]:checked + label:before {
   background-color: #008000;
 }
 
-#P-content input[type='checkbox']+label:before {
-  background-color: #ff0000;
+#P-content input[type="checkbox"] + label:before {
+  background-color: #f00;
 }
 
 #blacklist-edit-list,
 #impexp-list {
   font-family: Consolas, Lucida Console, monospace;
+
   background-color: #808080;
 }
 }
@@ -72,29 +73,34 @@
 
 /* Hide existing native 'watched' badges so they don't conflict with the code */
 .watched-badge {
-  display: none
+  display: none;
 }
 
 /* Add 'watched' badges with dark overlay for videos you've watched;
 should work on more pages than YouTube's native badges. */
 .resume-playback-background:before {
-  content: "";
-  position: absolute;
-  display: block;
-  top: -107px;
-  width: 196px;
-  height: 111px;
-  background: no-repeat url(data:image/png;base64,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);
-  background-color: rgba(0, 0, 0, 0.8);
-  background-size: 100% 100%;
-  text-align: center;
-  line-height: 104px;
   font-size: 3em;
   font-weight: 500;
-  color: #fff;
-  text-shadow: 0 0 5px #111;
-  transition: 0.2s;
+  line-height: 104px;
+
+  position: absolute;
+  top: -107px;
+
+  display: block;
+
+  width: 196px;
+  height: 111px;
+
+  content: "";
+  transition: .2s;
+  text-align: center;
   pointer-events: none;
+
+  color: #fff;
+  background: no-repeat url(data:image/png;base64,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);
+  background-color: rgba(0, 0, 0, .8);
+  background-size: 100% 100%;
+  text-shadow: 0 0 5px #111;
 }
 
 /* Hide red portion of progress bar */
@@ -104,9 +110,10 @@ should work on more pages than YouTube's native badges. */
 
 /* Hide grey portion of progress bar and Fix opacity on thumbnail images */
 .resume-playback-background {
-  background: rgba(0, 0, 0, 0);
+  pointer-events: none;
+
   opacity: 1;
-  pointer-events: none
+  background: rgba(0, 0, 0, 0);
 }
 
 /* Makes time in video thumbnails stand out properly. */
@@ -118,35 +125,42 @@ should work on more pages than YouTube's native badges. */
 .contains-addto:hover .resume-playback-background:before,
 .video-list-item:hover .resume-playback-background:before {
   content: "";
+  transition: .2s;
+
   background: rgba(0, 0, 0, 0);
-  transition: 0.2s;
 }
 
 /* Fixes 'watched' badges in recommended sidebars. */
 .related-list-item .resume-playback-background:before {
+  font-size: 1.8em;
+  line-height: 90px;
+
   top: -94px;
+
   width: 168px;
   height: 98px;
-  line-height: 90px;
-  font-size: 1.8em;
 }
 
 /* Fixes 'watched' badges on playlist pages. */
 .pl-video-thumb .resume-playback-background:before {
+  font-size: 1em;
+  line-height: 36px;
+
   top: -37px;
+
   width: 72px;
   height: 41px;
-  line-height: 36px;
-  font-size: 1em;
 }
 
 /* Fixes 'watched' badges on search pages. */
 .search .resume-playback-background:before {
+  font-size: 2.3em;
+  line-height: 131px;
+
   top: -134px;
+
   width: 246px;
   height: 138px;
-  line-height: 131px;
-  font-size: 2.3em;
 }
 }
 
@@ -154,35 +168,35 @@ should work on more pages than YouTube's native badges. */
 /*::: Dark mode for Social Blade Plugin :::*/
 
 div#ChanOver {
-  background-color: #1A1A1A !important;
+  background-color: #1a1a1a !important;
 }
 
 #ChanOver.element.style {
-  border-bottom: #2703E6 !important;
+  border-bottom: #2703e6 !important;
 }
 
 #VL30D {
-  color: #BFBFBF !important;
+  color: #bfbfbf !important;
 }
 
 #SL30D {
-  color: #BFBFBF !important;
+  color: #bfbfbf !important;
 }
 
 #DSA {
-  color: #BFBFBF !important;
+  color: #bfbfbf !important;
 }
 
 #DVA {
-  color: #BFBFBF !important;
+  color: #bfbfbf !important;
 }
 
 #ST {
-  color: #BFBFBF !important;
+  color: #bfbfbf !important;
 }
 
 #VT {
-  color: #BFBFBF !important;
+  color: #bfbfbf !important;
 }
 
 #ERR {
@@ -202,13 +216,14 @@ fa.fa.fa-paperclip {
 }
 
 #alientube {
-  margin-top: -0px!important;
+  margin-top: -0 !important;
 }
 
 #watch-discussion {
-  margin: 0px;
-  padding: 0px;
   display: block;
+
+  margin: 0;
+  padding: 0;
 }
 
 #comment-section-renderer {
@@ -230,9 +245,9 @@ fa.fa.fa-paperclip {
 }
 
 [class*=channel-header-profile-image-container] {
+  z-index: 99 !important;
   top: 10px !important;
   left: 25px !important;
-  z-index: 99 !important;
 }
 }
 
@@ -241,8 +256,9 @@ fa.fa.fa-paperclip {
 
 #appbar-guide-menu {
   left: -210px;
-  transition: 0.3s cubic-bezier(.77, 0, .18, 1);
-  -webkit-transition: 0.3s cubic-bezier(.77, 0, .18, 1);
+
+  -webkit-transition: .3s cubic-bezier(.77, 0, .18, 1);
+  transition: .3s cubic-bezier(.77, 0, .18, 1);
 }
 
 #appbar-guide-menu:hover {

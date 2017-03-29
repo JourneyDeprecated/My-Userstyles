@@ -8,9 +8,9 @@
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 17 / 2016                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 02 / 27 / 2017                                                    || */
+/* ||* Updated     : 03 / 29 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 2.4.8                                                             || */
+/* ||* Version     : 2.4.9                                                             || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2016-2017                                                         || */
 /* ||                                                                                  || */
@@ -21,22 +21,22 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: SETTINGS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 :root {
---bg: #2c2c33 !important;             /*  var(--bg) blue  */
---bg2: #2a2a31 !important;             /*  var(--bg2) a bit darker blue  */
---bg-dark: #1d1e22 !important;             /*  var(--bg-dark) darker blue  */
---border: #000102 !important;             /* var(--border) Black Border */
---first-color: #ffffff !important;             /* var(--first-color) white  */
---second-color: #888888 !important;             /* var(--second-color) grey  */
---third-color: #16a085 !important;             /* var(--third-color) darker Keppel  */
---fourth-color: #009edf !important;             /* var(--fourth-color) blue  */
---fifth-color: #ff0000 !important;             /* var(--fifth-color) red  */
---sixth-color: #000000 !important;             /* var(--sixth-color) black  */
---seventh-color: #8e44ad !important;             /* var(--seventh-color) purple  */
---eight-color: #6e7a83 !important;             /* var(--eight-color) light blue-grey  */
---transparent1: rgba(29, 30, 34, 0.65) !important;             /* var(--transparent1) */
---transparent2: rgba(0, 0, 0, .75) !important;             /* var(--transparent2) */
---transparent3: rgba(0, 0, 0, .5) !important;             /* var(--transparent3) */
---transparent4: rgba(0, 0, 0, .10) !important;             /* var(--transparent4) */
+  --bg: #2c2c33 !important;             /*  var(--bg) blue  */
+  --bg2: #2a2a31 !important;             /*  var(--bg2) a bit darker blue  */
+  --bg-dark: #1d1e22 !important;             /*  var(--bg-dark) darker blue  */
+  --border: #000102 !important;             /* var(--border) Black Border */
+  --first-color: #fff !important;             /* var(--first-color) white  */
+  --second-color: #888 !important;             /* var(--second-color) grey  */
+  --third-color: #16a085 !important;             /* var(--third-color) darker Keppel  */
+  --fourth-color: #009edf !important;             /* var(--fourth-color) blue  */
+  --fifth-color: #f00 !important;             /* var(--fifth-color) red  */
+  --sixth-color: #000 !important;             /* var(--sixth-color) black  */
+  --seventh-color: #8e44ad !important;             /* var(--seventh-color) purple  */
+  --eight-color: #6e7a83 !important;             /* var(--eight-color) light blue-grey  */
+  --transparent1: rgba(29, 30, 34, .65) !important;             /* var(--transparent1) */
+  --transparent2: rgba(0, 0, 0, .75) !important;             /* var(--transparent2) */
+  --transparent3: rgba(0, 0, 0, .5) !important;             /* var(--transparent3) */
+  --transparent4: rgba(0, 0, 0, .10) !important;             /* var(--transparent4) */
 }
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: THEME :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
@@ -49,8 +49,8 @@
 }
 
 .trakt-full {
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/Style/img/Trakt_TV_Header_Logo.png") no-repeat !important;
   border-bottom: none !important;
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/Style/img/Trakt_TV_Header_Logo.png") no-repeat !important;
 }
 
 /*::: HP Join Trakt.tv Buttons :::*/
@@ -126,8 +126,8 @@ your devices. :::*/
 /*::: HP Create using the API :::*/
 #api-wrapper .full-screenshot.lazy.enabled,
 #api-wrapper {
-  background-image: none !important;
   border-top: none !important;
+  background-image: none !important;
 }
 
 #api-wrapper .shade {
@@ -181,6 +181,7 @@ footer {
 #top-brand {
   width: 65px !important;
   height: 65px !important;
+
   background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/Style/img/Trakt_TV_Header_Logo.png") no-repeat !important;
 }
 
@@ -190,12 +191,14 @@ header#top-nav #top-brand .bottom-wrapper .bottom,
 }
 
 header#top-nav #top-brand .bottom-wrapper {
-  z-index: -1 !important;
   position: static !important;
+  z-index: -1 !important;
   bottom: 0 !important;
+
+  overflow: hidden !important;
+
   width: 65px !important;
   height: 1px !important;
-  overflow: hidden !important;
 }
 
 /*::: Navigation Menu User Menu :::*/
@@ -240,9 +243,10 @@ header#top-nav #header-search #header-search-type.shown .dropdown-menu {
 }
 
 header#top-nav #header-search #header-search-type a {
+  cursor: pointer !important;
+
   color: var(--first-color) !important;
   background: var(--bg) !important;
-  cursor: pointer !important;
 }
 
 header#top-nav #header-search #header-search-type a:hover {
@@ -362,16 +366,19 @@ ul.lists li.selected {
 .xdsoft_datetimepicker .xdsoft_calendar td,
 .xdsoft_datetimepicker .xdsoft_calendar th,
 .xdsoft_datetimepicker .xdsoft_timepicker .xdsoft_time_box > div > div {
+  font-size: 13px !important;
+
   color: var(--first-color) !important;
   background: var(--bg) !important;
-  font-size: 13px !important;
 }
 
 /*::: Avatars on various pages  :::*/
 .user-avatar img {
   display: block !important;
+
   width: 100% !important;
   margin-left: 5px !important;
+
   border: solid 1px var(--border) !important;
   border-radius: 0 !important;
   background-color: var(--bg-dark) !important;
@@ -400,6 +407,7 @@ ul.lists li.selected {
 
 .fanart .real {
   visibility: visible !important;
+
   border-radius: 5px !important;
 }
 
@@ -409,6 +417,7 @@ ul.lists li.selected {
 
 .poster .real {
   visibility: visible !important;
+
   border-radius: 5px !important;
 }
 
@@ -437,6 +446,7 @@ ul.lists li.selected {
 
 .quick-icons {
   margin-top: 2px !important;
+
   border-width: 0 !important;
   background-color: var(--transparent4) !important;
 }
@@ -672,6 +682,7 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 
 .comment-wrapper.wider .above-comment .interactions a {
   margin: 15px !important;
+
   color: var(--first-color) !important;
 }
 
@@ -690,19 +701,22 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 
 /*::: Date and Time :::*/
 .comment-wrapper .above-comment .date {
-  color: var(--first-color) !important;
   font-family: "Proxima Nova" !important;
+
+  color: var(--first-color) !important;
 }
 
 /*::: Add Comment :::*/
 .new-comment-focus.main {
-  color: var(--second-color) !important;
   font-size: 13px !important;
+
+  color: var(--second-color) !important;
 }
 
 .new-comment-focus.main:hover {
-  color: var(--first-color) !important;
   font-size: 13px !important;
+
+  color: var(--first-color) !important;
 }
 
 /*::: reply Box :::*/
@@ -728,11 +742,12 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 
 /*::: Spoiler Stuff :::*/
 .comment-wrapper .comment.visible pre {
+  word-wrap: normal !important;
+  word-break: normal !important;
+
   color: var(--first-color) !important;
   border: 0 !important;
   background-color: var(--bg-dark) !important;
-  word-break: normal !important;
-  word-wrap: normal !important;
 }
 
 .comment-wrapper .comment code {
@@ -748,7 +763,9 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 
 .frame-wrapper #huckster-desktop-wrapper.visible {
   display: block !important;
+
   padding: 0 !important;
+
   background: var(--bg-dark) !important;
 }
 
@@ -842,8 +859,8 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 
 /*::: Avatar :::*/
 #results-top-wrapper.user-wrapper .user-avatar img {
-  border-color: var(--bg-dark) !important;
   border-width: 0 !important;
+  border-color: var(--bg-dark) !important;
   background-color: var(--bg-dark) !important;
 }
 
@@ -892,15 +909,18 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 #boxes-wrapper .row .stat-box .shade h3,
 #boxes-wrapper .row .stat-box .shade h4,
 #boxes-wrapper .row .stat-box h2 {
-  left: 70px !important;
-  margin-right: 0 !important;
   font-family: "Proxima Nova" !important;
   font-size: 15px !important;
+
+  left: 70px !important;
+
+  margin-right: 0 !important;
 }
 
 #boxes-wrapper .row .last-comment h3 .fa {
-  margin: 0 !important;
   font-size: 30px !important;
+
+  margin: 0 !important;
 }
 
 #boxes-wrapper .row .last-comment {
@@ -944,10 +964,12 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 .seasons {
   width: 85% !important;
   margin-left: 3% !important;
+
+  text-align: center !important;
+
   border-radius: 15px !important;
   background-color: var(--bg2) !important;
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
-  text-align: center !important;
 }
 
 .season-toggle {
@@ -959,15 +981,17 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 /*::: Add List / Reorder :::*/
 #btn-list-add,
 #btn-list-edit-lists {
-  color: var(--second-color) !important;
   font-size: 13px !important;
+
+  color: var(--second-color) !important;
 }
 
 #btn-list-add:hover,
 #btn-list-edit-lists.active,
 #btn-list-edit-lists:hover {
-  color: var(--first-color) !important;
   font-size: 13px !important;
+
+  color: var(--first-color) !important;
 }
 
 #btn-list-edit-lists .icon {
@@ -1035,15 +1059,17 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 }
 
 .fa-heart-o {
-  color: var(--first-color) !important;
-  animation-duration: .5s !important;
   animation-name: fade-out !important;
+  animation-duration: .5s !important;
+
+  color: var(--first-color) !important;
 }
 
 .fa-heart-o:hover {
-  color: var(--fifth-color) !important;
-  animation-duration: .5s !important;
   animation-name: fade-in !important;
+  animation-duration: .5s !important;
+
+  color: var(--fifth-color) !important;
 }
 
 /*::: Checkin/Watched/Collection/Add to List/Comment :::*/
@@ -1152,35 +1178,39 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 
 /*::: Summary and user activity :::*/
 .summary-activity .tabs .tab {
+  transition: all 0s !important;
+
   color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
   background: var(--bg-dark) !important;
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
-  transition: all 0s !important;
 }
 
 .summary-activity .tabs .tab:hover {
+  transition: all 0s !important;
+
   color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
   background: var(--bg2) !important;
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
-  transition: all 0s !important;
 }
 
 .summary-activity .tabs .tab.selected {
+  transition: all 0s !important;
+
   color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
   background: var(--bg-dark) !important;
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
-  transition: all 0s !important;
 }
 
 .summary-activity .tabs .tab.selected:hover {
+  transition: all 0s !important;
+
   color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
   background: var(--bg2) !important;
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
-  transition: all 0s !important;
 }
 
 .summary-activity .tab-content .tab-pane .users-wrapper {
@@ -1195,8 +1225,8 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 }
 
 #info-wrapper .info #actors .posters ul:hover li .titles .name {
-  color: var(--first-color) !important;
   opacity: 100% !important;
+  color: var(--first-color) !important;
 }
 
 .tooltip-inner {
