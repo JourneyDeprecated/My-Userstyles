@@ -12,7 +12,7 @@ regexp("https?:\/\/.*:/*[[PORT]]*/\/.*") {
 /* ||                                                                                  || */
 /* ||* Updated     : 03 / 29 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 0.0.8                                                             || */
+/* ||* Version     : 0.0.9                                                             || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2017                                                              || */
 /* ||                                                                                  || */
@@ -43,7 +43,7 @@ div[class^="PrePlayArtwork-imageContainer-"] {
   height: 100% !important;
   margin: 0 !important;
 
-  -webkit-animation: plexbgfadein .6s ease-in !important;
+  -webkit-animation: plexbgfadein .6s ease-in;
 
   background: #1f1f1f !important;
 }
@@ -119,7 +119,7 @@ div[class^="PrePlaySummary-summary-"] > div {
 div[class*="MetadataPosterCell-continueWatchingTitleContainer-"] {
   padding: 4px 5px !important;
 
-  background-color: rgba(0, 0, 0, .35) !important;
+  background-color: rgba(0, 0, 0, .35);
 }
 
 /*::: shorten the padding on headers on dashboard to bring inline with being closer to continue watching title container :::*/
