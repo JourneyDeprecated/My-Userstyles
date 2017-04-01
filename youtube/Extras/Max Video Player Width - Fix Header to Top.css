@@ -6,12 +6,12 @@
 .watch-stage-mode .player-width,
 .watch-stage-mode #player {
   left: 0 !important;
-
-  width: 100% !important;
-  width: calc(99vw - 12px) !important;
   /* Compensating for the right scrollbar */
+
   margin-top: -8px !important;
   margin-left: 5px !important;
+  width: 100% !important;
+  width: calc(99vw - 12px) !important;
 }
 
 .watch-stage-mode #placeholder-player .player-width {

@@ -55,30 +55,38 @@
 
 /*::: HP Join Trakt.tv Buttons :::*/
 #watching-wrapper .btn-primary {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 #watching-wrapper .btn-primary:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 body.main.home header#top-nav.scrolled .btn-primary {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 body.main.home header#top-nav.scrolled .btn-primary:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -89,16 +97,20 @@ from your media center. :::*/
 }
 
 #scrobblers-wrapper .btn-primary {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 #scrobblers-wrapper .btn-primary:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -110,16 +122,20 @@ from your media center. :::*/
 /*::: HP Apps for all
 your devices. :::*/
 #apps-wrapper .btn-primary {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 #apps-wrapper .btn-primary:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -127,6 +143,7 @@ your devices. :::*/
 #api-wrapper .full-screenshot.lazy.enabled,
 #api-wrapper {
   border-top: none !important;
+
   background-image: none !important;
 }
 
@@ -135,16 +152,20 @@ your devices. :::*/
 }
 
 #api-wrapper .btn-primary {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 #api-wrapper .btn-primary:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -191,11 +212,11 @@ header#top-nav #top-brand .bottom-wrapper .bottom,
 }
 
 header#top-nav #top-brand .bottom-wrapper {
-  position: static !important;
-  z-index: -1 !important;
-  bottom: 0 !important;
-
   overflow: hidden !important;
+
+  position: static !important;
+  bottom: 0 !important;
+  z-index: -1 !important;
 
   width: 65px !important;
   height: 1px !important;
@@ -209,17 +230,21 @@ header#top-nav #top-brand .bottom-wrapper {
 /*::: Header Search :::*/
 #header-search,
 header#top-nav #header-search #header-search-button.btn-primary {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 #header-search:hover,
 header#top-nav #header-search #header-search-button.btn-primary:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -229,8 +254,9 @@ header#top-nav #header-search #header-search-query.open {
 }
 
 header#top-nav #header-search #header-search-type.shown .dropdown-toggle {
-  color: var(--first-color) !important;
   border-left: transparent !important;
+
+  color: var(--first-color) !important;
   background: transparent !important;
 }
 
@@ -243,10 +269,10 @@ header#top-nav #header-search #header-search-type.shown .dropdown-menu {
 }
 
 header#top-nav #header-search #header-search-type a {
-  cursor: pointer !important;
-
   color: var(--first-color) !important;
   background: var(--bg) !important;
+
+  cursor: pointer !important;
 }
 
 header#top-nav #header-search #header-search-type a:hover {
@@ -256,15 +282,17 @@ header#top-nav #header-search #header-search-type a:hover {
 
 /*::: Alert :::*/
 .alert {
-  color: var(--first-color) !important;
   border: 1px solid var(--sixth-color) !important;
+
+  color: var(--first-color) !important;
   background-color: transparent !important;
 }
 
 /*::: Toast :::*/
 #toast-container.toast-top-full-width .toast.toast-success {
-  color: var(--first-color) !important;
   border: 1px solid var(--sixth-color) !important;
+
+  color: var(--first-color) !important;
   background-color: transparent !important;
 }
 
@@ -280,6 +308,7 @@ header#top-nav #header-search #header-search-type a:hover {
 
 .popover-title {
   border-bottom: 1px solid var(--bg2) !important;
+
   background-color: var(--bg-dark) !important;
 }
 
@@ -293,17 +322,21 @@ ul.lists li.selected {
 
 .popover.remove .popover-content > button,
 .popover.remove .popover-content > button.btn-cancel {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .popover.remove .popover-content > button.btn-cancel:hover,
 .popover.remove .popover-content > button:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -317,16 +350,20 @@ ul.lists li.selected {
 }
 
 .popover .metadata-wrapper button {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .popover .metadata-wrapper button:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -342,11 +379,12 @@ ul.lists li.selected {
 
 .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline {
   border-top: 1px solid var(--bg2) !important;
+
   background-color: var(--bg) !important;
 }
 
 .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline button {
-  opacity: 100 !important;
+  opacity: 1 !important;
 }
 
 .popover .data-wrapper .xdsoft_datetimepicker.xdsoft_inline .xdsoft_month,
@@ -376,11 +414,11 @@ ul.lists li.selected {
 .user-avatar img {
   display: block !important;
 
-  width: 100% !important;
   margin-left: 5px !important;
-
   border: solid 1px var(--border) !important;
   border-radius: 0 !important;
+  width: 100% !important;
+
   background-color: var(--bg-dark) !important;
 }
 
@@ -446,8 +484,8 @@ ul.lists li.selected {
 
 .quick-icons {
   margin-top: 2px !important;
-
   border-width: 0 !important;
+
   background-color: var(--transparent4) !important;
 }
 
@@ -525,78 +563,98 @@ ul.lists li.selected {
 
 /*::: Twitter Button :::*/
 .btn-twitter {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-twitter:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Facebook Button :::*/
 .btn-facebook {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-facebook:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Google+ Button :::*/
 .btn-google-plus,
 .btn-gplus {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-google-plus:hover,
 .btn-gplus:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Tumblr Button :::*/
 .btn-tumblr {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-tumblr:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Medium Button :::*/
 .btn-medium {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-medium:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -612,6 +670,7 @@ ul.lists li.selected {
 #cover-wrapper #avatar-wrapper .avatar {
   border: 0 !important;
   border-radius: 1% !important;
+
   background-color: transparent !important;
 }
 
@@ -629,16 +688,20 @@ ul.lists li.selected {
 Recently Watched/Recently Collected/Personal Lists,
 Rank/Comments/Recently Added dropdowns/Friends :::*/
 .btn-default {
-  color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--first-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .dropdown .btn-default {
-  color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--first-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -647,9 +710,11 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 .btn-default:focus,
 .dropdown .btn-default:hover,
 .open > .btn-default.dropdown-toggle {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -672,6 +737,7 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 
 .comment-wrapper {
   border-width: 0 !important;
+
   background-color: transparent !important;
 }
 
@@ -722,31 +788,37 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 /*::: reply Box :::*/
 .new-reply-wrapper .reply-field textarea {
   border: solid 1px var(--border) !important;
+
   background-color: var(--bg) !important;
 }
 
 .new-reply-wrapper .buttons .comment-submit {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .new-reply-wrapper .buttons .comment-submit:active,
 .new-reply-wrapper .buttons .comment-submit:hover {
-  color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--first-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Spoiler Stuff :::*/
 .comment-wrapper .comment.visible pre {
+  border: 0 !important;
+
   word-wrap: normal !important;
   word-break: normal !important;
 
   color: var(--first-color) !important;
-  border: 0 !important;
   background-color: var(--bg-dark) !important;
 }
 
@@ -787,40 +859,47 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 /*::: Login form :::*/
 #auth-form-wrapper,
 .checkin-modal {
-  color: var(--second-color) !important;
   border-radius: 1px !important;
+
+  color: var(--second-color) !important;
   background-color: var(--bg-dark) !important;
 }
 
 /*::: Text area :::*/
 .form-control {
-  color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--first-color) !important;
   background-color: var(--bg-dark) !important;
 }
 
 /*::: Sign-in Button :::*/
 #auth-form-wrapper .btn-primary,
 .checkin-modal .btn-primary {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 #auth-form-wrapper .btn-primary:hover,
 .checkin-modal .btn-primary:hover {
-  color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--first-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Bottom Section of login form :::*/
 #auth-form-wrapper .bottom-wrapper,
 .checkin-modal .bottom-wrapper {
-  color: var(--second-color) !important;
   border-top: solid 1px var(--bg2) !important;
+
+  color: var(--second-color) !important;
   background-color: var(--bg-dark) !important;
 }
 
@@ -830,23 +909,29 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 }
 
 .btn-group.in-wrapper .btn {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-group.in-wrapper .btn:hover {
-  color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--first-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-group.in-wrapper .btn-primary {
-  color: var(--fifth-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--fifth-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -861,6 +946,7 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 #results-top-wrapper.user-wrapper .user-avatar img {
   border-width: 0 !important;
   border-color: var(--bg-dark) !important;
+
   background-color: var(--bg-dark) !important;
 }
 
@@ -909,18 +995,18 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 #boxes-wrapper .row .stat-box .shade h3,
 #boxes-wrapper .row .stat-box .shade h4,
 #boxes-wrapper .row .stat-box h2 {
-  font-family: "Proxima Nova" !important;
-  font-size: 15px !important;
-
   left: 70px !important;
 
   margin-right: 0 !important;
+
+  font-family: "Proxima Nova" !important;
+  font-size: 15px !important;
 }
 
 #boxes-wrapper .row .last-comment h3 .fa {
-  font-size: 30px !important;
-
   margin: 0 !important;
+
+  font-size: 30px !important;
 }
 
 #boxes-wrapper .row .last-comment {
@@ -962,13 +1048,14 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 
 /*::: Season Bar :::*/
 .seasons {
-  width: 85% !important;
   margin-left: 3% !important;
+  border-radius: 15px !important;
+  width: 85% !important;
 
   text-align: center !important;
 
-  border-radius: 15px !important;
   background-color: var(--bg2) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -1059,17 +1146,17 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 }
 
 .fa-heart-o {
+  color: var(--first-color) !important;
+
   animation-name: fade-out !important;
   animation-duration: .5s !important;
-
-  color: var(--first-color) !important;
 }
 
 .fa-heart-o:hover {
+  color: var(--fifth-color) !important;
+
   animation-name: fade-in !important;
   animation-duration: .5s !important;
-
-  color: var(--fifth-color) !important;
 }
 
 /*::: Checkin/Watched/Collection/Add to List/Comment :::*/
@@ -1117,16 +1204,20 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 
 /*::: Sidebar Watch Now :::*/
 .btn-watch-now {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .btn-watch-now:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -1144,16 +1235,20 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 }
 
 .sidebar .external li a {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .sidebar .external li a:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -1163,59 +1258,72 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 }
 
 .affiliate-links .section a {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .affiliate-links .section a:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 /*::: Summary and user activity :::*/
 .summary-activity .tabs .tab {
-  transition: all 0s !important;
+  border: 1px solid var(--border) !important;
 
   color: var(--first-color) !important;
-  border: 1px solid var(--border) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+
+  transition: all 0s !important;
 }
 
 .summary-activity .tabs .tab:hover {
-  transition: all 0s !important;
+  border: 1px solid var(--border) !important;
 
   color: var(--second-color) !important;
-  border: 1px solid var(--border) !important;
   background: var(--bg2) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+
+  transition: all 0s !important;
 }
 
 .summary-activity .tabs .tab.selected {
-  transition: all 0s !important;
+  border: 1px solid var(--border) !important;
 
   color: var(--first-color) !important;
-  border: 1px solid var(--border) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+
+  transition: all 0s !important;
 }
 
 .summary-activity .tabs .tab.selected:hover {
-  transition: all 0s !important;
+  border: 1px solid var(--border) !important;
 
   color: var(--second-color) !important;
-  border: 1px solid var(--border) !important;
   background: var(--bg2) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
+
+  transition: all 0s !important;
 }
 
 .summary-activity .tab-content .tab-pane .users-wrapper {
-  color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--first-color) !important;
   background: var(--bg2) !important;
 }
 
@@ -1225,13 +1333,15 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 }
 
 #info-wrapper .info #actors .posters ul:hover li .titles .name {
-  opacity: 100% !important;
   color: var(--first-color) !important;
+
+  opacity: 100% !important;
 }
 
 .tooltip-inner {
-  color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--first-color) !important;
   background-color: var(--bg) !important;
 }
 
@@ -1247,9 +1357,10 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 }
 
 .season-links {
-  color: var(--second-color) !important;
   border-top: 1px solid var(--border) !important;
   border-bottom: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
 }
 
 .season-links .links ul li a {
@@ -1267,7 +1378,9 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 /*::: Episode Info :::*/
 .under-info .titles {
   border: 1px solid var(--border) !important;
+
   background-color: var(--bg2) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -1312,53 +1425,66 @@ body.list_comments #info-wrapper .above-comment-bg {
 /*::: General :::*/
 .panel-default {
   border-color: var(--border) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 .panel-heading {
-  color: var(--first-color) !important;
   border-color: var(--border) !important;
+
+  color: var(--first-color) !important;
   background-color: var(--bg-dark) !important;
 }
 
 .panel-body {
-  color: var(--first-color) !important;
   border-color: var(--border) !important;
+
+  color: var(--first-color) !important;
   background-color: var(--bg-dark) !important;
 }
 
 .input-group .form-control:first-child {
-  color: var(--first-color) !important;
   border-color: var(--border) !important;
+
+  color: var(--first-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 #avatar-file-upload {
-  color: var(--first-color) !important;
   border-color: var(--border) !important;
+
+  color: var(--first-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 #avatar-file-upload:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 body.settings .buttons .btn {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 body.settings .buttons .btn:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -1368,9 +1494,11 @@ body.settings .notifications-table .table tbody > tr > td {
 }
 
 body.settings .notifications-table .table tbody > tr:hover {
-  color: var(--second-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--second-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
@@ -1380,30 +1508,36 @@ h3.instructions {
 
 /*::: Hidden Items :::*/
 body.settings .subnav-wrapper {
-  color: var(--first-color) !important;
   border-bottom: solid 1px var(--border) !important;
+
+  color: var(--first-color) !important;
 }
 
 /*::: Connected Apps :::*/
 body.authorized_applications .subnav-wrapper {
-  color: var(--first-color) !important;
   border-bottom: solid 1px var(--border) !important;
+
+  color: var(--first-color) !important;
 }
 
 /*::: Your API Apps :::*/
 #authorized-applications .btn-primary,
 #authorized-applications .btn-success {
-  color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--first-color) !important;
   background: var(--bg-dark) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 
 #authorized-applications .btn-primary:hover,
 #authorized-applications .btn-success:hover {
-  color: var(--first-color) !important;
   border: 1px solid var(--border) !important;
+
+  color: var(--first-color) !important;
   background: var(--transparent3) !important;
+
   box-shadow: 1px 1px 5px 1px var(--transparent2) !important;
 }
 

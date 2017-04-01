@@ -23,7 +23,7 @@ regexp("https?:\/\/.*:/*[[PORT]]*/\/.*") {
 url-prefix("http://app.plex.tv/"),
 regexp("https?:\/\/.*:/*[[PORT]]*/\/.*") {
 
-/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::: Pre 3.0.0 Fixes :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Make main background come back to pre-3.0.0 color :::*/
 .background-container [data-reactroot] div > div[style] {
@@ -33,19 +33,19 @@ regexp("https?:\/\/.*:/*[[PORT]]*/\/.*") {
 /*::: Image Container :::*/
 div[class^="PrePlayArtwork-imageContainer-"] {
   position: fixed !important;
-  z-index: -1 !important;
   top: 0 !important;
   right: 0 !important;
   bottom: 0 !important;
   left: 0 !important;
+  z-index: -1 !important;
 
+  margin: 0 !important;
   width: 100% !important;
   height: 100% !important;
-  margin: 0 !important;
-
-  -webkit-animation: plexbgfadein .6s ease-in;
 
   background: #1f1f1f !important;
+
+  -webkit-animation: plexbgfadein .6s ease-in;
 }
 
 /*::: Image :::*/
@@ -81,7 +81,7 @@ div[class^="PrePlayArtwork-imageContainer-"] + div {
   }
 }
 
-/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: NEW ADDITIONS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::: NEW ADDITIONS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Max Width Of Summary Container :::*/
 div[class^="PrePlaySummary-summary-"] {
@@ -100,7 +100,7 @@ div[class^="PrePlaySummary-summary-"] > div {
   display: none !important;
 }
 
-/*::: Hide The Go Premium  Button :::*/
+/*::: Hide The Go Premium Button :::*/
 .plex-pass-label {
   display: none !important;
 }
@@ -129,27 +129,27 @@ div[class*="HubCellHeader-hubCellHeader-"] {
 
 /*::: Pulsate Status :::*/ /*::: Credits to @IanCeling :::*/
 .nav-bar li.active i {
+  opacity: .1;
+
   -webkit-animation: pulsate 5s ease-out;
   -webkit-animation-iteration-count: infinite;
-
-  opacity: .1;
 }
 
 @-webkit-keyframes pulsate {
   0% {
-    -webkit-transform: scale(1.7, 1);
-
     opacity: 1.0;
+
+    -webkit-transform: scale(1.7, 1);
   }
   50% {
-    -webkit-transform: scale(.85, .85);
-
     opacity: .3;
+
+    -webkit-transform: scale(.85, .85);
   }
   100% {
-    -webkit-transform: scale(1.7, 1);
-
     opacity: 1.0;
+
+    -webkit-transform: scale(1.7, 1);
   }
 }
 }
