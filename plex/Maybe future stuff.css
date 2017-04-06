@@ -10,12 +10,33 @@
 
 /*::: Make the navbar transparent :::*/
 .nav-bar {
-  background: transparent !important;
+  border-bottom: 1px solid #000;
 
-  box-shadow: 0 0 0 3px rgba(0, 0, 0, .1) !important;
+  background: transparent !important;
 }
 
+/*::: Make the page header transparent :::*/
+[class^="PrePlayPageHeader-altPageHeader-"],
+[class*="PageHeader-pageHeader-"] {
+  border-bottom: 1px solid #000;
+
+  background: transparent !important;
+}
+
+/*::: Make the sidebar and server menu button transparent :::*/
+[class^="Sidebar-sidebar-"] {
+  border-right: 1px solid #000;
+
+  background-color: rgba(0,0,0,.04);
+}
+
+[class^="ServerMenuButton-serverMenuButton-"],
+[class^="ServerMenuButton-serverMenuButton-"]:hover {
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+
+  background: transparent !important;
+}
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: projects I'm working on now :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-None
