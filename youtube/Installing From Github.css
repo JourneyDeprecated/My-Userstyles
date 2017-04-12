@@ -270,7 +270,7 @@ td {
 
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: STRETCH VIDEO TO FILL PLAYER :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-@-moz-document domain("youtube.com") {
+@-moz-document regexp("https:\/\/www.youtube.com\/watch.*") {
 /*::: STRETCH VIDEO TO FILL PLAYER :::*/
 
 video {

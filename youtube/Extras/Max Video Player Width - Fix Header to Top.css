@@ -1,6 +1,6 @@
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Max Video Player Width: Fix Header to Top :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
-@-moz-document domain("youtube.com") {
+@-moz-document regexp("https:\/\/www.youtube.com\/watch.*") {
 /*::: Max Video Player Width: Fix Header To Top :::*/
 
 .watch-stage-mode .player-width,
