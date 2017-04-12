@@ -1335,7 +1335,7 @@ MOST WATCHED MOVIE/FEATURED LIST/FAVORITE GENRES :::*/
 #info-wrapper .info #actors .posters ul:hover li .titles .name {
   color: var(--first-color) !important;
 
-  opacity: 100% !important;
+  opacity: 1 !important;
 }
 
 .tooltip-inner {

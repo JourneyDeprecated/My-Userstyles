@@ -9,7 +9,7 @@ Place below code under /*::: Profile Header :::*/ if you want a custom header ch
   display: none !important;
 }
 
-place below code below /*::: VIP/AD Blocking :::*/ if you dont want ads.
+place below code below /*::: VIP/AD Blocking :::*/ if you dont want ads
 
 [class*=huckster],
 [id*=huckster] {
