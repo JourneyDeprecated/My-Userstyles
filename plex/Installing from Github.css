@@ -54,10 +54,6 @@ div[class^="PrePlayRelatedList-relatedList-"] {
 /*:::::::::::::::::::::::::::::::::::::::::::::::: Posters ::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Posters Hover Effects :::*/ /*::: Credits to @IanCeling :::*/
-div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover {
-  transform: scale(.97) translateY(-5px);
-}
-
 div[class^="MetadataPosterCard-cardContainer-"] {
   margin-top: 5px;
 
@@ -68,6 +64,10 @@ div[class^="MetadataPosterCard-cardContainer-"] {
 
 div[class^="MetadataPosterCard-cardContainer-"]:hover {
   transform: scale(1.05) translateY(-5px);
+}
+
+div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover {
+  transform: scale(.97) translateY(-5px);
 }
 
 div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="PosterCardImg-imageContainer-"] {

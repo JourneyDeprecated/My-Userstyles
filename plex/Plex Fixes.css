@@ -10,7 +10,7 @@ regexp("https?:\/\/.*:/*[[PORT]]*/\/.*") {
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 10 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 04 / 04 / 2017                                                    || */
+/* ||* Updated     : 04 / 12 / 2017                                                    || */
 /* ||                                                                                  || */
 /* ||* Version     : 0.0.10                                                            || */
 /* ||                                                                                  || */
@@ -107,7 +107,7 @@ div[class^="PrePlaySummary-summary-"] > div {
 
 /*::: Move dashboard down slightly :::*/
 [class^="DashboardPage-dashboardPageContent-"] {
-  padding: 10px 55px 60px;
+  padding: 15px 55px 60px !important;
 }
 
 /*[[CastL]]*/
