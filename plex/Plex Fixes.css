@@ -10,9 +10,9 @@ regexp("https?:\/\/.*:/*[[PORT]]*/\/.*") {
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 10 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 04 / 12 / 2017                                                    || */
+/* ||* Updated     : 04 / 13 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 0.0.10                                                            || */
+/* ||* Version     : 0.0.11                                                            || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2017                                                              || */
 /* ||                                                                                  || */
@@ -54,6 +54,9 @@ div[class^="PrePlayArtwork-imageContainer-"] > div {
 
   width: 100% !important;
   height: 100% !important;
+
+  background-repeat: no-repeat !important;
+  background-size: 100% 100% !important;
 
   opacity: .25 !important;
 }
