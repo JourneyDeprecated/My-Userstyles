@@ -66,7 +66,8 @@ div[class^="MetadataPosterCard-cardContainer-"]:hover {
   transform: scale(1.05) translateY(-5px);
 }
 
-div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover {
+div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover,
+div[data-qa-id="hub--home.videos.recent"] div[class^="MetadataPosterCard-cardContainer-"]:hover {
   transform: scale(.97) translateY(-5px);
 }
 
