@@ -360,3 +360,14 @@ html .ytp-storyboard-lens-timestamp-wrapper .ytp-storyboard-lens-timestamp {
   padding-bottom: 0;
 }
 }
+
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Hide Get Youtube Red/TV In Sidebar :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+@-moz-document domain("youtube.com") {
+/*::: Hide Get Youtube Red/TV In Sidebar :::*/
+
+#-guide-item > .spf-nolink.yt-valign.yt-uix-sessionlink.guide-item,
+[id*=unlimited-guide-item] {
+  display: none;
+}
+}
