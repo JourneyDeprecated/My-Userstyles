@@ -19,13 +19,16 @@
 
 ### Changes
 `+` (Hate doing this but) added !important to everything in style sheet as to fix a couple style issues that sometimes pop up.
+
 `+` Tidy CSS a little bit.
 
 ## v0.0.7 ... (27 MARCH 17)
 
 ### Additions
 `+` Hide Cast List Option
+
 `+` Hide Extras Option
+
 `+` Hide Related Option
 
 ### Changes
@@ -38,13 +41,16 @@
 
 ### Changes
 `+` Move a couple css selections around
+
 `+` Make the sidebar transitions a bit smoother
 
 ## v0.0.5 ... (24 MARCH 17)
 
 ### Additions
 `+` Hide the "Go Premium" button
+
 `+` Expand 'Extras' display for movies [shows as grid instead of scroller]
+
 `+` Minimize the sidebar to save screen space [Expands back out on hovering over the sidebar]
 
 ### Changes
@@ -54,15 +60,22 @@
 
 ### Additions
 `+` Bring back the dark background scheme for the discover page. (does not interfere with background artwork fix)
+
 `+` Add several new additions //Credits to @IanCeling --
+
 `+` High-Contrast hover effect on media cards
+
 `+` Smooth scale transform animations
+
 `+` Box-Shadows on media cards
+
 `+` Pulsing status glyph
+
 `+` Larger Play buttons
 
 ### Changes
 `+` Rename userstyle from "PLEX BACKGROUND ARTWORK FIX" to "Plex Fixes" as this is going to be turning into a more AIO to bring things back inline with how some stuff was before the release of plex web 3.0.0
+
 `+` Clean up a few CSS selections
 
 ### Fixes

@@ -20,6 +20,7 @@
 
 ### Fixes
 `+` Fix a issue with app page
+
 `+` Fix Add To Collection Metadata Colors.
 
 ## v2.4.5 ... (09 FEBRUARY 17)
@@ -31,7 +32,9 @@
 
 ### Fixes
 `+` Make everything !important since the devs likes to always mess things up...
+
 `+` Fix some more shading stuff
+
 `+` Fix a VIP/Private overlap that is by default a problem by the devs...
 
 ## v2.4.3 ... (28 JANUARY 17)
@@ -46,7 +49,9 @@
 
 ### Fixes
 `+` Fix up issue with trailer / (before & end) credits button
+
 `+` Fix up new watch now button
+
 `+` Fix sidebar navigate hover
 
 ## v2.4.1 ... (21 NOVEMBER 16)
@@ -71,6 +76,7 @@
 
 ### Notes
 `*` Looking for a way to unblock trailers/opening(closing) credits while blocking the buy buttons on show/movie pages [ currently all blocked because the way the classes are set up, if someone could help me out here it would be great. ]
+
 `*` Looking into a way to make it so you can either have the default headers for profile pages or a custom one.
 
 ### Additions
@@ -90,6 +96,7 @@
 
 ### Changes
 `+` Add new Ads to blocker list
+
 `+` Changed a lot of things around in the CSS
 
 ## v2.2 ... (26 JULY 16)

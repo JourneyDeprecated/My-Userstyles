@@ -1,4 +1,4 @@
-# Quick fixes and colorizations for youtube Changelog
+# Quick fixes and colorization's for YouTube Changelog
 
 ## v1.0.7 ... (26 APRIL 17)
 
@@ -14,6 +14,7 @@
 
 ### Additions
 `+` Add real theater mode
+
 `+` Add stretch video to fill player
 
 ### Changes
@@ -44,6 +45,7 @@
 
 ### Additions
 `+` Add Max channel width option
+
 `+` Add Hide Left Navigation option
 
 ## v1.0 ... (03 JANUARY 17)
