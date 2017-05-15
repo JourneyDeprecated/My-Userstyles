@@ -1,0 +1,269 @@
+@-moz-document regexp("https?://userstyles.org/.*") {
+
+/* ++----------------------------------------------------------------------------------++ */
+/* ||                                                                                  || */
+/* ||* Name        : Userstyles Dark                                                   || */
+/* ||                                                                                  || */
+/* ||* Author      : JourneyOver                                                       || */
+/* ||                                                                                  || */
+/* ||* Created     : 05 / 10 / 2017                                                    || */
+/* ||                                                                                  || */
+/* ||* Updated     : 05 / 10 / 2017                                                    || */
+/* ||                                                                                  || */
+/* ||* Version     : 0.0.1                                                             || */
+/* ||                                                                                  || */
+/* ||* Copyright   : 2017                                                              || */
+/* ||                                                                                  || */
+/* ++----------------------------------------------------------------------------------++ */
+}
+
+
+@-moz-document regexp("https?://userstyles.org/.*") {
+
+/*::: backgrounds :::*/
+/*:: body/header/footer/nav view ::*/
+body,
+#footer,
+#nav-view {
+  background: #202020;
+}
+
+#header,
+.style_card {
+  margin: 0 12px 12px 0 !important;
+  border-radius: 0!important;
+
+  background: #3a3a3a !important;
+
+  -webkit-box-shadow: 0 0 8px 0 rgba(0,0,0,.75)!important;
+  -moz-box-shadow: 0 0 8px 0 rgba(0,0,0,.75)!important;
+  box-shadow: 0 0 8px 0 rgba(0,0,0,.75)!important;
+}
+
+#navigation {
+  margin-top: -10px !important;
+  border: 1px solid #111!important;
+  padding: 10px 20px 100px !important;
+
+  background: #3a3a3a !important;
+
+  box-shadow: none!important;
+}
+
+/*::: Notes from latest update :::*/
+#notes_textarea {
+  border: 1px solid #111!important;
+  border-radius: 5px 0 0 5px!important;
+  padding: 20px !important;
+
+  background: #212121 !important;
+
+  box-shadow: none!important;
+}
+
+/*::: Styles IMG Previews :::*/
+.screenshot_img {
+  border-radius: 0;
+  width: auto;
+  max-width: 220px;
+  height: auto;
+  max-height: 128px;
+}
+
+.screenshot_wrapper > a > div {
+  display: flex;
+
+  width: 220px;
+  height: 128px;
+
+  align-items: center;
+  justify-content: center;
+}
+
+#preview_image_div {
+  max-width: 742px!important;
+
+  background-repeat: no-repeat!important;
+  background-position: center top!important;
+  background-size: contain!important;
+
+  transition: all .2s ease-in-out;
+
+  cursor: zoom-in;
+}
+
+#preview_image_div:active {
+  height: 650px;
+
+  transform: scale(1.0);
+
+  cursor: zoom-out;
+}
+
+/*::: Input :::*/
+.option-user-url,
+.text_setting_input,
+#search_input,
+#search_input input{
+  color: #ddd!important;
+  background-color: #333!important;
+}
+
+/*::: text & links color :::*/
+*:not(#headline):not(input):not(textarea):not(.btn-auth):not(mark):not(.bold):not(a):not(pre):not(.cm-builtin):not(.cm-property):not(.cm-number):not(.cm-atom):not(.cm-keyword):not(.cm-string):not(.cm-variable-3):not(.cm-tag):not(.cm-def):not(.cm-comment):not(.CodeMirror-linenumber):not(.cm-qualifier) {
+  color: #ddd!important;
+}
+body a {
+  color: #3498db!important;
+}
+body a:hover,
+body span.bold:hover {
+  color: #649bef!important;
+}
+#headline {
+  color: #3498db!important;
+}
+body .CodeMirror-code pre > span,
+.cm-property,
+.btn-auth {
+  color: #000!important;
+}
+.btn-google,
+.upload_image_label {
+  color: #fff!important;
+}
+
+ul {
+  list-style-type: square!important;
+}
+
+/*::: content center :::*/
+#nav-view {
+  width: 75%!important;
+}
+
+#view {
+  margin: 0 auto !important;
+}
+#container {
+  display: flex!important;
+}
+/*::: navigation :::*/
+.navigation_link_active {
+  border: none!important;
+}
+
+.navigation_link:hover {
+  background-color: #444!important;
+}
+
+.linksBox .navigation_link:last-child {
+  box-shadow: 0 1px 0 0 #333, 0 0 0 0 #333!important;
+}
+
+[src="/ui/images/icons/newest.svg"],
+[src="/ui/images/icons/popular.svg"],
+[src="/ui/images/icons/home-icon.svg"],
+[src="/ui/images/icons/site-icon.svg"],
+[src="/ui/images/icons/app-icon.svg"],
+[src="/ui/images/icons/global-icon.svg"],
+[src="/ui/images/icons/graveyard.svg"] {
+  -webkit-filter: grayscale(100%) brightness(250%);
+  filter: grayscale(100%) brightness(250%);
+}
+
+/***Advanced Style Settings***/
+[style^="whitespace: pre"] {
+  margin: -350px 0 0;
+  height: 60px;
+}
+
+[style^="height:2em"] {
+  border: 1px solid #5c5b5b;
+
+  background-color: #202020;
+}
+
+.advanced_button {
+  display: none!important;
+}
+
+#style-settings:before {
+  font-size: 16px;
+  font-weight: bold;
+
+  color: #3498db;
+
+  content: "Style Settings";
+}
+
+#style-settings {
+  position: absolute!important;
+
+  margin: 70px 0 0 770px !important;
+  width: 340px!important;
+  height: 630px;
+}
+
+.advancedsettings_hidden {
+  display: block !important;
+
+  padding: 10px 0 0 !important;
+}
+
+.advancedsettings_shown {
+  display: flex !important;
+
+  padding: 10px 0 0 !important;
+  height: 599px;
+
+  background-color: #202020 !important;
+}
+
+.text_setting_input {
+  margin-bottom: 0 !important;
+  height: 22px!important;
+}
+
+.setting_div:last-of-type {
+  padding-bottom: 350px !important;
+}
+
+.edit-setting {
+  background: transparent!important;
+}
+
+#style-settings select {
+  border: none!important;
+
+  background: #5c5b5b!important;
+}
+
+:focus {
+  outline: -webkit-focus-ring-color auto 0!important;
+}
+
+/*::: Footer :::*/
+#footer {
+  border: 1px solid #111!important;
+
+  background: #3a3a3a !important;
+
+  box-shadow: none!important;
+}
+
+#rightFooter > div > a > img {
+  display: none;
+}
+
+#rightFooter > div > a {
+  width: 111px !important;
+  height: 34.03px !important;
+
+  content: url("https://userstyles.org/ui/images/stylish-logo-2.svg") !important;
+}
+
+#copyrights {
+  color: #808080;
+}
+}
