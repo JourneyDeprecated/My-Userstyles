@@ -1,5 +1,10 @@
 # Dark Trakt.TV Changelog
 
+## v2.4.10 ... (15 MAY 17)
+
+### Fixes
+`+` Fixed Logo picture links so they actually work again instead of pointing to dead picture links.
+
 ## v2.4.9 ... (29 MARCH 17)
 
 ### Notes

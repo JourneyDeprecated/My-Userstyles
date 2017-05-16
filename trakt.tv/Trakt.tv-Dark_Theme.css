@@ -8,9 +8,9 @@
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 17 / 2016                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 03 / 29 / 2017                                                    || */
+/* ||* Updated     : 05 / 15 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 2.4.9                                                             || */
+/* ||* Version     : 2.4.10                                                            || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2016-2017                                                         || */
 /* ||                                                                                  || */
@@ -50,7 +50,7 @@
 
 .trakt-full {
   border-bottom: none !important;
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/Style/img/Trakt_TV_Header_Logo.png") no-repeat !important;
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/dev/trakt.tv/img/Trakt_TV_Header_Logo.png") no-repeat !important;
 }
 
 /*::: HP Join Trakt.tv Buttons :::*/
@@ -203,7 +203,7 @@ footer {
   width: 65px !important;
   height: 65px !important;
 
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/Style/img/Trakt_TV_Header_Logo.png") no-repeat !important;
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/dev/trakt.tv/img/Trakt_TV_Header_Logo.png") no-repeat !important;
 }
 
 header#top-nav #top-brand .bottom-wrapper .bottom,
@@ -852,7 +852,7 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 /*::: Trakt Logo :::*/
 #auth-form-wrapper .logo-wrapper .logo,
 .checkin-modal .logo-wrapper .logo {
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/gh-pages/trakt.tv/Style/img/Trakt_TV_Login.png") no-repeat !important;
+  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/dev/trakt.tv/img/Trakt_TV_Login.png") no-repeat !important;
   background-size: 128px 128px !important;
 }
 
