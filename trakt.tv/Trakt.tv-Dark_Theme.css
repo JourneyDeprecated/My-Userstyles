@@ -8,9 +8,9 @@
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 17 / 2016                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 05 / 15 / 2017                                                    || */
+/* ||* Updated     : 05 / 22 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 2.4.10                                                            || */
+/* ||* Version     : 2.4.11                                                            || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2016-2017                                                         || */
 /* ||                                                                                  || */
@@ -738,6 +738,14 @@ Rank/Comments/Recently Added dropdowns/Friends :::*/
 .comment-wrapper {
   border-width: 0 !important;
 
+  background-color: transparent !important;
+}
+
+.new-comment-wrapper textarea {
+  background-color: rgb(42, 44, 49) !important;
+}
+
+.new-comment-wrapper .formatting-help {
   background-color: transparent !important;
 }
 

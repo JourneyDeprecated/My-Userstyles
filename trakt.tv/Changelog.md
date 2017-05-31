@@ -1,5 +1,10 @@
 # Dark Trakt.TV Changelog
 
+## v2.4.11 ... (22 MAY 17)
+
+### Fixes
+`+` Fixed background color of "add your comment" so you can see what you are typing.
+
 ## v2.4.10 ... (15 MAY 17)
 
 ### Fixes
