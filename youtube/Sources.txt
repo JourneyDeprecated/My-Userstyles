@@ -3,3 +3,4 @@ Dark mode for Social Blade Plugin - https://userstyles.org/styles/130355/dark-mo
 Youtube+ Dark Theme - https://userstyles.org/styles/133865/youtube-dark-theme
 seek preview and time not overlapping - https://userstyles.org/styles/137430/youtube-seek-preview-and-time-not-overlapping
 YouTube - Real Theater Mode - https://userstyles.org/styles/132367/youtube-real-theater-mode
+Stretch video to fill player - https://userstyles.org/styles/133098/youtube-stretch-video-to-fill-player
