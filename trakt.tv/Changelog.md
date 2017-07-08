@@ -1,5 +1,10 @@
 # Dark Trakt.TV Changelog
 
+## v2.4.12 ... (08 JULY 17)
+
+### Fixes
+`+` Fixed coded messages on show/movie pages for lists.
+
 ## v2.4.11 ... (22 MAY 17)
 
 ### Fixes
