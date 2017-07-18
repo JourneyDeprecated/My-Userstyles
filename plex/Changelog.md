@@ -1,5 +1,10 @@
 # Plex Fixes Changelog
 
+## v0.0.12 ... (18 JULY 17)
+
+### Fixes
+`+` update for plex web v3.11.0
+
 ## v0.0.11 ... (13 APRIL 17)
 
 ### Changes

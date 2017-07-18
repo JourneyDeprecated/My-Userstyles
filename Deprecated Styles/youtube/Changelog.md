@@ -1,5 +1,10 @@
 # Quick fixes and colorization's for YouTube Changelog
 
+## v1.0.7 ... (18 JULY 17)
+
+### NOTES
+`-` Style is now deprecated as I will no longer be working/updating script for old/new youtube layout.
+
 ## v1.0.7 ... (26 APRIL 17)
 
 ### Additions

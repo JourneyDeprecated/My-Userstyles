@@ -10,9 +10,9 @@ regexp("https?:\/\/.*:/*[[PORT]]*/\/.*") {
 /* ||                                                                                  || */
 /* ||* Created     : 03 / 10 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Updated     : 04 / 13 / 2017                                                    || */
+/* ||* Updated     : 07 / 18 / 2017                                                    || */
 /* ||                                                                                  || */
-/* ||* Version     : 0.0.11                                                            || */
+/* ||* Version     : 0.0.12                                                            || */
 /* ||                                                                                  || */
 /* ||* Copyright   : 2017                                                              || */
 /* ||                                                                                  || */
@@ -31,7 +31,9 @@ regexp("https?:\/\/.*:/*[[PORT]]*/\/.*") {
 }
 
 /*::: Image Container :::*/
-div[class^="PrePlayArtwork-imageContainer-"] {
+div[class^="PrePlayArtwork-imageContainer-"],
+div[class^="_3dXG6"]
+{
   position: fixed !important;
   top: 0 !important;
   right: 0 !important;
@@ -49,7 +51,8 @@ div[class^="PrePlayArtwork-imageContainer-"] {
 }
 
 /*::: Image :::*/
-div[class^="PrePlayArtwork-imageContainer-"] > div {
+div[class^="PrePlayArtwork-imageContainer-"] > div,
+div[class^="_3dXG6"] > div {
   position: fixed !important;
 
   width: 100% !important;
@@ -62,12 +65,14 @@ div[class^="PrePlayArtwork-imageContainer-"] > div {
 }
 
 /*::: Resizing adds extra divs :::*/
-div[class^="PrePlayArtwork-imageContainer-"] > div + div {
+div[class^="PrePlayArtwork-imageContainer-"] > div + div,
+div[class^="_3dXG6"] > div + div {
   display: none !important;
 }
 
 /*::: Item Thumbnail :::*/
-div[class^="PrePlayArtwork-imageContainer-"] + div {
+div[class^="PrePlayArtwork-imageContainer-"] + div,
+div[class^="_3dXG6"] + div {
   position: fixed !important;
   top: 180px !important;
 
@@ -87,19 +92,22 @@ div[class^="PrePlayArtwork-imageContainer-"] + div {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::: NEW ADDITIONS :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Max Width Of Summary Container :::*/
-div[class^="PrePlaySummary-summary-"] {
+div[class^="PrePlaySummary-summary-"],
+div[class^="_1NL8g"] {
   max-width: none !important;
 }
 
 /*::: Make Sure Overflow Of Summary Container is always visible :::*/
-div[class^="PrePlaySummary-summary-"] > div {
+div[class^="PrePlaySummary-summary-"] > div,
+div[class^="_1NL8g"] > div {
   overflow: visible !important;
 
   max-height: none !important;
 }
 
 /*::: Hide Read More Button Since It's Useless Now :::*/
-[class^="CollapsibleText-readMore-"] {
+[class^="CollapsibleText-readMore-"],
+[class^="_1bRJm"] {
   display: none !important;
 }
 
@@ -109,7 +117,8 @@ div[class^="PrePlaySummary-summary-"] > div {
 }
 
 /*::: Move dashboard down slightly :::*/
-[class^="DashboardPage-dashboardPageContent-"] {
+[class^="DashboardPage-dashboardPageContent-"],
+[class^="_2rN8X"] {
   padding: 15px 55px 60px !important;
 }
 
@@ -124,14 +133,16 @@ div[class^="PrePlaySummary-summary-"] > div {
 /*[[CompactSB]]*/
 
 /*::: make continue watching title containers a bit smaller :::*/
-div[class*="MetadataPosterCell-continueWatchingTitleContainer-"] {
+div[class*="MetadataPosterCell-continueWatchingTitleContainer-"],
+div[class^="_3yCAY"] {
   padding: 4px 5px !important;
 
   background-color: rgba(0, 0, 0, .35);
 }
 
 /*::: shorten the padding on headers on dashboard to bring inline with being closer to continue watching title container :::*/
-div[class*="HubCellHeader-hubCellHeader-"] {
+div[class*="HubCellHeader-hubCellHeader-"],
+div[class^="_2pvYN"] {
   padding: 4px 0 0 5px !important;
 }
 
