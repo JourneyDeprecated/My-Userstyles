@@ -166,7 +166,7 @@ div[class^="MenuContainer-menu-"],
 div[class*="2yixi"],
 div[class*="MI02O"],
 div[class*="3Gtlw"] {
-  background-color: rgba(35, 36, 38,.5);
+  background-color: rgba(35, 36, 38,.5) !important;
 }
 
 /* Make background of play queue/play next normal */
@@ -178,7 +178,7 @@ div[class*="2gkcE"],
 div[class*="mD38o"],
 div[class*="1G36_"],
 div[class*="2UnXo"] > div > div > div {
-  background: rgba(31, 31, 31, 1.0);
+  background: rgba(31, 31, 31, 1.0) !important;
 }
 
 /*::: Pulsate Status :::*/ /*::: Credits to @IanCeling :::*/
