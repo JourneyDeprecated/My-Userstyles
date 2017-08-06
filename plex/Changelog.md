@@ -1,5 +1,14 @@
 # Plex Fixes Changelog
 
+## v0.0.13 ... (06 AUGUST 17)
+
+### Additions:
+`+` Added a custom Url support for people who have a custom url to access plex.
+`+` Added an option to allow background images for certain areas of plex. *You don't have to use this and you can leave the option as is and it'll default to a dark background like how it used to be pre-3.0.0 plex, if you do decide to use this option then I suggest using a dark background image for the time being, I plan on going through things soonish to see if I can change things up a bit to support light & dark backgrounds*
+
+### Fixes:
+`+` update for plex web v3.17.3
+
 ## v0.0.12 ... (18 JULY 17)
 
 ### Fixes

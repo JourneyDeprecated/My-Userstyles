@@ -16,7 +16,7 @@
 
   {
     "html": {
-      "brace_style": "collapse-preserve-inline",
+      "brace_style": "collapse,preserve-inline",
       "end_with_newline": false, // End output with newline
       "indent_char": " ", // Indentation character
       "indent_with_tabs": false, //indent with tabs
@@ -39,7 +39,7 @@
       "space_around_selector_separator": true //  ensure space around selector separators: '>', '+', '~' (e.g. "a>b" -> "a > b")
     },
     "js": {
-      "brace_style": "collapse-preserve-inline",
+      "brace_style": "collapse,preserve-inline",
       "break_chained_methods": false, // Break chained method calls across subsequent lines
       "e4x": true, // Pass E4X xml literals through untouched
       "end_with_newline": false, // End output with newline

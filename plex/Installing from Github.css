@@ -1,49 +1,38 @@
-/*:::::::::::::::::::::::::::::::::::::::::::::::: Extras Section ::::::::::::::::::::::::::::::::::::::::::::::::*/
-
 /*:::::::::::::::::::::::::::::::::::::::::::::::: Cast List ::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Hide Cast List :::*/
 div[class^="PrePlayCastList-castList-"],
-div[class^="_3dQB5"] {
+div[class*="3dQB5"] {
   display: none !important;
 }
 
 /*::: Hover effect on CAST cards :::*/
-a[class^="PrePlayCastCell-cardLink-"],
-div[class^="TagPosterCard-card-"],
-a[class^="Tndv5"],
-div[class^="RVD0D"] {
-  transition: all .5s ease-out;
-}
-
 a[class^="PrePlayCastCell-cardLink-"]:hover,
 a[class^="PrePlayCastCell-cardLink-"]:hover > div,
-a[class^="Tndv5"]:hover,
-a[class^="Tndv5"]:hover > div {
-  border-radius: 5%;
-
-  transform: scale(1.05);
+a[class*="Tndv5"]:hover,
+a[class*="Tndv5"]:hover > div {
+  transform: scale(1.07);
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::: Movie Extras ::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Hide Movie Extras (dunno if there are tv extras or not as I could never get extras for tv shows to show up) :::*/
 div[class^="PrePlayExtrasList-extrasHubCell-"],
-div[class^="_2NcGK"] {
+div[class*="2NcGK"] {
   display: none !important;
 }
 
 /*::: Expand 'Extras' display for movies (shows as grid instead of scroller) :::*/
 [class^="PrePlayExtrasList-extrasHubCell-"] > div:nth-child(2),
 [class^="PrePlayExtrasList-extrasHubCell-"] > div:nth-child(2) > [class^="Measure-container-"] > div > div,
-[class^="_2NcGK"] > div:nth-child(2),
-[class^="_2NcGK"] > div:nth-child(2) > [class^="_2XznZ"] > div > div {
+[class*="2NcGK"] > div:nth-child(2),
+[class*="2NcGK"] > div:nth-child(2) > [class*="2XznZ"] > div > div {
   width: auto !important;
   height: auto !important;
 }
 
 [class^="PrePlayExtrasList-extrasHubCell-"] > div:nth-child(2) > [class^="Measure-container-"] > div > div > div,
-[class^="_2NcGK"] > div:nth-child(2) > [class^="_2XznZ"] > div > div > div {
+[class*="2NcGK"] > div:nth-child(2) > [class*="2XznZ"] > div > div > div {
   display: inline-block;
 
   position: relative !important;
@@ -57,57 +46,70 @@ div[class^="_2NcGK"] {
 
 /*::: Hide Related List i.e Related movies|shows|Genres|People :::*/
 div[class^="PrePlayRelatedList-relatedList-"],
-div[class^="_2fY8S"] {
+div[class*="2fY8S"] {
   display: none !important;
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::: Posters ::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 /*::: Posters Hover Effects :::*/ /*::: Credits to @IanCeling :::*/
+
+/* Poster Shadow */
 div[class^="MetadataPosterCard-cardContainer-"],
-div[class^="_2gRcQ"] {
+div[class*="2gRcQ"] {
   margin-top: 5px;
 
-  box-shadow: 0 12px 20px -8px #000;
+  box-shadow: 2px 3px 8px #000;
 
-  transition: transform .26s ease-out;
+  transition: all 1s;
 }
 
+/* Poster Hover */
 div[class^="MetadataPosterCard-cardContainer-"]:hover,
-div[class^="_2gRcQ"]:hover {
+div[class*="2gRcQ"]:hover {
+  box-shadow: 0 0 0 0 #000;
+
   transform: scale(1.05) translateY(-5px);
 }
 
+/* Continue Watching poster hover */
 div[data-qa-id="hub--home.continue"] div[class^="MetadataPosterCard-cardContainer-"]:hover,
-div[data-qa-id="hub--home.videos.recent"] div[class^="MetadataPosterCard-cardContainer-"]:hover,
-div[data-qa-id="hub--home.continue"] div[class^="_2gRcQ"]:hover,
-div[data-qa-id="hub--home.videos.recent"] div[class^="_2gRcQ"]:hover {
+div[data-qa-id="hub--home.continue"] div[class*="2gRcQ"]:hover {
   transform: scale(.97) translateY(-5px);
 }
 
+/* Add a bit of greyscale to the posters */
 div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="PosterCardImg-imageContainer-"],
-div[class^="_2gRcQ"]:hover div[class^="_1Ar4M"] {
+div[class*="2gRcQ"]:hover div[class*="1Ar4M"] {
   filter: grayscale(50%) brightness(105%) contrast(220%);
 }
 
-/*::: Poster Play Button :::*/ /*::: Credits to @IanCeling :::*/
+/*::: Poster Play Button :::*/
 div[class^="MetadataPosterCardOverlay-playCircle-"],
-div[class^="M67q6"] {
-  opacity: 0;
-  box-shadow: 0 6px 10px -4px #000;
+div[class*="M67q6"] {
+  border-radius: 50%;
+  width: 62px;
+  height: 62px;
 
-  transition: all .5s ease-out;
+  font-size: 18px;
+  line-height: 62px;
 
-  filter: blur(10px);
+  color: hsla(0, 0%, 100%, .7);
+
+  box-shadow: 0 4px 16px -2px #000;
+
+  transition: all 900ms;
+  transform: translate(-50%, -50%) scale(.1);
 }
 
 div[class^="MetadataPosterCard-cardContainer-"]:hover div[class^="MetadataPosterCardOverlay-playCircle-"],
-div[class^="_2gRcQ"]:hover div[class^="M67q6"] {
-  zoom: 1.5;
+div[class*="2gRcQ"]:hover div[class*="M67q6"] {
+  transform: translate(-50%, -50%) scale(1.2);
+}
 
-  opacity: 1;
-
-  filter: blur(0);
+div[class^="MetadataPosterCard-cardContainer-"]:hover [class^=plex-icon-play-],
+div[class*="2gRcQ"]:hover [class^=plex-icon-play-] {
+  font-size: 30px;
 }
 
 /*:::::::::::::::::::::::::::::::::::::::::::::::: Side Bar ::::::::::::::::::::::::::::::::::::::::::::::::*/
@@ -134,19 +136,19 @@ div[class^="_2gRcQ"]:hover div[class^="M67q6"] {
 [class^="SidebarServerLibraries-librariesTitle"],
 [class^="SidebarList-sidebarListHeader"],
 [class^="ServerMenuButton-serverMenuTitle-"],
-[class^="_7WfGt"],
-[class^="_3iqmv"],
-[class^="m1Kth"],
-[class^="cAqMG"] {
+[class*="7WfGt"],
+[class*="3iqmv"],
+[class*="m1Kth"],
+[class*="cAqMG"] {
   font-size: 0 !important;
 }
 
 .sidebar-container:hover [class^="SidebarLink-title"],
 .sidebar-container:hover [class^="SidebarServerLibraries-librariesTitle"],
 .sidebar-container:hover [class^="SidebarList-sidebarListHeader"],
-.sidebar-container:hover [class^="_7WfGt"],
-.sidebar-container:hover [class^="_3iqmv"],
-.sidebar-container:hover [class^="m1Kth"] {
+.sidebar-container:hover [class*="7WfGt"],
+.sidebar-container:hover [class*="3iqmv"],
+.sidebar-container:hover [class*="m1Kth"] {
   font-size: 12px !important;
 
   transition: all 2s ease !important;
@@ -155,31 +157,31 @@ div[class^="_2gRcQ"]:hover div[class^="M67q6"] {
 [class^="SidebarLibrariesActions-actions"],
 [class^="SidebarLink-children"],
 [class^="DisclosureArrow-disclosureArrow-"],
-[class^="_2eVPc"],
-[class^="_7pc_H"],
-[class^="_1sBFv"] {
+[class*="2eVPc"],
+[class*="7pc_H"],
+[class*="1sBFv"] {
   display: none !important;
 }
 
 .sidebar-container:hover [class^="SidebarLibrariesActions-actions"],
 .sidebar-container:hover [class^="SidebarLink-children"],
 .sidebar-container:hover [class^="DisclosureArrow-disclosureArrow"],
-.sidebar-container:hover [class^="_2eVPc"],
-.sidebar-container:hover [class^="_7pc_H"],
-.sidebar-container:hover [class^="_1sBFv"] {
+.sidebar-container:hover [class*="2eVPc"],
+.sidebar-container:hover [class*="7pc_H"],
+.sidebar-container:hover [class*="1sBFv"] {
   display: inline-block !important;
 
   transition: all 2s ease !important;
 }
 
 .sidebar-container:hover [class^="ServerMenuButton-serverMenuTitle-"],
-.sidebar-container:hover [class^="cAqMG"] {
+.sidebar-container:hover [class*="cAqMG"] {
   font-size: 14px !important;
 
   transition: all 3s ease !important;
 }
 
 [class^="SidebarLibraryItem-action"],
-[class^="_2AHiQ"] {
+[class*="2AHiQ"] {
   width: 0 !important;
 }
