@@ -1,5 +1,28 @@
 # Dark Trakt.TV Changelog
 
+## v3.0.0 ... (Unreleased)
+
+### Additions
+`+` Add Option to remove Button for shop
+
+`+` Add Option to remove all VIP Stuff since I don't have VIP I can't theme anything that has to do with VIP (only thing that will remain is the VIP Button on the nav bar)
+
+`+` Make scroll bar thin/darker
+
+`+` Add Version Number into footer section of site
+
+`+` style can now be directly installed from my <a href="https://raw.githubusercontent.com/JourneyOver/Userstyles/dev/trakt.tv/style.user.css">Github.</a> repository (if using Stylus or FreeStyler)
+
+### Fixes
+`+` Added support for Welcome Pages
+
+`+` Made it so style doesn't affect trakt blog pages (might create a addon to the style for trakt blogs in future )
+
+### Notes
+`*` Code might be a bit messy and some stuff may seem like redudent duplicates to some people, but I split things up a lot more to help me update things when need be
+
+`*` Switched name from Trakt.tv dark to Dark Trakt.tv
+
 ## v2.4.12 ... (08 JULY 17)
 
 ### Fixes
