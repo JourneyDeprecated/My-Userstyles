@@ -334,6 +334,66 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
 @-moz-document url-prefix("https://trakt.tv") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Home Page :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
+/*:: Buttons ::*/
+[id="top-nav"] > [class*="navbar-nav"] > li > [class*=btn-primary],
+[id="watching-wrapper"] > div > div > div > div > div > [class*=btn-primary],
+[id="scrobblers-wrapper"] > div > div > div > div > div > [class*=btn-primary],
+[id="apps-wrapper"] > div > div > div > div > div > [class*=btn-primary],
+[id="api-wrapper"] > div > div > div > div > [class*=btn-primary] {
+  border: 1px solid var(--button-border) !important;
+
+  color: var(--button-txt) !important;
+  background: var(--button-bg) !important;
+
+  box-shadow: 1px 1px 5px 1px var(--button-boxshadow) !important;
+}
+
+[id="top-nav"] > [class*="navbar-nav"] > li > [class*=btn-primary]:hover,
+[id="watching-wrapper"] > div > div > div > div > div > [class*=btn-primary]:hover,
+[id="scrobblers-wrapper"] > div > div > div > div > div > [class*=btn-primary]:hover,
+[id="apps-wrapper"] > div > div > div > div > div > [class*=btn-primary]:hover,
+[id="api-wrapper"] > div > div > div > div > [class*=btn-primary]:hover {
+  color: var(--button-hovertxt) !important;
+  background: var(--button-hoverbg) !important;
+
+  box-shadow: 1px 1px 5px 1px var(--button-boxshadow) !important;
+}
+
+/* Text and Background Images Corrections */
+[id="scrobblers-wrapper"] > [class*="full-screenshot"] {
+  background-image: url("https://shield.nvidia.fr/new_images/android-tv/media-server/what-is-plex.png") !important;
+  background-size: 100% 100% !important;
+}
+
+[id="watchnow-wrapper"] {
+  background-color: var(--bg) !important;
+}
+
+[id="api-wrapper"] {
+  border-top: solid 1px var(--border) !important;
+
+  background-color: var(--bg) !important;
+}
+
+[id="scrobblers-wrapper"] > div > div > div > div > h1,
+[id="scrobblers-wrapper"] > div > div > div > div > h2,
+[id="watchnow-wrapper"] > div > div > div > div > h1,
+[id="watchnow-wrapper"] > div > div > div > div > h2,
+[id="api-wrapper"] > div > div > div > h1,
+[id="api-wrapper"] > div > div > div > h2 {
+  color: var(--normaltxt-2) !important;
+}
+
+[id="watchnow-wrapper"] > [class="shade"],
+[id="api-wrapper"] > [class="shade"] {
+  display: none !important;
+}
+
+}
+
+@-moz-document url-prefix("https://trakt.tv") {
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: dashboard :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
 }
 
 @-moz-document url-prefix("https://trakt.tv") {
