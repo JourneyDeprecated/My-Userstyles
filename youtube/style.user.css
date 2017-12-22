@@ -1,0 +1,13 @@
+/* ==UserStyle==
+@name        YouTube_
+@namespace   github.com/JourneyOver/My-Userstyles/tree/Cleanup_and_Rewrites/youtube
+@homepageURL https://github.com/JourneyOver/My-Userstyles/tree/Cleanup_and_Rewrites/youtube
+@supportURL  https://github.com/JourneyOver/My-Userstyles/issues
+@version     0.0.1
+@updateURL   https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/youtube/style.user.css
+@description Small YouTube Additions
+@author      JourneyOver (https://github.com/JourneyOver)
+@license     CC BY-NC-SA 4.0
+==/UserStyle== */
+
+@-moz-document domain("youtube.com") {}
