@@ -86,7 +86,6 @@
 
 /* Avatar */
 [id*="top-nav"] > [class*="nav"] > [class*="hidden-xs"] > [id*="desktop-user-avatar"] > [class*="avatar"] {
-  border: 2px solid var(--border) !important;
   border-radius: 0 !important;
 }
 
@@ -375,5 +374,19 @@ footer > [class="copyright"] > a:hover {
 
 @-moz-document url-prefix("https://trakt.tv") {
 /*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Dashboard :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+
+/* Main Sections */
+[class="user-wrapper"],
+[id="ondeck-wrapper"],
+[id="schedule-wrapper"],
+[id*="huckster-desktop-wrapper"],
+[id="charts-wrapper"],
+[id="activity-wrapper"],
+[id="network-wrapper"],
+[id="recommendations-wrapper"],
+[id="main-search"],
+footer {
+  background-color: var(--bg) !important;
+}
 
 }
