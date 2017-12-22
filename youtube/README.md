@@ -11,12 +11,12 @@ Install a userstyle manager for your favorite browser:
 - Chrome (Stylish): **[Install Stylish][1]**
 - Chrome (Stylus): **[Install Stylus][2]**
 - Chrome (xStyle): **[Install xStyle][3]**
-- Firefox: **[Install Stylish][4]**
-- Firefox: **[Install Stylus][5]**
-- Firefox: **[Install xStyle][6]**
-- Opera: **[Install Stylish][7]**
-- Opera: **[Install Stylus][8]**
-- Safari: **[Install Stylish][9]**
+- Firefox (Stylish): **[Install Stylish][4]**
+- Firefox (Stylus): **[Install Stylus][5]**
+- Firefox (xStyle): **[Install xStyle][6]**
+- Opera (Stylish): **[Install Stylish][7]**
+- Opera (Stylus): **[Install Stylus][8]**
+- Safari (Stylish): **[Install Stylish][9]**
 
 Then, copy-pasta the styles from `YouTube_.css` into a new userstyle.
 
