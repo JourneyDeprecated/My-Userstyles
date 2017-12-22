@@ -27,7 +27,9 @@
 - ~~[Quick fixes and colorizations for youtube](https://userstyles.org/styles/137220/quick-fixes-and-colorizations-for-youtube)~~ **Discontinued**
 - [Dark Trakt.tv](https://userstyles.org/styles/125666/dark-trakt-tv)
 - [Plex Fixes](https://userstyles.org/styles/139979/plex-fixes)
+- [YouTube_](WIP)
 
 # Install my styles right from Github
 
 - [Dark Trakt.tv](https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/trakt.tv/style.user.css)
+- [YouTube_](https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/youtube/style.user.css)
