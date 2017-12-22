@@ -18,8 +18,6 @@ Install a userstyle manager for your favorite browser:
 - Opera (Stylus): **[Install Stylus][8]**
 - Safari (Stylish): **[Install Stylish][9]**
 
-Then, copy-pasta the styles from `YouTube_.css` into a new userstyle.
-
 ## Userstyles.org
 
 If you use the Stylish/Stylus addon on Chrome or Firefox you can find one-click installs including automatic updates via the packages below.
