@@ -1,11 +1,12 @@
 /* ==UserStyle==
 @name        Dark Trakt.tv
+@namespace   github.com/JourneyOver/My-Userstyles/tree/Cleanup_and_Rewrites/trakt.tv
+@homepageURL https://github.com/JourneyOver/My-Userstyles/tree/Cleanup_and_Rewrites/trakt.tv
+@supportURL  https://github.com/JourneyOver/My-Userstyles/issues
 @version     3.0.0
-@namespace   github.com/JourneyOver/Userstyles/tree/dev/trakt.tv
-@description Switch off the lights on trakt.tv and browse in nighttime mode.
+@updateURL   https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/trakt.tv/style.user.css
+@description Dark Trakt.tv Theme
 @author      JourneyOver (https://github.com/JourneyOver)
-@homepageURL https://github.com/JourneyOver/Userstyles/tree/dev/trakt.tv
-@supportURL  https://github.com/JourneyOver/Userstyles/issues
 @license     CC BY-NC-SA 4.0
 
 @advanced color bg "background" #1d1e22
@@ -132,7 +133,7 @@ div[id="top-brand"] {
   width: 65px !important;
   height: 65px !important;
 
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/dev/trakt.tv/img/Trakt_TV_Header_Logo.png") no-repeat !important;
+  background: url("https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/trakt.tv/img/logos/slightly_darkerlight_logo_(65_x_65).png") no-repeat !important;
 }
 
 header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] > [class="bottom"],
@@ -155,7 +156,7 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
   border-bottom: none !important;
   height: 65px !important;
 
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/dev/trakt.tv/img/Trakt_TV_Header_Logo.png") no-repeat !important;
+  background: url("https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/trakt.tv/img/logos/slightly_darkerlight_logo_(65_x_65).png") no-repeat !important;
 }
 
 /*:: Social Buttons ::*/
@@ -221,7 +222,7 @@ footer > [class="copyright"] > a:hover {
 [class="trakt"]::after {
   white-space: pre;
 
-  content: "\A                  Trakt.tv Dark Ver. 3.0.0";
+  content: "\A                  Dark Trakt.tv Ver. 3.0.0";
 }
 
 }
@@ -273,7 +274,7 @@ footer > [class="copyright"] > a:hover {
 
 /*:: Logo ::*/
 [id="auth-form-wrapper"] > a > [class="logo-wrapper"] > div[class="logo"] {
-  background: url("https://raw.githubusercontent.com/JourneyOver/Userstyles/dev/trakt.tv/img/Trakt_TV_Login.png") no-repeat !important;
+  background: url("https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/trakt.tv/img/logos/dark_logo_(400_x_400).png") no-repeat !important;
   background-size: 128px 128px !important;
 }
 
@@ -375,7 +376,7 @@ footer > [class="copyright"] > a:hover {
 
 /* Text and Background Images Corrections */
 [id="scrobblers-wrapper"] > [class*="full-screenshot"] {
-  background-image: url("https://shield.nvidia.fr/new_images/android-tv/media-server/what-is-plex.png") !important;
+  background-image: url("https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/trakt.tv/img/other/scrobblers-wrapper-image.png") !important;
   background-size: 100% 100% !important;
 }
 

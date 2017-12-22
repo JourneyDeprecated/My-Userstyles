@@ -1,4 +1,4 @@
-# Dark Trakt.TV Changelog
+# Dark Trakt.tv Changelog
 
 ## v3.0.0 ... (Unreleased)
 
@@ -11,7 +11,7 @@
 
 `+` Add Version Number into footer section of site
 
-`+` style can now be directly installed from my <a href="https://raw.githubusercontent.com/JourneyOver/Userstyles/dev/trakt.tv/style.user.css">Github.</a> repository (if using Stylus or FreeStyler)
+`+` style can now be directly installed from my <a href="https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/trakt.tv/style.user.css">Github</a> repository (if using Stylus or xStyles)
 
 ### Fixes
 `+` Added support for Welcome Pages
