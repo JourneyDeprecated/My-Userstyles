@@ -22,8 +22,8 @@
 @advanced color scrollbar "scrollbar color" #333333
 @advanced color scrollbart "scrollbar thumb color" #555555
 
-@advanced color link "link color" #ed1c24
-@advanced color hlink "link hover color" #ebebeb
+@advanced color link "link color" #ffffff
+@advanced color hlink "link hover color" #338682
 
 @advanced dropdown Ads "Hide Ads?" {
 ADSY "Yes" <<<EOT
@@ -116,6 +116,12 @@ VIPN "No" <<<EOT
   background: var(--transparent) !important;
 }
 
+/* Avatar */
+[id*="top-nav"] > [class*="nav"] > [class*="hidden-xs"] > [id*="desktop-user-avatar"] > [class*="avatar"] {
+  border: 2px solid var(--border) !important;
+  border-radius: 0 !important;
+}
+
 /*:: Logos ::*/
 div[id="top-brand"] > a > img,
 [class="trakt-full"] > img {
@@ -191,7 +197,11 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
 [class="bottom-wrapper"] > a,
 [class="form-inputs with-icons"] > [class="with-icon"] > a[href*="/auth/password/new"],
 [id="watching-wrapper"] > div > div > div > div > div > div > a,
-[id="watching-wrapper"] > div > div > div > div > h2 > a {
+[id="watching-wrapper"] > div > div > div > div > h2 > a,
+[id="main-nav"] > [class*="nav"] > li > a,
+footer > [class="links"] > [class="left-side"] > li > a,
+footer > [class="links"] > [class="social"] > a,
+footer > [class="copyright"] > a {
   color: var(--link-color) !important;
 }
 
@@ -199,7 +209,11 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
 [class="form-inputs with-icons"] > [class="with-icon"] > a[href*="/auth/password/new"]:hover,
 [id="watching-wrapper"] > div > div > div > div > div > div > a:hover,
 [id="watching-wrapper"] > div > a:hover,
-[id="watching-wrapper"] > div > div > div > div > h2 > a:hover {
+[id="watching-wrapper"] > div > div > div > div > h2 > a:hover,
+[id="main-nav"] > [class*="nav"] > li > a:hover,
+footer > [class="links"] > [class="left-side"] > li > a:hover,
+footer > [class="links"] > [class="social"] > a:hover,
+footer > [class="copyright"] > a:hover {
   color: var(--link-hovercolor) !important;
 }
 
@@ -392,7 +406,7 @@ header[id="top-nav"] > [id="top-brand"] > a > [class="bottom-wrapper"] {
 }
 
 @-moz-document url-prefix("https://trakt.tv") {
-/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: dashboard :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
+/*::::::::::::::::::::::::::::::::::::::::::::::::::::::::: Dashboard :::::::::::::::::::::::::::::::::::::::::::::::::::::::*/
 
 }
 
