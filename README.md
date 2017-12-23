@@ -1,4 +1,4 @@
-### DO NOT USE THIS BRANCH --- THE STYLES IN THIS BRANCH ARE CURRENTLY WORK IN PROGRESS AND ARE SUBJECTIVE TO MULTIPLE CHANGES! ###
+### THis REPOSITORY IS NOW CONSIDERED DEAD! EVERYTHING WILL REMAIN AS IS UNTIL I COMPLETE MY TRAKT RE-WRITE AND THEN THIS REPOSITORY WILL BE DELETED! YOU CAN FOLLOW THE REPOS FOR MY THEMES HERE https://github.com/StylusThemes ###
 
 # How to use these Userstyles with Stylish
 
@@ -31,6 +31,6 @@
 
 # Install my styles right from Github
 
-- [Dark Trakt.tv](https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/trakt.tv/style.user.css)
-- [Plex Fixes](https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/plex/style.user.css)
-- [YouTube_](https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/youtube/style.user.css)
+- ~~[Dark Trakt.tv](https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/style.user.css)~~ Not Ready Yet!
+- [Plex Fixes](https://raw.githubusercontent.com/StylusThemes/Plex-Fixes/style.user.css)
+- [YouTube_](https://raw.githubusercontent.com/StylusThemes/YouTube_/style.user.css)
