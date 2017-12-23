@@ -32,4 +32,5 @@
 # Install my styles right from Github
 
 - [Dark Trakt.tv](https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/trakt.tv/style.user.css)
+- [Plex Fixes](https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/plex/style.user.css)
 - [YouTube_](https://raw.githubusercontent.com/JourneyOver/My-Userstyles/Cleanup_and_Rewrites/youtube/style.user.css)
