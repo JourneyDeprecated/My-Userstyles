@@ -27,10 +27,10 @@
 - ~~[Quick fixes and colorizations for youtube](https://userstyles.org/styles/137220/quick-fixes-and-colorizations-for-youtube)~~ **Discontinued**
 - [Dark Trakt.tv](https://userstyles.org/styles/125666/dark-trakt-tv)
 - [Plex Fixes](https://userstyles.org/styles/139979/plex-fixes)
-- [YouTube_](WIP)
+- [YouTube Theater](https://userstyles.org/styles/160362/youtube-theater)
 
 # Install my styles right from Github
 
 - ~~[Dark Trakt.tv](https://raw.githubusercontent.com/StylusThemes/Trakt-Dark/style.user.css)~~ Not Ready Yet!
 - [Plex Fixes](https://raw.githubusercontent.com/StylusThemes/Plex-Fixes/style.user.css)
-- [YouTube_](https://raw.githubusercontent.com/StylusThemes/YouTube_/style.user.css)
+- [YouTube Theater](https://raw.githubusercontent.com/StylusThemes/YouTube-Theater/style.user.css)
